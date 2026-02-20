@@ -174,10 +174,4 @@ The application follows a **modular architecture** with clear separation of conc
 
 ---
 
-## 📝 License
-
-This project is proprietary to **INWI**. All rights reserved.
-
----
-
 *Data Center Monitoring Dashboard | © 2025 INWI*
