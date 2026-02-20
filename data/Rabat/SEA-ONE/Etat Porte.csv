@@ -1,0 +1,195 @@
+﻿history:GTC_Multisite_Inwi/SEA-ONE Contact de Porte
+
+Timestamp,Trend Flags,Status,Value
+04-Dec-24 4:18:05 PM WEST,{start},{ok},Ouvert
+05-Dec-24 11:10:02 AM WEST,{ },{ok},Fermé
+05-Dec-24 11:10:03 AM WEST,{ },{ok},Ouvert
+05-Dec-24 11:41:10 AM WEST,{ },{down},Ouvert
+05-Dec-24 11:46:16 AM WEST,{ },{ok},Ouvert
+05-Dec-24 11:46:16 AM WEST,{ },{stale},Ouvert
+05-Dec-24 11:46:18 AM WEST,{ },{ok},Ouvert
+05-Dec-24 12:17:49 PM WEST,{ },{ok},Fermé
+05-Dec-24 12:17:51 PM WEST,{ },{ok},Ouvert
+05-Dec-24 12:18:02 PM WEST,{ },{ok},Fermé
+05-Dec-24 12:18:11 PM WEST,{ },{ok},Ouvert
+05-Dec-24 12:18:15 PM WEST,{ },{ok},Fermé
+05-Dec-24 12:18:21 PM WEST,{ },{ok},Ouvert
+12-Dec-24 10:06:42 AM WEST,{ },{down},Ouvert
+12-Dec-24 10:11:48 AM WEST,{ },{ok},Ouvert
+12-Dec-24 10:11:48 AM WEST,{ },{stale},Ouvert
+12-Dec-24 10:11:49 AM WEST,{ },{ok},Ouvert
+13-Dec-24 4:28:07 PM WEST,{ },{down},Ouvert
+13-Dec-24 6:52:28 PM WEST,{ },{ok},Ouvert
+13-Dec-24 6:52:28 PM WEST,{ },{stale},Ouvert
+13-Dec-24 6:52:30 PM WEST,{ },{ok},Ouvert
+18-Dec-24 2:17:01 PM WEST,{ },{ok},Fermé
+18-Dec-24 2:19:31 PM WEST,{ },{ok},Ouvert
+23-Dec-24 9:44:33 AM WEST,{ },{ok},Fermé
+23-Dec-24 9:44:53 AM WEST,{ },{ok},Ouvert
+07-Jan-25 10:50:12 AM WEST,{ },{ok},Fermé
+07-Jan-25 10:51:49 AM WEST,{ },{ok},Ouvert
+17-Jan-25 1:05:49 PM WEST,{start},{ok},Ouvert
+28-Jan-25 4:53:16 PM WEST,{start},{ok},Ouvert
+28-Jan-25 9:24:06 PM WEST,{ },{ok},Fermé
+28-Jan-25 9:25:10 PM WEST,{ },{ok},Ouvert
+29-Jan-25 9:27:30 AM WEST,{start},{ok},Ouvert
+29-Jan-25 11:24:25 PM WEST,{ },{ok},Fermé
+29-Jan-25 11:24:49 PM WEST,{ },{ok},Ouvert
+30-Jan-25 10:07:54 PM WEST,{start},{ok},Ouvert
+02-Feb-25 8:43:18 AM WEST,{ },{ok},Fermé
+02-Feb-25 9:02:08 AM WEST,{ },{ok},Ouvert
+05-Feb-25 10:43:42 AM WEST,{ },{down},Ouvert
+05-Feb-25 10:48:44 AM WEST,{ },{ok},Ouvert
+05-Feb-25 10:52:49 AM WEST,{ },{ok},Fermé
+05-Feb-25 10:53:43 AM WEST,{ },{ok},Ouvert
+10-Feb-25 12:08:24 PM WEST,{ },{ok},Fermé
+10-Feb-25 12:51:44 PM WEST,{ },{ok},Ouvert
+11-Feb-25 11:37:28 AM WEST,{start},{ok},Ouvert
+12-Feb-25 2:26:00 AM WEST,{ },{down},Ouvert
+12-Feb-25 2:53:47 AM WEST,{ },{ok},Ouvert
+13-Feb-25 3:38:42 PM WEST,{start},{ok},Ouvert
+13-Feb-25 4:42:35 PM WEST,{start},{ok},Ouvert
+14-Feb-25 9:28:33 AM WEST,{start},{ok},Ouvert
+20-Feb-25 8:58:50 AM WEST,{start},{ok},Ouvert
+20-Feb-25 9:00:32 AM WEST,{start},{ok},Ouvert
+23-Feb-25 10:02:21 AM WET,{ },{ok},Fermé
+23-Feb-25 10:02:41 AM WET,{ },{ok},Ouvert
+24-Feb-25 11:39:47 AM WET,{ },{ok},Fermé
+24-Feb-25 11:42:28 AM WET,{ },{ok},Ouvert
+25-Feb-25 9:37:25 AM WET,{ },{ok},Fermé
+25-Feb-25 2:55:43 PM WET,{ },{ok},Ouvert
+26-Feb-25 2:16:33 AM WET,{ },{down},Ouvert
+26-Feb-25 2:21:35 AM WET,{ },{ok},Ouvert
+26-Feb-25 8:37:23 AM WET,{ },{ok},Fermé
+26-Feb-25 8:37:29 AM WET,{ },{ok},Ouvert
+26-Feb-25 8:38:05 AM WET,{ },{ok},Fermé
+26-Feb-25 8:38:34 AM WET,{ },{ok},Ouvert
+28-Feb-25 1:52:55 AM WET,{ },{down},Ouvert
+28-Feb-25 1:57:58 AM WET,{ },{ok},Ouvert
+02-Mar-25 9:20:12 AM WET,{ },{ok},Fermé
+02-Mar-25 9:21:56 AM WET,{ },{ok},Ouvert
+02-Mar-25 6:01:00 PM WET,{ },{ok},Fermé
+02-Mar-25 6:01:06 PM WET,{ },{ok},Ouvert
+03-Mar-25 6:58:55 PM WET,{ },{ok},Fermé
+03-Mar-25 6:59:42 PM WET,{ },{ok},Ouvert
+03-Mar-25 7:54:50 PM WET,{ },{ok},Fermé
+03-Mar-25 7:55:33 PM WET,{ },{ok},Ouvert
+09-Mar-25 6:51:53 PM WET,{ },{ok},Fermé
+09-Mar-25 6:52:14 PM WET,{ },{ok},Ouvert
+14-Mar-25 6:02:15 AM WET,{ },{ok},Fermé
+14-Mar-25 6:02:35 AM WET,{ },{ok},Ouvert
+15-Mar-25 10:44:47 AM WET,{ },{ok},Fermé
+15-Mar-25 10:44:53 AM WET,{ },{ok},Ouvert
+19-Mar-25 12:10:08 AM WET,{ },{ok},Fermé
+19-Mar-25 12:10:20 AM WET,{ },{ok},Ouvert
+28-Mar-25 10:29:31 AM WET,{ },{ok},Fermé
+28-Mar-25 10:29:51 AM WET,{ },{ok},Ouvert
+02-Apr-25 4:17:47 PM WET,{ },{ok},Fermé
+02-Apr-25 4:18:31 PM WET,{ },{ok},Ouvert
+08-Apr-25 2:40:35 PM WEST,{ },{down},Ouvert
+08-Apr-25 3:55:21 PM WEST,{ },{ok},Ouvert
+08-Apr-25 3:55:22 PM WEST,{ },{stale},Ouvert
+08-Apr-25 3:55:23 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:08:12 PM WEST,{ },{down},Ouvert
+08-Apr-25 4:13:38 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:13:39 PM WEST,{ },{stale},Ouvert
+08-Apr-25 4:13:40 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:16:15 PM WEST,{ },{down},Ouvert
+08-Apr-25 4:21:21 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:21:22 PM WEST,{ },{stale},Ouvert
+08-Apr-25 4:21:23 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:21:55 PM WEST,{ },{ok},Fermé
+08-Apr-25 4:22:08 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:23:57 PM WEST,{ },{down},Ouvert
+08-Apr-25 4:34:24 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:34:24 PM WEST,{ },{stale},Ouvert
+08-Apr-25 4:34:26 PM WEST,{ },{ok},Ouvert
+08-Apr-25 4:48:00 PM WEST,{ },{down},Ouvert
+08-Apr-25 4:58:25 PM WEST,{ },{ok},Ouvert
+08-Apr-25 6:03:06 PM WEST,{ },{fault},Ouvert
+08-Apr-25 6:03:17 PM WEST,{ },{stale},Ouvert
+08-Apr-25 6:05:19 PM WEST,{ },"{fault,stale}",Ouvert
+09-Apr-25 4:23:38 PM WEST,{start},{ok},Fermé
+13-Apr-25 8:05:42 PM WEST,{start},{ok},Fermé
+18-Apr-25 2:41:08 PM WEST,{ },{ok},Ouvert
+18-Apr-25 6:02:12 PM WEST,{ },{ok},Fermé
+21-Apr-25 4:56:49 PM WEST,{ },{ok},Ouvert
+21-Apr-25 7:03:10 PM WEST,{ },{ok},Fermé
+23-Apr-25 12:10:54 PM WEST,{start},{ok},Fermé
+01-May-25 10:27:00 AM WEST,{ },{ok},Ouvert
+01-May-25 11:47:10 AM WEST,{ },{ok},Fermé
+09-May-25 9:35:17 AM WEST,{ },{ok},Ouvert
+09-May-25 11:57:28 AM WEST,{ },{ok},Fermé
+13-May-25 12:00:29 PM WEST,{ },{ok},Ouvert
+13-May-25 4:03:34 PM WEST,{ },{ok},Fermé
+13-May-25 5:01:32 PM WEST,{ },{ok},Ouvert
+13-May-25 7:44:15 PM WEST,{ },{ok},Fermé
+13-May-25 7:46:59 PM WEST,{ },{ok},Ouvert
+13-May-25 7:47:10 PM WEST,{ },{ok},Fermé
+20-May-25 9:01:32 AM WEST,{start},{ok},Fermé
+31-May-25 1:38:22 PM WEST,{ },{ok},Ouvert
+31-May-25 2:29:17 PM WEST,{ },{ok},Fermé
+05-Jun-25 12:17:48 PM WEST,{ },{ok},Ouvert
+05-Jun-25 1:09:05 PM WEST,{ },{ok},Fermé
+12-Jun-25 11:10:52 AM WEST,{start},{ok},Fermé
+12-Jun-25 12:16:54 PM WEST,{start},{ok},Fermé
+12-Jun-25 12:26:50 PM WEST,{start},{ok},Fermé
+12-Jun-25 12:29:23 PM WEST,{start},{ok},Fermé
+13-Jun-25 12:38:31 PM WEST,{ },{ok},Ouvert
+13-Jun-25 12:39:25 PM WEST,{ },{ok},Fermé
+17-Jun-25 2:43:23 PM WEST,{ },{ok},Ouvert
+17-Jun-25 3:08:49 PM WEST,{ },{ok},Fermé
+19-Jun-25 1:01:55 PM WEST,{ },{down},Fermé
+23-Jun-25 11:46:07 AM WEST,{start},"{down,stale}",Ouvert
+23-Jun-25 11:49:55 AM WEST,{ },{stale},Ouvert
+23-Jun-25 11:49:55 AM WEST,{ },{ok},Fermé
+25-Jun-25 9:31:42 AM WEST,{start},{ok},Fermé
+02-Jul-25 12:29:13 PM WEST,{start},{ok},Fermé
+02-Jul-25 2:16:25 PM WEST,{ },{ok},Ouvert
+02-Jul-25 2:39:35 PM WEST,{ },{ok},Fermé
+02-Jul-25 3:14:01 PM WEST,{ },{ok},Ouvert
+02-Jul-25 3:24:16 PM WEST,{ },{ok},Fermé
+09-Jul-25 3:49:23 PM WEST,{start},{ok},Fermé
+09-Jul-25 5:30:36 PM WEST,{start},{ok},Fermé
+16-Jul-25 2:20:45 PM WEST,{start},{ok},Fermé
+22-Jul-25 11:54:55 AM WEST,{ },{ok},Ouvert
+22-Jul-25 12:38:00 PM WEST,{ },{ok},Fermé
+23-Jul-25 4:31:11 PM WEST,{start},{ok},Fermé
+23-Jul-25 4:41:37 PM WEST,{start},{ok},Fermé
+10-Aug-25 3:44:05 PM WEST,{start},{ok},Fermé
+14-Aug-25 9:59:20 PM WEST,{ },{ok},Ouvert
+14-Aug-25 10:43:19 PM WEST,{ },{ok},Fermé
+19-Aug-25 12:15:31 PM WEST,{ },{ok},Ouvert
+19-Aug-25 1:22:47 PM WEST,{ },{ok},Fermé
+25-Aug-25 9:34:01 AM WEST,{start},{ok},Fermé
+25-Aug-25 11:28:27 AM WEST,{start},{ok},Fermé
+27-Aug-25 9:02:31 AM WEST,{start},{ok},Fermé
+28-Aug-25 10:31:55 AM WEST,{start},{ok},Fermé
+01-Sep-25 5:27:03 PM WEST,{start},{ok},Fermé
+02-Sep-25 9:07:22 AM WEST,{start},{ok},Fermé
+22-Sep-25 1:24:16 PM WEST,{start},{ok},Fermé
+23-Sep-25 11:40:17 AM WEST,{start},{ok},Fermé
+24-Sep-25 12:00:33 PM WEST,{ },{ok},Ouvert
+24-Sep-25 12:28:22 PM WEST,{ },{ok},Fermé
+27-Sep-25 7:47:57 PM WEST,{start},{ok},Fermé
+29-Sep-25 3:14:45 PM WEST,{ },{ok},Ouvert
+29-Sep-25 3:19:18 PM WEST,{ },{ok},Fermé
+30-Sep-25 12:22:18 PM WEST,{start},{ok},Fermé
+30-Sep-25 4:25:36 PM WEST,{ },{ok},Ouvert
+30-Sep-25 4:37:58 PM WEST,{ },{ok},Fermé
+03-Oct-25 2:32:16 PM WEST,{ },{ok},Ouvert
+03-Oct-25 3:08:16 PM WEST,{ },{ok},Fermé
+05-Oct-25 5:29:48 PM WEST,{ },{ok},Ouvert
+05-Oct-25 10:55:07 PM WEST,{ },{ok},Fermé
+10-Oct-25 12:03:39 PM WEST,{start},{ok},Fermé
+13-Oct-25 9:14:15 AM WEST,{start},{ok},Fermé
+15-Oct-25 11:18:34 AM WEST,{start},{ok},Fermé
+15-Oct-25 11:52:46 AM WEST,{start},{ok},Fermé
+15-Oct-25 12:27:16 PM WEST,{start},{ok},Fermé
+16-Oct-25 12:16:07 PM WEST,{start},{ok},Fermé
+19-Oct-25 3:07:09 PM WEST,{ },{ok},Ouvert
+19-Oct-25 3:18:24 PM WEST,{ },{ok},Fermé
+20-Oct-25 9:06:38 AM WEST,{start},{ok},Fermé
+22-Oct-25 6:19:54 PM WEST,{start},{ok},Fermé
+23-Oct-25 4:20:15 PM WEST,{ },{ok},Ouvert
+23-Oct-25 4:23:20 PM WEST,{ },{ok},Fermé

@@ -1,0 +1,710 @@
+POP-INWI-IOT Data Integrity Report
+==================================================
+
+Total sites: 75
+Valid sites: 0
+Invalid sites: 75
+Success rate: 0.0%
+
+MISSING FILES:
+  Agadir/AAM-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Agadir/GLM-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Agadir/TNT-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Casablanca/BER-MCO:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Casablanca/BER-ONCF:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Casablanca/BER-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Casablanca/CAS-ZENITH-MCO:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - Température Extérieure.csv
+  Casablanca/MEDYOUNA-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Casablanca/MOH-MCO:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Casablanca/RN-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Casablanca/TZR-ONE:
+    - Etat CLIM D.csv
+  Laayoune/CHB-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Laayoune/DAK-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Laayoune/LAAY-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Marrakech/BGU-ONCF:
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+  Meknès/AHS-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Meknès/ALF-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Meknès/AZR-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Meknès/FEZ-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Meknès/IFR-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Meknès/KMR-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Meknès/MDL-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Meknès/OLI-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/KEN-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/RAB-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/SEA-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/SIDI_SLIMANE-ONCF:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/TIF-ONE:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Rabat/TNP1:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Rabat/TNP2:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Rabat/VSAT:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+  Tanger/Assilah-ONCF:
+    - Etat CLIM A.csv
+    - Etat CLIM B.csv
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+    - P.Active CLIM.csv
+    - P.Active générale.csv
+    - Température Ambiante.csv
+    - Température Extérieure.csv
+  Tanger/FAR-ONE:
+    - Etat CLIM D.csv
+  Tanger/MEL-ONE:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+  Tanger/TET-MCO:
+    - Etat CLIM C.csv
+    - Etat CLIM D.csv
+
+WRONG SITE NAMES:
+  Agadir/AGA-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Agadir/AGA-ONE1:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Agadir/AGA-ONE2:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Agadir/GLA-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Agadir/GLM-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Agadir/TNT-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/BEN-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/BEN-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/BER-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/BER-ONCF:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/BER-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/CAS-ZENITH-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+  Casablanca/CASA-NU:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/JAD-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/KHO-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/MOH-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/SAFI-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/SAFI-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/SETAT-ONCF:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/TME-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/TZG-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Casablanca/TZR-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Laayoune/DAK-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Laayoune/DAK-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Laayoune/LAAY-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/BGU-ONCF:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/BGU-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/CHC-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/ESS-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/MAR-ONE01:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/MAR-ONE02:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Marrakech/OUA-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/ALF-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/AZR-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/FEZ-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/FEZ-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/KMR-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/MEK-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/MEK-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Meknès/OLI-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/AHO-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/BOU-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/BRK-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/GRC-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/NAD-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/NAD-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/OUJ-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Oujda/OUJ-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/KEN-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/KEN-ONE:
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/RAB-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/RAB-ONE:
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/SEA-ONE:
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/SIDI_SLIMANE-ONCF:
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/TIF-ONE:
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Rabat/VSAT:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/FAR-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/LAR-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/LAR-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/MEL-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/TAN-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/TET-MCO:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+  Tanger/TET-ONE:
+    - Etat CLIM A.csv: Header doesn't start with 'history:'
+    - Etat CLIM B.csv: Header doesn't start with 'history:'
+    - Etat CLIM C.csv: Header doesn't start with 'history:'
+    - Etat CLIM D.csv: Header doesn't start with 'history:'
+    - P.Active CLIM.csv: Header doesn't start with 'history:'
+    - P.Active générale.csv: Header doesn't start with 'history:'
+    - Température Ambiante.csv: Header doesn't start with 'history:'
+    - Température Extérieure.csv: Header doesn't start with 'history:'
+

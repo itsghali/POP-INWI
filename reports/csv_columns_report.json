@@ -1,0 +1,5799 @@
+[
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Etat CLIM A.csv",
+    "relative": "Agadir\\AGA-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Etat CLIM B.csv",
+    "relative": "Agadir\\AGA-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Etat CLIM C.csv",
+    "relative": "Agadir\\AGA-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Etat CLIM D.csv",
+    "relative": "Agadir\\AGA-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Etat Porte.csv",
+    "relative": "Agadir\\AGA-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\P.Active CLIM.csv",
+    "relative": "Agadir\\AGA-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\P.Active Générale.csv",
+    "relative": "Agadir\\AGA-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Température Ambiante.csv",
+    "relative": "Agadir\\AGA-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-MCO\\Température Extérieure.csv",
+    "relative": "Agadir\\AGA-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Etat CLIM A.csv",
+    "relative": "Agadir\\AGA-ONE1\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Etat CLIM B.csv",
+    "relative": "Agadir\\AGA-ONE1\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Etat CLIM C.csv",
+    "relative": "Agadir\\AGA-ONE1\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Etat CLIM D.csv",
+    "relative": "Agadir\\AGA-ONE1\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Etat Porte.csv",
+    "relative": "Agadir\\AGA-ONE1\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\P.Active CLIM.csv",
+    "relative": "Agadir\\AGA-ONE1\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\P.Active Générale.csv",
+    "relative": "Agadir\\AGA-ONE1\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Température Ambiante.csv",
+    "relative": "Agadir\\AGA-ONE1\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE1\\Température Extérieure.csv",
+    "relative": "Agadir\\AGA-ONE1\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Etat CLIM A.csv",
+    "relative": "Agadir\\AGA-ONE2\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Etat CLIM B.csv",
+    "relative": "Agadir\\AGA-ONE2\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Etat CLIM C.csv",
+    "relative": "Agadir\\AGA-ONE2\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Etat CLIM D.csv",
+    "relative": "Agadir\\AGA-ONE2\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Etat Porte.csv",
+    "relative": "Agadir\\AGA-ONE2\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\P.Active CLIM.csv",
+    "relative": "Agadir\\AGA-ONE2\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\P.Active Générale.csv",
+    "relative": "Agadir\\AGA-ONE2\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Température Ambiante.csv",
+    "relative": "Agadir\\AGA-ONE2\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\AGA-ONE2\\Température Extérieure.csv",
+    "relative": "Agadir\\AGA-ONE2\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Etat CLIM A.csv",
+    "relative": "Agadir\\GLA-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Etat CLIM B.csv",
+    "relative": "Agadir\\GLA-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Etat CLIM C.csv",
+    "relative": "Agadir\\GLA-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Etat CLIM D.csv",
+    "relative": "Agadir\\GLA-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Etat Porte.csv",
+    "relative": "Agadir\\GLA-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\P.Active CLIM.csv",
+    "relative": "Agadir\\GLA-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\P.Active Générale.csv",
+    "relative": "Agadir\\GLA-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Température Ambiante.csv",
+    "relative": "Agadir\\GLA-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLA-ONE\\Température Extérieure.csv",
+    "relative": "Agadir\\GLA-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\Etat CLIM A.csv",
+    "relative": "Agadir\\GLM-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\Etat CLIM B.csv",
+    "relative": "Agadir\\GLM-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\Etat Porte.csv",
+    "relative": "Agadir\\GLM-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\P.Active CLIM.csv",
+    "relative": "Agadir\\GLM-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\P.Active Générale.csv",
+    "relative": "Agadir\\GLM-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\Température Ambiante.csv",
+    "relative": "Agadir\\GLM-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\GLM-ONE\\Température Extérieure.csv",
+    "relative": "Agadir\\GLM-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\Etat CLIM A.csv",
+    "relative": "Agadir\\TNT-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\Etat CLIM B.csv",
+    "relative": "Agadir\\TNT-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\Etat Porte.csv",
+    "relative": "Agadir\\TNT-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\P.Active CLIM.csv",
+    "relative": "Agadir\\TNT-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\P.Active Générale.csv",
+    "relative": "Agadir\\TNT-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\Température Ambiante.csv",
+    "relative": "Agadir\\TNT-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Agadir\\TNT-ONE\\Température Extérieure.csv",
+    "relative": "Agadir\\TNT-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM A.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM B.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM C.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM D.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM E.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat CLIM F.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Etat Porte.csv",
+    "relative": "Casablanca\\BEN-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\P.Active CLIM.csv",
+    "relative": "Casablanca\\BEN-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\P.Active Générale.csv",
+    "relative": "Casablanca\\BEN-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Température Ambiante.csv",
+    "relative": "Casablanca\\BEN-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-MCO\\Température Extérieure.csv",
+    "relative": "Casablanca\\BEN-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\BEN-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\BEN-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\BEN-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\BEN-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\BEN-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\BEN-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\BEN-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\BEN-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BEN-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\BEN-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\Etat CLIM A.csv",
+    "relative": "Casablanca\\BER-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\Etat CLIM B.csv",
+    "relative": "Casablanca\\BER-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\Etat Porte.csv",
+    "relative": "Casablanca\\BER-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\P.Active CLIM.csv",
+    "relative": "Casablanca\\BER-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\P.Active Générale.csv",
+    "relative": "Casablanca\\BER-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\Température Ambiante.csv",
+    "relative": "Casablanca\\BER-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-MCO\\Température Extérieure.csv",
+    "relative": "Casablanca\\BER-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\Etat CLIM A.csv",
+    "relative": "Casablanca\\BER-ONCF\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\Etat CLIM B.csv",
+    "relative": "Casablanca\\BER-ONCF\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\Etat Porte.csv",
+    "relative": "Casablanca\\BER-ONCF\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\P.Active CLIM.csv",
+    "relative": "Casablanca\\BER-ONCF\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\P.Active Générale.csv",
+    "relative": "Casablanca\\BER-ONCF\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\Température Ambiante.csv",
+    "relative": "Casablanca\\BER-ONCF\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONCF\\Température Extérieure.csv",
+    "relative": "Casablanca\\BER-ONCF\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\BER-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\BER-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\BER-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\BER-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\BER-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\BER-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\BER-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\BER-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\Etat CLIM A.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\Etat CLIM B.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\Etat Porte.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\P.Active CLIM.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kVA)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\P.Active Générale.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CAS-ZENITH-MCO\\Température Ambiante.csv",
+    "relative": "Casablanca\\CAS-ZENITH-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Etat CLIM A.csv",
+    "relative": "Casablanca\\CASA-NU\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Etat CLIM B.csv",
+    "relative": "Casablanca\\CASA-NU\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Etat CLIM C.csv",
+    "relative": "Casablanca\\CASA-NU\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Etat CLIM D.csv",
+    "relative": "Casablanca\\CASA-NU\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Etat Porte.csv",
+    "relative": "Casablanca\\CASA-NU\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\P.Active CLIM.csv",
+    "relative": "Casablanca\\CASA-NU\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\P.Active Générale.csv",
+    "relative": "Casablanca\\CASA-NU\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Température Ambiante.csv",
+    "relative": "Casablanca\\CASA-NU\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\CASA-NU\\Température Extérieure.csv",
+    "relative": "Casablanca\\CASA-NU\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\JAD-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\JAD-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\JAD-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\JAD-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\JAD-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\JAD-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\JAD-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\JAD-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\JAD-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\JAD-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\KHO-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\KHO-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\KHO-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\KHO-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\KHO-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\KHO-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\KHO-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\KHO-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\KHO-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\KHO-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\MOH-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\MOH-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\MOH-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\MOH-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\MOH-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\MOH-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\MOH-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\MOH-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\MOH-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\MOH-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM A.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM B.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM C.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM D.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM E.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat CLIM F.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Etat Porte.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\P.Active CLIM.csv",
+    "relative": "Casablanca\\SAFI-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\P.Active Générale.csv",
+    "relative": "Casablanca\\SAFI-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Température Ambiante.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-MCO\\Température Extérieure.csv",
+    "relative": "Casablanca\\SAFI-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\SAFI-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\SAFI-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SAFI-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\SAFI-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Etat CLIM A.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Etat CLIM B.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Etat CLIM C.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Etat CLIM D.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Etat Porte.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\P.Active CLIM.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\P.Active Générale.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Température Ambiante.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\SETAT-ONCF\\Température Extérieure.csv",
+    "relative": "Casablanca\\SETAT-ONCF\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\TME-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\TME-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\TME-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\TME-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\TME-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\TME-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\TME-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\TME-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TME-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\TME-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\TZG-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\TZG-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\TZG-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Etat CLIM D.csv",
+    "relative": "Casablanca\\TZG-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\TZG-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\TZG-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\TZG-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\TZG-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZG-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\TZG-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Etat CLIM A.csv",
+    "relative": "Casablanca\\TZR-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Etat CLIM B.csv",
+    "relative": "Casablanca\\TZR-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Etat CLIM C.csv",
+    "relative": "Casablanca\\TZR-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Etat Porte.csv",
+    "relative": "Casablanca\\TZR-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\P.Active CLIM.csv",
+    "relative": "Casablanca\\TZR-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\P.Active Générale.csv",
+    "relative": "Casablanca\\TZR-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Température Ambiante.csv",
+    "relative": "Casablanca\\TZR-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Casablanca\\TZR-ONE\\Température Extérieure.csv",
+    "relative": "Casablanca\\TZR-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Etat CLIM A.csv",
+    "relative": "Laayoune\\DAK-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Etat CLIM B.csv",
+    "relative": "Laayoune\\DAK-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Etat CLIM C.csv",
+    "relative": "Laayoune\\DAK-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Etat CLIM D.csv",
+    "relative": "Laayoune\\DAK-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Etat Porte.csv",
+    "relative": "Laayoune\\DAK-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\P.Active CLIM.csv",
+    "relative": "Laayoune\\DAK-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\P.Active Générale.csv",
+    "relative": "Laayoune\\DAK-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Température Ambiante.csv",
+    "relative": "Laayoune\\DAK-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-MCO\\Température Extérieure.csv",
+    "relative": "Laayoune\\DAK-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\Etat CLIM A.csv",
+    "relative": "Laayoune\\DAK-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\Etat CLIM B.csv",
+    "relative": "Laayoune\\DAK-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\Etat Porte.csv",
+    "relative": "Laayoune\\DAK-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\P.Active CLIM.csv",
+    "relative": "Laayoune\\DAK-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\P.Active Générale.csv",
+    "relative": "Laayoune\\DAK-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\Température Ambiante.csv",
+    "relative": "Laayoune\\DAK-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\DAK-ONE\\Température Extérieure.csv",
+    "relative": "Laayoune\\DAK-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Etat CLIM A.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Etat CLIM B.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Etat CLIM C.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Etat CLIM D.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Etat Porte.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\P.Active CLIM.csv",
+    "relative": "Laayoune\\LAAY-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\P.Active Générale.csv",
+    "relative": "Laayoune\\LAAY-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Température Ambiante.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Laayoune\\LAAY-MCO\\Température Extérieure.csv",
+    "relative": "Laayoune\\LAAY-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Etat CLIM A.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Etat CLIM B.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Etat CLIM C.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Etat Porte.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Température Ambiante.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONCF\\Température Extérieure.csv",
+    "relative": "Marrakech\\BGU-ONCF\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Etat CLIM A.csv",
+    "relative": "Marrakech\\BGU-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Etat CLIM B.csv",
+    "relative": "Marrakech\\BGU-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Etat CLIM C.csv",
+    "relative": "Marrakech\\BGU-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Etat CLIM D.csv",
+    "relative": "Marrakech\\BGU-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Etat Porte.csv",
+    "relative": "Marrakech\\BGU-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\P.Active CLIM.csv",
+    "relative": "Marrakech\\BGU-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\P.Active Générale.csv",
+    "relative": "Marrakech\\BGU-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Température Ambiante.csv",
+    "relative": "Marrakech\\BGU-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\BGU-ONE\\Température Extérieure.csv",
+    "relative": "Marrakech\\BGU-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Etat CLIM A.csv",
+    "relative": "Marrakech\\CHC-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Etat CLIM B.csv",
+    "relative": "Marrakech\\CHC-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Etat CLIM C.csv",
+    "relative": "Marrakech\\CHC-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Etat CLIM D.csv",
+    "relative": "Marrakech\\CHC-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Etat Porte.csv",
+    "relative": "Marrakech\\CHC-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\P.Active CLIM.csv",
+    "relative": "Marrakech\\CHC-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\P.Active Générale.csv",
+    "relative": "Marrakech\\CHC-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Température Ambiante.csv",
+    "relative": "Marrakech\\CHC-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\CHC-ONE\\Température Extérieure.csv",
+    "relative": "Marrakech\\CHC-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Etat CLIM A.csv",
+    "relative": "Marrakech\\ESS-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Etat CLIM B.csv",
+    "relative": "Marrakech\\ESS-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Etat CLIM C.csv",
+    "relative": "Marrakech\\ESS-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Etat CLIM D.csv",
+    "relative": "Marrakech\\ESS-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Etat Porte.csv",
+    "relative": "Marrakech\\ESS-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\P.Active CLIM.csv",
+    "relative": "Marrakech\\ESS-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\P.Active Générale.csv",
+    "relative": "Marrakech\\ESS-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Température Ambiante.csv",
+    "relative": "Marrakech\\ESS-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\ESS-MCO\\Température Extérieure.csv",
+    "relative": "Marrakech\\ESS-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Etat CLIM A.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Etat CLIM B.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Etat CLIM C.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Etat CLIM D.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Etat Porte.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\P.Active CLIM.csv",
+    "relative": "Marrakech\\MAR-ONE01\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\P.Active Générale.csv",
+    "relative": "Marrakech\\MAR-ONE01\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Température Ambiante.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE01\\Température Extérieure.csv",
+    "relative": "Marrakech\\MAR-ONE01\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Etat CLIM A.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Etat CLIM B.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Etat CLIM C.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Etat CLIM D.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Etat Porte.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\P.Active CLIM.csv",
+    "relative": "Marrakech\\MAR-ONE02\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\P.Active Générale.csv",
+    "relative": "Marrakech\\MAR-ONE02\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Température Ambiante.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\MAR-ONE02\\Température Extérieure.csv",
+    "relative": "Marrakech\\MAR-ONE02\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Etat CLIM A.csv",
+    "relative": "Marrakech\\OUA-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Etat CLIM B.csv",
+    "relative": "Marrakech\\OUA-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Etat CLIM C.csv",
+    "relative": "Marrakech\\OUA-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Etat CLIM D.csv",
+    "relative": "Marrakech\\OUA-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Etat Porte.csv",
+    "relative": "Marrakech\\OUA-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\P.Active CLIM.csv",
+    "relative": "Marrakech\\OUA-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\P.Active Générale.csv",
+    "relative": "Marrakech\\OUA-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Température Ambiante.csv",
+    "relative": "Marrakech\\OUA-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Marrakech\\OUA-ONE\\Température Extérieure.csv",
+    "relative": "Marrakech\\OUA-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\ALF-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\ALF-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\ALF-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\ALF-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\ALF-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\ALF-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\ALF-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\ALF-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\AZR-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\AZR-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\AZR-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\AZR-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\AZR-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\AZR-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\AZR-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\AZR-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM A.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM B.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM C.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM D.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM E.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM F.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM G.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM G.csv",
+    "table_name": "Etat_CLIM_G",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat CLIM H.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat CLIM H.csv",
+    "table_name": "Etat_CLIM_H",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Etat Porte.csv",
+    "relative": "Meknès\\FEZ-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\P.Active CLIM.csv",
+    "relative": "Meknès\\FEZ-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\P.Active Générale.csv",
+    "relative": "Meknès\\FEZ-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Température Ambiante.csv",
+    "relative": "Meknès\\FEZ-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-MCO\\Température Extérieure.csv",
+    "relative": "Meknès\\FEZ-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\FEZ-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\FEZ-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\FEZ-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\FEZ-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\FEZ-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\FEZ-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\FEZ-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\FEZ-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\KMR-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\KMR-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\KMR-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\KMR-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\KMR-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\KMR-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\KMR-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\KMR-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM A.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM B.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM C.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM D.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM E.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM F.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat CLIM G.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat CLIM G.csv",
+    "table_name": "Etat_CLIM_G",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Etat Porte.csv",
+    "relative": "Meknès\\MEK-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\P.Active CLIM.csv",
+    "relative": "Meknès\\MEK-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\P.Active Générale.csv",
+    "relative": "Meknès\\MEK-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Température Ambiante.csv",
+    "relative": "Meknès\\MEK-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-MCO\\Température Extérieure.csv",
+    "relative": "Meknès\\MEK-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\MEK-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\MEK-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Etat CLIM C.csv",
+    "relative": "Meknès\\MEK-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Etat CLIM D.csv",
+    "relative": "Meknès\\MEK-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\MEK-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\MEK-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\MEK-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\MEK-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\MEK-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\MEK-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\Etat CLIM A.csv",
+    "relative": "Meknès\\OLI-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\Etat CLIM B.csv",
+    "relative": "Meknès\\OLI-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\Etat Porte.csv",
+    "relative": "Meknès\\OLI-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\P.Active CLIM.csv",
+    "relative": "Meknès\\OLI-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\P.Active Générale.csv",
+    "relative": "Meknès\\OLI-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\Température Ambiante.csv",
+    "relative": "Meknès\\OLI-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Meknès\\OLI-ONE\\Température Extérieure.csv",
+    "relative": "Meknès\\OLI-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Etat CLIM A.csv",
+    "relative": "Oujda\\AHO-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Etat CLIM B.csv",
+    "relative": "Oujda\\AHO-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Etat CLIM C.csv",
+    "relative": "Oujda\\AHO-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Etat CLIM D.csv",
+    "relative": "Oujda\\AHO-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Etat Porte.csv",
+    "relative": "Oujda\\AHO-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\P.Active CLIM.csv",
+    "relative": "Oujda\\AHO-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\P.Active Générale.csv",
+    "relative": "Oujda\\AHO-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Température Ambiante.csv",
+    "relative": "Oujda\\AHO-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\AHO-MCO\\Température Extérieure.csv",
+    "relative": "Oujda\\AHO-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Etat CLIM A.csv",
+    "relative": "Oujda\\BOU-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Etat CLIM B.csv",
+    "relative": "Oujda\\BOU-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Etat CLIM C.csv",
+    "relative": "Oujda\\BOU-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Etat CLIM D.csv",
+    "relative": "Oujda\\BOU-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Etat Porte.csv",
+    "relative": "Oujda\\BOU-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\P.Active CLIM.csv",
+    "relative": "Oujda\\BOU-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\P.Active Générale.csv",
+    "relative": "Oujda\\BOU-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Température Ambiante.csv",
+    "relative": "Oujda\\BOU-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BOU-ONE\\Température Extérieure.csv",
+    "relative": "Oujda\\BOU-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Etat CLIM A.csv",
+    "relative": "Oujda\\BRK-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Etat CLIM B.csv",
+    "relative": "Oujda\\BRK-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Etat CLIM C.csv",
+    "relative": "Oujda\\BRK-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Etat CLIM D.csv",
+    "relative": "Oujda\\BRK-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Etat Porte.csv",
+    "relative": "Oujda\\BRK-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\P.Active CLIM.csv",
+    "relative": "Oujda\\BRK-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\P.Active Générale.csv",
+    "relative": "Oujda\\BRK-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Température Ambiante.csv",
+    "relative": "Oujda\\BRK-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\BRK-ONE\\Température Extérieure.csv",
+    "relative": "Oujda\\BRK-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Etat CLIM A.csv",
+    "relative": "Oujda\\GRC-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Etat CLIM B.csv",
+    "relative": "Oujda\\GRC-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Etat CLIM C.csv",
+    "relative": "Oujda\\GRC-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Etat CLIM D.csv",
+    "relative": "Oujda\\GRC-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Etat Porte.csv",
+    "relative": "Oujda\\GRC-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\P.Active CLIM.csv",
+    "relative": "Oujda\\GRC-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\P.Active Générale.csv",
+    "relative": "Oujda\\GRC-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Température Ambiante.csv",
+    "relative": "Oujda\\GRC-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\GRC-ONE\\Température Extérieure.csv",
+    "relative": "Oujda\\GRC-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Etat CLIM A.csv",
+    "relative": "Oujda\\NAD-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Etat CLIM B.csv",
+    "relative": "Oujda\\NAD-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Etat CLIM C.csv",
+    "relative": "Oujda\\NAD-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Etat CLIM D.csv",
+    "relative": "Oujda\\NAD-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Etat Porte.csv",
+    "relative": "Oujda\\NAD-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\P.Active CLIM.csv",
+    "relative": "Oujda\\NAD-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\P.Active Générale.csv",
+    "relative": "Oujda\\NAD-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Température Ambiante.csv",
+    "relative": "Oujda\\NAD-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-MCO\\Température Extérieure.csv",
+    "relative": "Oujda\\NAD-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Etat CLIM A.csv",
+    "relative": "Oujda\\NAD-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Etat CLIM B.csv",
+    "relative": "Oujda\\NAD-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Etat CLIM C.csv",
+    "relative": "Oujda\\NAD-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Etat CLIM D.csv",
+    "relative": "Oujda\\NAD-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Etat Porte.csv",
+    "relative": "Oujda\\NAD-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\P.Active CLIM.csv",
+    "relative": "Oujda\\NAD-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\P.Active Générale.csv",
+    "relative": "Oujda\\NAD-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Température Ambiante.csv",
+    "relative": "Oujda\\NAD-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\NAD-ONE\\Température Extérieure.csv",
+    "relative": "Oujda\\NAD-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Etat CLIM A.csv",
+    "relative": "Oujda\\OUJ-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Etat CLIM B.csv",
+    "relative": "Oujda\\OUJ-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Etat CLIM C.csv",
+    "relative": "Oujda\\OUJ-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Etat CLIM D.csv",
+    "relative": "Oujda\\OUJ-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Etat Porte.csv",
+    "relative": "Oujda\\OUJ-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\P.Active CLIM.csv",
+    "relative": "Oujda\\OUJ-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\P.Active Générale.csv",
+    "relative": "Oujda\\OUJ-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Température Ambiante.csv",
+    "relative": "Oujda\\OUJ-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-MCO\\Température Extérieure.csv",
+    "relative": "Oujda\\OUJ-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Etat CLIM A.csv",
+    "relative": "Oujda\\OUJ-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Etat CLIM B.csv",
+    "relative": "Oujda\\OUJ-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Etat CLIM C.csv",
+    "relative": "Oujda\\OUJ-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Etat CLIM D.csv",
+    "relative": "Oujda\\OUJ-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Etat Porte.csv",
+    "relative": "Oujda\\OUJ-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\P.Active CLIM.csv",
+    "relative": "Oujda\\OUJ-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\P.Active Générale.csv",
+    "relative": "Oujda\\OUJ-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Température Ambiante.csv",
+    "relative": "Oujda\\OUJ-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Oujda\\OUJ-ONE\\Température Extérieure.csv",
+    "relative": "Oujda\\OUJ-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM A.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM B.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM C.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM D.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM E.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat CLIM F.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Etat Porte.csv",
+    "relative": "Rabat\\KEN-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\P.Active CLIM.csv",
+    "relative": "Rabat\\KEN-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\P.Active Générale.csv",
+    "relative": "Rabat\\KEN-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Température Ambiante.csv",
+    "relative": "Rabat\\KEN-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-MCO\\Température Extérieure.csv",
+    "relative": "Rabat\\KEN-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-ONE\\Etat Porte.csv",
+    "relative": "Rabat\\KEN-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-ONE\\P.Active CLIM.csv",
+    "relative": "Rabat\\KEN-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-ONE\\P.Active Générale.csv",
+    "relative": "Rabat\\KEN-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-ONE\\Température Ambiante.csv",
+    "relative": "Rabat\\KEN-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\KEN-ONE\\Température Extérieure.csv",
+    "relative": "Rabat\\KEN-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Etat CLIM A.csv",
+    "relative": "Rabat\\RAB-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Etat CLIM B.csv",
+    "relative": "Rabat\\RAB-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Etat CLIM C.csv",
+    "relative": "Rabat\\RAB-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Etat CLIM D.csv",
+    "relative": "Rabat\\RAB-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Etat Porte.csv",
+    "relative": "Rabat\\RAB-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\P.Active CLIM.csv",
+    "relative": "Rabat\\RAB-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\P.Active Générale.csv",
+    "relative": "Rabat\\RAB-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Température Ambiante.csv",
+    "relative": "Rabat\\RAB-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-MCO\\Température Extérieure.csv",
+    "relative": "Rabat\\RAB-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-ONE\\Etat Porte.csv",
+    "relative": "Rabat\\RAB-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-ONE\\P.Active CLIM.csv",
+    "relative": "Rabat\\RAB-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-ONE\\P.Active Générale.csv",
+    "relative": "Rabat\\RAB-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-ONE\\Température Ambiante.csv",
+    "relative": "Rabat\\RAB-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\RAB-ONE\\Température Extérieure.csv",
+    "relative": "Rabat\\RAB-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SEA-ONE\\Etat Porte.csv",
+    "relative": "Rabat\\SEA-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SEA-ONE\\P.Active CLIM.csv",
+    "relative": "Rabat\\SEA-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SEA-ONE\\P.Active Générale.csv",
+    "relative": "Rabat\\SEA-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SEA-ONE\\Température Ambiante.csv",
+    "relative": "Rabat\\SEA-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SEA-ONE\\Température Extérieure.csv",
+    "relative": "Rabat\\SEA-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SIDI_SLIMANE-ONCF\\Etat Porte.csv",
+    "relative": "Rabat\\SIDI_SLIMANE-ONCF\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SIDI_SLIMANE-ONCF\\P.Active CLIM.csv",
+    "relative": "Rabat\\SIDI_SLIMANE-ONCF\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SIDI_SLIMANE-ONCF\\P.Active Générale.csv",
+    "relative": "Rabat\\SIDI_SLIMANE-ONCF\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SIDI_SLIMANE-ONCF\\Température Ambiante.csv",
+    "relative": "Rabat\\SIDI_SLIMANE-ONCF\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\SIDI_SLIMANE-ONCF\\Température Extérieure.csv",
+    "relative": "Rabat\\SIDI_SLIMANE-ONCF\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\TIF-ONE\\Etat Porte.csv",
+    "relative": "Rabat\\TIF-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\TIF-ONE\\P.Active CLIM.csv",
+    "relative": "Rabat\\TIF-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\TIF-ONE\\P.Active Générale.csv",
+    "relative": "Rabat\\TIF-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\TIF-ONE\\Température Ambiante.csv",
+    "relative": "Rabat\\TIF-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\TIF-ONE\\Température Extérieure.csv",
+    "relative": "Rabat\\TIF-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\Etat CLIM A.csv",
+    "relative": "Rabat\\VSAT\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\Etat CLIM B.csv",
+    "relative": "Rabat\\VSAT\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\Etat Porte.csv",
+    "relative": "Rabat\\VSAT\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\P.Active Générale.csv",
+    "relative": "Rabat\\VSAT\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\Température Ambiante.csv",
+    "relative": "Rabat\\VSAT\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Rabat\\VSAT\\Température Extérieure.csv",
+    "relative": "Rabat\\VSAT\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Etat CLIM A.csv",
+    "relative": "Tanger\\FAR-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Etat CLIM B.csv",
+    "relative": "Tanger\\FAR-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Etat CLIM C.csv",
+    "relative": "Tanger\\FAR-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Etat Porte.csv",
+    "relative": "Tanger\\FAR-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\P.Active CLIM.csv",
+    "relative": "Tanger\\FAR-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\P.Active Générale.csv",
+    "relative": "Tanger\\FAR-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Température Ambiante.csv",
+    "relative": "Tanger\\FAR-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\FAR-ONE\\Température Extérieure.csv",
+    "relative": "Tanger\\FAR-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Etat CLIM A.csv",
+    "relative": "Tanger\\LAR-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Etat CLIM B.csv",
+    "relative": "Tanger\\LAR-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Etat CLIM C.csv",
+    "relative": "Tanger\\LAR-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Etat CLIM D.csv",
+    "relative": "Tanger\\LAR-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Etat Porte.csv",
+    "relative": "Tanger\\LAR-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\P.Active CLIM.csv",
+    "relative": "Tanger\\LAR-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\P.Active Générale.csv",
+    "relative": "Tanger\\LAR-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Température Ambiante.csv",
+    "relative": "Tanger\\LAR-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-MCO\\Température Extérieure.csv",
+    "relative": "Tanger\\LAR-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Etat CLIM A.csv",
+    "relative": "Tanger\\LAR-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Etat CLIM B.csv",
+    "relative": "Tanger\\LAR-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Etat CLIM C.csv",
+    "relative": "Tanger\\LAR-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Etat CLIM D.csv",
+    "relative": "Tanger\\LAR-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Etat Porte.csv",
+    "relative": "Tanger\\LAR-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\P.Active CLIM.csv",
+    "relative": "Tanger\\LAR-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\P.Active Générale.csv",
+    "relative": "Tanger\\LAR-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Température Ambiante.csv",
+    "relative": "Tanger\\LAR-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\LAR-ONE\\Température Extérieure.csv",
+    "relative": "Tanger\\LAR-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\Etat CLIM A.csv",
+    "relative": "Tanger\\MEL-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\Etat CLIM B.csv",
+    "relative": "Tanger\\MEL-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\Etat Porte.csv",
+    "relative": "Tanger\\MEL-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\P.Active CLIM.csv",
+    "relative": "Tanger\\MEL-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\P.Active Générale.csv",
+    "relative": "Tanger\\MEL-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\Température Ambiante.csv",
+    "relative": "Tanger\\MEL-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\MEL-ONE\\Température Extérieure.csv",
+    "relative": "Tanger\\MEL-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM A.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM B.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM C.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM D.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM E.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM E.csv",
+    "table_name": "Etat_CLIM_E",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM F.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM F.csv",
+    "table_name": "Etat_CLIM_F",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM G.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM G.csv",
+    "table_name": "Etat_CLIM_G",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat CLIM H.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat CLIM H.csv",
+    "table_name": "Etat_CLIM_H",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Etat Porte.csv",
+    "relative": "Tanger\\TAN-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\P.Active CLIM.csv",
+    "relative": "Tanger\\TAN-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\P.Active Générale.csv",
+    "relative": "Tanger\\TAN-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Température Ambiante.csv",
+    "relative": "Tanger\\TAN-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TAN-MCO\\Température Extérieure.csv",
+    "relative": "Tanger\\TAN-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\Etat CLIM A.csv",
+    "relative": "Tanger\\TET-MCO\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\Etat CLIM B.csv",
+    "relative": "Tanger\\TET-MCO\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\Etat Porte.csv",
+    "relative": "Tanger\\TET-MCO\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\P.Active CLIM.csv",
+    "relative": "Tanger\\TET-MCO\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\P.Active Générale.csv",
+    "relative": "Tanger\\TET-MCO\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\Température Ambiante.csv",
+    "relative": "Tanger\\TET-MCO\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-MCO\\Température Extérieure.csv",
+    "relative": "Tanger\\TET-MCO\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Etat CLIM A.csv",
+    "relative": "Tanger\\TET-ONE\\Etat CLIM A.csv",
+    "table_name": "Etat_CLIM_A",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Etat CLIM B.csv",
+    "relative": "Tanger\\TET-ONE\\Etat CLIM B.csv",
+    "table_name": "Etat_CLIM_B",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Etat CLIM C.csv",
+    "relative": "Tanger\\TET-ONE\\Etat CLIM C.csv",
+    "table_name": "Etat_CLIM_C",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Etat CLIM D.csv",
+    "relative": "Tanger\\TET-ONE\\Etat CLIM D.csv",
+    "table_name": "Etat_CLIM_D",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Etat Porte.csv",
+    "relative": "Tanger\\TET-ONE\\Etat Porte.csv",
+    "table_name": "Etat_Porte",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\P.Active CLIM.csv",
+    "relative": "Tanger\\TET-ONE\\P.Active CLIM.csv",
+    "table_name": "P.Active_CLIM",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\P.Active Générale.csv",
+    "relative": "Tanger\\TET-ONE\\P.Active Générale.csv",
+    "table_name": "P.Active_Générale",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value (kW)"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Température Ambiante.csv",
+    "relative": "Tanger\\TET-ONE\\Température Ambiante.csv",
+    "table_name": "Température_Ambiante",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  },
+  {
+    "file": "data\\Tanger\\TET-ONE\\Température Extérieure.csv",
+    "relative": "Tanger\\TET-ONE\\Température Extérieure.csv",
+    "table_name": "Température_Extérieure",
+    "columns": [
+      "Timestamp",
+      "Trend Flags",
+      "Status",
+      "Value"
+    ]
+  }
+]

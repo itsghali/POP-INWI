@@ -1,0 +1,295 @@
+﻿history:GTC_Multisite_Inwi/KEN-MCO Etat Marche Split 5
+
+Timestamp,Trend Flags,Status,Value
+29-Jan-25 5:23:19 PM WEST,{start},{ok},OFF
+29-Jan-25 7:25:03 PM WEST,{ },{ok},ON
+29-Jan-25 11:22:49 PM WEST,{ },{ok},OFF
+30-Jan-25 3:22:53 AM WEST,{ },{ok},ON
+30-Jan-25 7:23:16 AM WEST,{ },{ok},OFF
+30-Jan-25 11:25:11 AM WEST,{ },{ok},ON
+30-Jan-25 2:54:24 PM WEST,{ },{ok},OFF
+30-Jan-25 7:25:59 PM WEST,{ },{ok},ON
+30-Jan-25 10:07:54 PM WEST,{start},{ok},ON
+30-Jan-25 11:22:56 PM WEST,{ },{ok},OFF
+31-Jan-25 3:24:22 AM WEST,{ },{ok},ON
+31-Jan-25 7:23:04 AM WEST,{ },{ok},OFF
+31-Jan-25 11:23:36 AM WEST,{ },{ok},ON
+31-Jan-25 2:54:11 PM WEST,{ },{ok},OFF
+31-Jan-25 7:24:51 PM WEST,{ },{ok},ON
+31-Jan-25 11:23:10 PM WEST,{ },{ok},OFF
+01-Feb-25 3:25:17 AM WEST,{ },{ok},ON
+01-Feb-25 7:23:08 AM WEST,{ },{ok},OFF
+01-Feb-25 11:25:21 AM WEST,{ },{ok},ON
+01-Feb-25 2:53:42 PM WEST,{ },{ok},OFF
+01-Feb-25 7:23:27 PM WEST,{ },{ok},ON
+01-Feb-25 11:22:59 PM WEST,{ },{ok},OFF
+02-Feb-25 3:24:11 AM WEST,{ },{ok},ON
+02-Feb-25 7:23:24 AM WEST,{ },{ok},OFF
+02-Feb-25 11:26:18 AM WEST,{ },{ok},ON
+02-Feb-25 2:53:48 PM WEST,{ },{ok},OFF
+02-Feb-25 7:25:01 PM WEST,{ },{ok},ON
+02-Feb-25 11:22:40 PM WEST,{ },{ok},OFF
+03-Feb-25 3:22:43 AM WEST,{ },{ok},ON
+03-Feb-25 7:23:11 AM WEST,{ },{ok},OFF
+03-Feb-25 11:25:14 AM WEST,{ },{ok},ON
+03-Feb-25 2:54:17 PM WEST,{ },{ok},OFF
+03-Feb-25 7:25:58 PM WEST,{ },{ok},ON
+03-Feb-25 11:22:45 PM WEST,{ },{ok},OFF
+04-Feb-25 3:24:20 AM WEST,{ },{ok},ON
+04-Feb-25 7:22:57 AM WEST,{ },{ok},OFF
+04-Feb-25 11:23:33 AM WEST,{ },{ok},ON
+04-Feb-25 2:54:05 PM WEST,{ },{ok},OFF
+04-Feb-25 7:24:51 PM WEST,{ },{ok},ON
+04-Feb-25 11:23:04 PM WEST,{ },{ok},OFF
+05-Feb-25 3:25:13 AM WEST,{ },{ok},ON
+05-Feb-25 7:22:59 AM WEST,{ },{ok},OFF
+05-Feb-25 11:25:15 AM WEST,{ },{ok},ON
+05-Feb-25 2:53:35 PM WEST,{ },{ok},OFF
+05-Feb-25 7:23:17 PM WEST,{ },{ok},ON
+05-Feb-25 7:49:06 PM WEST,{ },{ok},OFF
+05-Feb-25 7:49:56 PM WEST,{ },{down},OFF
+05-Feb-25 7:55:01 PM WEST,{ },{ok},OFF
+05-Feb-25 7:55:03 PM WEST,{ },{ok},ON
+05-Feb-25 11:22:53 PM WEST,{ },{ok},OFF
+06-Feb-25 3:24:04 AM WEST,{ },{ok},ON
+06-Feb-25 7:23:18 AM WEST,{ },{ok},OFF
+06-Feb-25 11:26:13 AM WEST,{ },{ok},ON
+06-Feb-25 2:53:43 PM WEST,{ },{ok},OFF
+06-Feb-25 7:24:50 PM WEST,{ },{ok},ON
+06-Feb-25 11:22:32 PM WEST,{ },{ok},OFF
+07-Feb-25 3:22:38 AM WEST,{ },{ok},ON
+07-Feb-25 7:22:59 AM WEST,{ },{ok},OFF
+07-Feb-25 11:25:03 AM WEST,{ },{ok},ON
+07-Feb-25 2:54:07 PM WEST,{ },{ok},OFF
+07-Feb-25 7:25:47 PM WEST,{ },{ok},ON
+07-Feb-25 11:22:38 PM WEST,{ },{ok},OFF
+08-Feb-25 3:24:10 AM WEST,{ },{ok},ON
+08-Feb-25 7:22:48 AM WEST,{ },{ok},OFF
+08-Feb-25 11:23:23 AM WEST,{ },{ok},ON
+08-Feb-25 2:53:56 PM WEST,{ },{ok},OFF
+08-Feb-25 7:24:35 PM WEST,{ },{ok},ON
+08-Feb-25 11:22:55 PM WEST,{ },{ok},OFF
+09-Feb-25 3:25:07 AM WEST,{ },{ok},ON
+09-Feb-25 7:22:51 AM WEST,{ },{ok},OFF
+09-Feb-25 11:25:06 AM WEST,{ },{ok},ON
+09-Feb-25 2:53:27 PM WEST,{ },{ok},OFF
+09-Feb-25 7:23:11 PM WEST,{ },{ok},ON
+09-Feb-25 11:22:44 PM WEST,{ },{ok},OFF
+10-Feb-25 3:23:54 AM WEST,{ },{ok},ON
+10-Feb-25 7:23:10 AM WEST,{ },{ok},OFF
+10-Feb-25 11:26:03 AM WEST,{ },{ok},ON
+10-Feb-25 2:53:31 PM WEST,{ },{ok},OFF
+10-Feb-25 7:24:38 PM WEST,{ },{ok},ON
+10-Feb-25 11:22:23 PM WEST,{ },{ok},OFF
+11-Feb-25 3:22:26 AM WEST,{ },{ok},ON
+11-Feb-25 7:22:53 AM WEST,{ },{ok},OFF
+11-Feb-25 11:24:52 AM WEST,{ },{ok},ON
+11-Feb-25 11:37:28 AM WEST,{start},{ok},ON
+11-Feb-25 2:54:02 PM WEST,{ },{ok},OFF
+11-Feb-25 7:25:40 PM WEST,{ },{ok},ON
+11-Feb-25 11:22:34 PM WEST,{ },{ok},OFF
+12-Feb-25 2:26:00 AM WEST,{ },{down},OFF
+12-Feb-25 2:53:47 AM WEST,{ },{ok},OFF
+12-Feb-25 3:24:01 AM WEST,{ },{ok},ON
+12-Feb-25 7:22:41 AM WEST,{ },{ok},OFF
+12-Feb-25 11:23:16 AM WEST,{ },{ok},ON
+12-Feb-25 2:53:51 PM WEST,{ },{ok},OFF
+12-Feb-25 7:24:27 PM WEST,{ },{ok},ON
+12-Feb-25 11:22:49 PM WEST,{ },{ok},OFF
+13-Feb-25 3:24:59 AM WEST,{ },{ok},ON
+13-Feb-25 7:22:42 AM WEST,{ },{ok},OFF
+13-Feb-25 11:24:55 AM WEST,{ },{ok},ON
+13-Feb-25 2:53:21 PM WEST,{ },{ok},OFF
+13-Feb-25 3:38:42 PM WEST,{start},{ok},OFF
+13-Feb-25 4:42:35 PM WEST,{start},{ok},OFF
+13-Feb-25 7:23:00 PM WEST,{ },{ok},ON
+13-Feb-25 11:22:36 PM WEST,{ },{ok},OFF
+14-Feb-25 3:23:47 AM WEST,{ },{ok},ON
+14-Feb-25 7:23:02 AM WEST,{ },{ok},OFF
+14-Feb-25 9:28:33 AM WEST,{start},{ok},OFF
+20-Feb-25 8:58:50 AM WEST,{start},{ok},OFF
+20-Feb-25 9:00:32 AM WEST,{start},{ok},OFF
+20-Feb-25 11:22:58 AM WEST,{ },{ok},ON
+20-Feb-25 2:53:35 PM WEST,{ },{ok},OFF
+20-Feb-25 7:24:14 PM WEST,{ },{ok},ON
+20-Feb-25 11:22:34 PM WEST,{ },{ok},OFF
+21-Feb-25 3:24:38 AM WEST,{ },{ok},ON
+21-Feb-25 7:22:27 AM WEST,{ },{ok},OFF
+21-Feb-25 11:24:37 AM WEST,{ },{ok},ON
+21-Feb-25 2:53:06 PM WEST,{ },{ok},OFF
+21-Feb-25 7:22:40 PM WEST,{ },{ok},ON
+21-Feb-25 11:22:24 PM WEST,{ },{ok},OFF
+22-Feb-25 3:23:27 AM WEST,{ },{ok},ON
+22-Feb-25 7:22:46 AM WEST,{ },{ok},OFF
+22-Feb-25 11:25:37 AM WEST,{ },{ok},ON
+22-Feb-25 2:53:11 PM WEST,{ },{ok},OFF
+22-Feb-25 7:24:15 PM WEST,{ },{ok},ON
+22-Feb-25 11:22:06 PM WEST,{ },{ok},OFF
+23-Feb-25 2:22:03 AM WET,{ },{ok},ON
+23-Feb-25 6:22:34 AM WET,{ },{ok},OFF
+23-Feb-25 10:24:29 AM WET,{ },{ok},ON
+23-Feb-25 1:53:34 PM WET,{ },{ok},OFF
+23-Feb-25 6:25:17 PM WET,{ },{ok},ON
+23-Feb-25 10:22:06 PM WET,{ },{ok},OFF
+24-Feb-25 2:23:38 AM WET,{ },{ok},ON
+24-Feb-25 6:22:19 AM WET,{ },{ok},OFF
+24-Feb-25 10:22:55 AM WET,{ },{ok},ON
+24-Feb-25 1:53:27 PM WET,{ },{ok},OFF
+24-Feb-25 6:24:08 PM WET,{ },{ok},ON
+24-Feb-25 10:22:25 PM WET,{ },{ok},OFF
+25-Feb-25 2:24:37 AM WET,{ },{ok},ON
+25-Feb-25 6:22:20 AM WET,{ },{ok},OFF
+25-Feb-25 10:24:34 AM WET,{ },{ok},ON
+25-Feb-25 1:52:59 PM WET,{ },{ok},OFF
+25-Feb-25 6:22:41 PM WET,{ },{ok},ON
+25-Feb-25 10:22:17 PM WET,{ },{ok},OFF
+26-Feb-25 2:16:38 AM WET,{ },{down},OFF
+26-Feb-25 2:21:42 AM WET,{ },{ok},OFF
+26-Feb-25 2:23:24 AM WET,{ },{ok},ON
+26-Feb-25 6:22:40 AM WET,{ },{ok},OFF
+26-Feb-25 10:25:33 AM WET,{ },{ok},ON
+26-Feb-25 1:53:06 PM WET,{ },{ok},OFF
+26-Feb-25 6:24:12 PM WET,{ },{ok},ON
+26-Feb-25 10:21:56 PM WET,{ },{ok},OFF
+27-Feb-25 2:21:55 AM WET,{ },{ok},ON
+27-Feb-25 6:22:28 AM WET,{ },{ok},OFF
+27-Feb-25 10:24:23 AM WET,{ },{ok},ON
+27-Feb-25 1:53:27 PM WET,{ },{ok},OFF
+27-Feb-25 6:25:08 PM WET,{ },{ok},ON
+27-Feb-25 10:22:03 PM WET,{ },{ok},OFF
+28-Feb-25 1:52:57 AM WET,{ },{down},OFF
+28-Feb-25 1:58:06 AM WET,{ },{ok},OFF
+28-Feb-25 2:23:28 AM WET,{ },{ok},ON
+28-Feb-25 6:22:14 AM WET,{ },{ok},OFF
+28-Feb-25 10:22:48 AM WET,{ },{ok},ON
+28-Feb-25 1:53:22 PM WET,{ },{ok},OFF
+28-Feb-25 6:24:04 PM WET,{ },{ok},ON
+28-Feb-25 10:22:22 PM WET,{ },{ok},OFF
+01-Mar-25 2:24:29 AM WET,{ },{ok},ON
+01-Mar-25 6:22:14 AM WET,{ },{ok},OFF
+01-Mar-25 10:24:29 AM WET,{ },{ok},ON
+01-Mar-25 1:52:51 PM WET,{ },{ok},OFF
+01-Mar-25 6:22:33 PM WET,{ },{ok},ON
+01-Mar-25 10:22:09 PM WET,{ },{ok},OFF
+02-Mar-25 2:23:21 AM WET,{ },{ok},ON
+02-Mar-25 6:22:31 AM WET,{ },{ok},OFF
+02-Mar-25 10:25:32 AM WET,{ },{ok},ON
+02-Mar-25 1:52:59 PM WET,{ },{ok},OFF
+02-Mar-25 6:24:07 PM WET,{ },{ok},ON
+02-Mar-25 10:21:44 PM WET,{ },{ok},OFF
+03-Mar-25 2:21:56 AM WET,{ },{ok},ON
+03-Mar-25 6:22:16 AM WET,{ },{ok},OFF
+03-Mar-25 10:24:19 AM WET,{ },{ok},ON
+03-Mar-25 1:53:21 PM WET,{ },{ok},OFF
+03-Mar-25 6:25:06 PM WET,{ },{ok},ON
+03-Mar-25 10:21:55 PM WET,{ },{ok},OFF
+04-Mar-25 2:23:23 AM WET,{ },{ok},ON
+04-Mar-25 6:22:04 AM WET,{ },{ok},OFF
+04-Mar-25 10:22:48 AM WET,{ },{ok},ON
+04-Mar-25 1:53:13 PM WET,{ },{ok},OFF
+04-Mar-25 6:23:58 PM WET,{ },{ok},ON
+04-Mar-25 10:22:14 PM WET,{ },{ok},OFF
+05-Mar-25 2:24:25 AM WET,{ },{ok},ON
+05-Mar-25 6:22:05 AM WET,{ },{ok},OFF
+05-Mar-25 10:24:20 AM WET,{ },{ok},ON
+05-Mar-25 1:52:43 PM WET,{ },{ok},OFF
+05-Mar-25 6:22:28 PM WET,{ },{ok},ON
+05-Mar-25 10:21:59 PM WET,{ },{ok},OFF
+06-Mar-25 2:23:19 AM WET,{ },{ok},ON
+06-Mar-25 6:22:24 AM WET,{ },{ok},OFF
+06-Mar-25 10:25:25 AM WET,{ },{ok},ON
+06-Mar-25 1:52:56 PM WET,{ },{ok},OFF
+06-Mar-25 6:24:01 PM WET,{ },{ok},ON
+06-Mar-25 10:21:37 PM WET,{ },{ok},OFF
+07-Mar-25 2:21:49 AM WET,{ },{ok},ON
+07-Mar-25 6:22:10 AM WET,{ },{ok},OFF
+07-Mar-25 10:24:13 AM WET,{ },{ok},ON
+07-Mar-25 1:53:18 PM WET,{ },{ok},OFF
+07-Mar-25 6:25:02 PM WET,{ },{ok},ON
+07-Mar-25 10:21:49 PM WET,{ },{ok},OFF
+08-Mar-25 2:23:21 AM WET,{ },{ok},ON
+08-Mar-25 6:22:00 AM WET,{ },{ok},OFF
+08-Mar-25 10:22:42 AM WET,{ },{ok},ON
+08-Mar-25 1:53:07 PM WET,{ },{ok},OFF
+08-Mar-25 6:23:55 PM WET,{ },{ok},ON
+08-Mar-25 10:22:09 PM WET,{ },{ok},OFF
+09-Mar-25 2:24:20 AM WET,{ },{ok},ON
+09-Mar-25 6:22:01 AM WET,{ },{ok},OFF
+09-Mar-25 10:24:20 AM WET,{ },{ok},ON
+09-Mar-25 1:52:35 PM WET,{ },{ok},OFF
+09-Mar-25 6:22:22 PM WET,{ },{ok},ON
+09-Mar-25 10:21:52 PM WET,{ },{ok},OFF
+10-Mar-25 2:23:11 AM WET,{ },{ok},ON
+10-Mar-25 6:22:18 AM WET,{ },{ok},OFF
+10-Mar-25 10:25:17 AM WET,{ },{ok},ON
+10-Mar-25 1:07:16 PM WET,{ },{ok},OFF
+10-Mar-25 5:30:34 PM WET,{ },{ok},ON
+10-Mar-25 9:28:11 PM WET,{ },{ok},OFF
+11-Mar-25 1:28:23 AM WET,{ },{ok},ON
+11-Mar-25 5:28:44 AM WET,{ },{ok},OFF
+11-Mar-25 9:30:50 AM WET,{ },{ok},ON
+11-Mar-25 12:59:51 PM WET,{ },{ok},OFF
+11-Mar-25 5:31:38 PM WET,{ },{ok},ON
+11-Mar-25 9:28:22 PM WET,{ },{ok},OFF
+12-Mar-25 1:29:59 AM WET,{ },{ok},ON
+12-Mar-25 5:28:30 AM WET,{ },{ok},OFF
+12-Mar-25 9:29:16 AM WET,{ },{ok},ON
+12-Mar-25 12:59:40 PM WET,{ },{ok},OFF
+12-Mar-25 5:30:25 PM WET,{ },{ok},ON
+12-Mar-25 9:28:40 PM WET,{ },{ok},OFF
+13-Mar-25 1:30:50 AM WET,{ },{ok},ON
+13-Mar-25 5:28:34 AM WET,{ },{ok},OFF
+13-Mar-25 9:30:53 AM WET,{ },{ok},ON
+13-Mar-25 12:33:31 PM WET,{ },{ok},OFF
+13-Mar-25 12:34:11 PM WET,{ },{ok},ON
+13-Mar-25 12:39:21 PM WET,{ },{ok},OFF
+13-Mar-25 12:39:33 PM WET,{ },{ok},ON
+13-Mar-25 12:59:19 PM WET,{ },{ok},OFF
+20-Mar-25 2:36:42 PM WET,{ },{down},OFF
+20-Mar-25 4:07:28 PM WET,{ },{ok},OFF
+21-Mar-25 2:37:23 PM WET,{ },{down},OFF
+21-Mar-25 2:42:28 PM WET,{ },{ok},OFF
+27-Mar-25 10:48:04 AM WET,{ },{down},OFF
+27-Mar-25 11:46:23 AM WET,{ },{ok},OFF
+27-Mar-25 11:46:23 AM WET,{ },{stale},OFF
+27-Mar-25 11:46:25 AM WET,{ },{ok},OFF
+09-Apr-25 4:23:38 PM WEST,{start},{ok},OFF
+13-Apr-25 8:05:42 PM WEST,{start},{ok},OFF
+23-Apr-25 12:10:54 PM WEST,{start},{ok},OFF
+20-May-25 9:01:32 AM WEST,{start},{ok},OFF
+12-Jun-25 11:10:52 AM WEST,{start},{ok},OFF
+12-Jun-25 12:16:54 PM WEST,{start},{ok},OFF
+12-Jun-25 12:26:50 PM WEST,{start},{ok},OFF
+12-Jun-25 12:29:23 PM WEST,{start},{ok},OFF
+19-Jun-25 1:01:55 PM WEST,{ },{down},OFF
+23-Jun-25 11:49:55 AM WEST,{start},{ok},OFF
+25-Jun-25 9:31:42 AM WEST,{start},{ok},OFF
+02-Jul-25 12:29:13 PM WEST,{start},{ok},OFF
+09-Jul-25 3:49:23 PM WEST,{start},{ok},OFF
+09-Jul-25 5:30:36 PM WEST,{start},{ok},OFF
+16-Jul-25 2:20:45 PM WEST,{start},{ok},OFF
+23-Jul-25 4:31:11 PM WEST,{start},{ok},OFF
+23-Jul-25 4:41:37 PM WEST,{start},{ok},OFF
+07-Aug-25 2:00:56 PM WEST,{ },{down},OFF
+07-Aug-25 2:06:00 PM WEST,{ },{ok},OFF
+07-Aug-25 2:06:00 PM WEST,{ },{stale},OFF
+07-Aug-25 2:06:02 PM WEST,{ },{ok},OFF
+10-Aug-25 3:44:05 PM WEST,{start},{ok},OFF
+25-Aug-25 9:34:01 AM WEST,{start},{ok},OFF
+25-Aug-25 11:28:27 AM WEST,{start},{ok},OFF
+27-Aug-25 9:02:31 AM WEST,{start},{ok},OFF
+28-Aug-25 10:31:55 AM WEST,{start},{ok},OFF
+01-Sep-25 5:27:03 PM WEST,{start},{ok},OFF
+02-Sep-25 9:07:22 AM WEST,{start},{ok},OFF
+22-Sep-25 1:24:16 PM WEST,{start},{ok},OFF
+23-Sep-25 11:40:17 AM WEST,{start},{ok},OFF
+27-Sep-25 7:47:57 PM WEST,{start},{ok},OFF
+30-Sep-25 12:22:19 PM WEST,{start},{ok},OFF
+10-Oct-25 12:03:39 PM WEST,{start},{ok},OFF
+13-Oct-25 9:14:15 AM WEST,{start},{ok},OFF
+15-Oct-25 11:18:34 AM WEST,{start},{ok},OFF
+15-Oct-25 11:52:46 AM WEST,{start},{ok},OFF
+15-Oct-25 12:27:16 PM WEST,{start},{ok},OFF
+16-Oct-25 12:16:07 PM WEST,{start},{ok},OFF
+20-Oct-25 9:06:38 AM WEST,{start},{ok},OFF
+22-Oct-25 6:19:54 PM WEST,{start},{ok},OFF
