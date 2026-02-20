@@ -1,4 +1,4 @@
-## 📦 Nouvelle Structure
+## Nouvelle Structure
 
 ```
 POP-INWI/
