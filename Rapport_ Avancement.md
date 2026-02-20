@@ -3,7 +3,7 @@
 ## Phases précedentes
 
 ### Phase 1 : Nettoyage et optimisation
-- Suppression du code legacy (606 lignes)
+- Suppression du code legacy
 - Optimisation des imports
 - Réorganisation des fichiers
 
