@@ -1,44 +1,46 @@
-# 📊 POP-INWI — Data Center Monitoring Dashboard
+# 📊 POP-INWI — Tableau de Bord de Surveillance des Centres de Données
 
-A **Streamlit-based monitoring dashboard** for INWI data centers (POPs — Points of Presence) across Morocco. It provides real-time environmental monitoring, incident detection, correlation analysis, and automated reporting across multiple regions and sites.
-
----
-
-## 🚀 Features
-
-- **Multi-region support** — Agadir, Casablanca, Laayoune, Marrakech, Meknès, Oujda, Rabat, Tanger
-- **13 interactive tabs** covering:
-  - 🌡️ Overview & ambient temperature monitoring
-  - 📈 Temporal analysis & trends
-  - 🔍 Exploratory Data Analysis (EDA)
-  - ❄️ Climatisation analysis
-  - 🚪 Door opening analysis
-  - 🔎 Incident Lens — automated incident detection
-  - 🔗 Correlation analysis
-  - 🌡️ Temperature change detection
-  - 💰 Cost simulation
-  - 📋 POP-level, region-level, and national reports
-  - 📊 Multi-POP comparison
-- **Automated incident detection** using anomaly detection algorithms
-- **Exterior cause analysis** — distinguishes internal failures from external temperature spikes
-- **Optimised data loading** with caching for multiple POPs
-- **Print-friendly reports** with CSS print styles
+Un **tableau de bord de surveillance basé sur Streamlit** pour les centres de données INWI (PDI — Points de Présence) au Maroc. Il fournit une surveillance environnementale en temps réel, une détection des incidents, une analyse de corrélation et des rapports automatisés dans plusieurs régions et sites.
 
 ---
 
-## 🗂️ Project Structure
+## 🚀 Fonctionnalités
+
+- **Support multi-régions** — Agadir, Casablanca, Laâyoune, Marrakech, Meknès, Oujda, Rabat, Tanger
+- **13 onglets interactifs** comprenant :
+  - 🌡️ Aperçu et surveillance de la température ambiante
+  - 📈 Analyse temporelle et tendances
+  - 🔍 Analyse Exploratoire des Données (EDA)
+  - ❄️ Analyse de climatisation
+  - 🚪 Analyse des ouvertures de porte
+  - 🔎 Incident Lens — détection automatique des incidents
+  - 🔗 Analyse de corrélation
+  - 🌡️ Détection des changements de température
+  - 💰 Simulation des coûts
+  - 📋 Rapports au niveau PDI, régional et national
+  - 📊 Comparaison multi-PDI
+- **Détection automatique des incidents** utilisant des algorithmes de détection d'anomalies
+- **Analyse des causes externes** — distingue les défaillances internes des pics de température externes
+- **Chargement de données optimisé** avec mise en cache pour plusieurs PDI
+- **Rapports adaptés à l'impression** avec styles CSS pour l'impression
+- **Base de données SQLite** — migration depuis les fichiers CSV vers une base de données centralisée pour améliorer les performances et la scalabilité
+- **Architecture modulaire** — application `app.py` refactorisée en modules distincts pour une meilleure maintenabilité et extensibilité
+
+---
+
+## 🗂️ Structure du Projet
 
 ```
 POP-INWI/
 │
-├── app.py                          # Main Streamlit application entry point
-├── data_cleaning.py                # Data cleaning and preprocessing
-├── requirements.txt                # Python dependencies
+├── app.py                          # Point d'entrée principal de l'application Streamlit
+├── data_cleaning.py                # Nettoyage et prétraitement des données
+├── requirements.txt                # Dépendances Python
 │
-├── data/                           # CSV data files organised by region/POP
+├── data/                           # Fichiers de données CSV organisés par région/PDI (source originale)
 │   ├── Agadir/
 │   ├── Casablanca/
-│   ├── Laayoune/
+│   ├── Laâyoune/
 │   ├── Marrakech/
 │   ├── Meknès/
 │   ├── Oujda/
@@ -46,18 +48,19 @@ POP-INWI/
 │   └── Tanger/
 │
 ├── src/
-│   ├── core/                       # Core data handling
-│   │   ├── data_loader.py          # Data loading & multi-POP optimised loading
-│   │   ├── cache_manager.py        # Cache & preloading management
-│   │   └── data_filter.py          # Date range filtering & validation
+│   ├── core/                       # Gestion des données de base
+│   │   ├── data_loader.py          # Chargement des données et optimisation multi-PDI
+│   │   ├── cache_manager.py        # Gestion du cache et préchargement
+│   │   ├── database.py             # Connexion et requêtes de base de données SQLite
+│   │   └── data_filter.py          # Filtrage par plage de dates et validation
 │   │
-│   ├── ui/                         # User interface components
-│   │   ├── sidebar.py              # Region/POP selection sidebar
-│   │   ├── period_selector.py      # Date period selector
-│   │   ├── incident_lens_ui.py     # Incident Lens interface
-│   │   ├── styles.py               # CSS themes & print styles
-│   │   ├── app_orchestrator.py     # Tab orchestration
-│   │   └── tabs/                   # 13 modular tab components
+│   ├── ui/                         # Composants de l'interface utilisateur
+│   │   ├── sidebar.py              # Barre latérale de sélection région/PDI
+│   │   ├── period_selector.py      # Sélecteur de période de dates
+│   │   ├── incident_lens_ui.py     # Interface Incident Lens
+│   │   ├── styles.py               # Thèmes CSS et styles d'impression
+│   │   ├── app_orchestrator.py     # Orchestration des onglets
+│   │   └── tabs/                   # 13 composants d'onglets modulaires
 │   │       ├── tab01_vue_ensemble.py
 │   │       ├── tab02_analyse_temporelle.py
 │   │       ├── tab03_analyses_eda.py
@@ -73,47 +76,40 @@ POP-INWI/
 │   │       └── tab13_comparaison_pops.py
 │   │
 │   ├── analysis/
-│   │   ├── anomaly_analyzer.py     # Anomaly detection logic
-│   │   └── exterior_cause.py       # Exterior cause analysis
+│   │   ├── anomaly_analyzer.py     # Logique de détection d'anomalies
+│   │   └── exterior_cause.py       # Analyse des causes externes
 │   │
 │   ├── incident_lens/
-│   │   ├── detector.py             # Incident detection engine
-│   │   └── analyzer-improved.py   # Improved incident analyzer
+│   │   ├── detector.py             # Moteur de détection d'incidents
+│   │   └── analyzer-improved.py   # Analyseur d'incidents amélioré
 │   │
 │   ├── config/
-│   │   └── settings.py             # Application configuration
+│   │   └── settings.py             # Configuration de l'application
 │   │
 │   └── utils/
-│       └── startup_detection.py    # Server startup detection
+│       └── startup_detection.py    # Détection du démarrage du serveur
 │
-├── scripts/                        # Utility scripts
-│   ├── csv_to_sqlite.py            # Convert CSV data to SQLite
-│   └── sync_missing_pops_to_db.py  # Sync missing POPs to database
+├── scripts/                        # Scripts utilitaires
+│   ├── csv_to_sqlite.py            # Conversion des données CSV en SQLite
+│   └── sync_missing_pops_to_db.py  # Synchronisation des PDI manquants dans la base de données
 │
-└── reports/                        # Generated reports & exports
+└── reports/                        # Rapports générés et exports
     ├── csv_columns_report.csv
     └── csv_columns_report.json
 ```
 
 ---
 
-## ⚙️ Prerequisites
-
-- Python 3.9 or higher
-- pip
-
----
-
 ## 🛠️ Installation
 
-1. **Clone the repository**
+1. **Cloner le référentiel**
 
    ```bash
    git clone https://github.com/itsghali/POP-INWI.git
    cd POP-INWI
    ```
 
-2. **Create and activate a virtual environment** (recommended)
+2. **Créer et activer un environnement virtuel** (recommandé)
 
    ```bash
    python -m venv venv
@@ -121,31 +117,39 @@ POP-INWI/
    venv\Scripts\activate          # Windows
    ```
 
-3. **Install dependencies**
+3. **Installer les dépendances**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Add your data files**
+4. **Ajouter vos fichiers de données**
 
-   Place your CSV data files in the appropriate `data/<Region>/<POP>/` directories.
+   Placez vos fichiers de données CSV dans les répertoires appropriés `data/<Région>/<PDI>/`.
+
+5. **Initialiser la base de données** (optionnel si utilisation d'une base de données existante)
+
+   ```bash
+   python scripts/csv_to_sqlite.py
+   ```
+
+   Cela convertira les fichiers CSV en base de données SQLite pour améliorer les performances.
 
 ---
 
-## ▶️ Running the Application
+## ▶️ Lancer l'Application
 
 ```bash
 streamlit run app.py
 ```
 
-The dashboard will be available at `http://localhost:8501` by default.
+Le tableau de bord sera disponible à `http://localhost:8501` par défaut.
 
 ---
 
-## 📦 Dependencies
+## 📦 Dépendances
 
-| Package | Version |
+| Paquet | Version |
 |---|---|
 | streamlit | 1.29.0 |
 | pandas | 2.1.4 |
@@ -158,26 +162,43 @@ The dashboard will be available at `http://localhost:8501` by default.
 | networkx | ≥ 3.0 |
 | openpyxl | 3.1.2 |
 | kaleido | 0.2.1 |
+| sqlite3 | Intégré |
 
 ---
 
 ## 🏗️ Architecture
 
-The application follows a **modular architecture** with clear separation of concerns:
+L'application suit une **architecture modulaire** avec une séparation claire des préoccupations :
 
-- **`app.py`** — Entry point; loads data, manages session state, orchestrates the UI
-- **`src/core/`** — Data loading, caching, and filtering logic
-- **`src/ui/`** — All UI components, including 13 independent tab modules
-- **`src/analysis/`** — Anomaly detection and exterior cause analysis
-- **`src/incident_lens/`** — Automated incident detection and analysis engine
-- **`src/config/`** — Centralised application settings
+### 🔧 Changements Majeurs
+
+#### 1. **Migration vers la Base de Données SQLite**
+L'application a été migrée des fichiers CSV vers une **base de données SQLite centralisée**, offrant :
+- **Performances améliorées** — Requêtes plus rapides et indexation de base de données
+- **Scalabilité** — Gestion efficace de grandes quantités de données
+- **Intégrité des données** — Contraintes et transactions ACID
+- **Accès concurrent** — Meilleure gestion des accès utilisateur simultanés
+
+Les scripts `csv_to_sqlite.py` et `sync_missing_pops_to_db.py` facilitent la conversion et la synchronisation des données.
+
+#### 2. **Architecture Modularisée de l'Application**
+Le fichier `app.py` a été refactorisé en modules distincts pour une meilleure maintenabilité :
+- **`src/core/`** — Logique de chargement des données, mise en cache et filtrage
+- **`src/ui/`** — Tous les composants d'interface utilisateur, y compris 13 modules d'onglets indépendants
+- **`src/analysis/`** — Détection d'anomalies et analyse des causes externes
+- **`src/incident_lens/`** — Moteur de détection et d'analyse des incidents automatisés
+- **`src/config/`** — Paramètres d'application centralisés
+- **`src/utils/`** — Fonctions utilitaires et outils
+
+### Composants Clés
+
+- **`app.py`** — Point d'entrée ; orchestre la charge des données du module `core` et l'interface utilisateur via `app_orchestrator`
+- **`src/core/database.py`** — Interface de la base de données SQLite pour toutes les opérations de données
+- **`src/ui/app_orchestrator.py`** — Orchestre les 13 onglets indépendants
+- **`src/ui/sidebar.py`** — Sélection dynamique des régions et PDI
+- **`src/ui/tabs/`** — 13 modules d'onglets indépendants et réutilisables
+- **`scripts/csv_to_sqlite.py`** — Utilitaire de migration des données CSV vers SQLite
 
 ---
 
-## 📝 License
-
-This project is proprietary to **INWI**. All rights reserved.
-
----
-
-*Data Center Monitoring Dashboard | © 2025 INWI*
+*Tableau de Bord de Surveillance des Centres de Données | © 2025 INWI*
