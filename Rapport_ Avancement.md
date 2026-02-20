@@ -20,7 +20,7 @@
 
 ---
 
-## 🆕 Améliorations Nouvelles du Projet
+## 🆕 Améliorations
 
 ### 🗄️ 1. Migration vers Base de Données SQLite
 
