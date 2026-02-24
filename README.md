@@ -1,6 +1,6 @@
 # 📊 POP-INWI — Data Center Monitoring Dashboard
 
-A **Streamlit-based monitoring dashboard** for INWI data centers (POPs — Points of Presence) across Morocco. It provides real-time environmental monitoring, incident detection, correlation analysis, and automated reporting across multiple regions and sites.
+A **Streamlit-based monitoring dashboard** for INWI data centers (POPs — Points of Presence) across Morocco. It provides environmental monitoring, incident detection, correlation analysis, and automated reporting across multiple regions and sites.
 
 ---
 
@@ -13,16 +13,16 @@ A **Streamlit-based monitoring dashboard** for INWI data centers (POPs — Point
   - 🔍 Exploratory Data Analysis (EDA)
   - ❄️ Climatisation analysis
   - 🚪 Door opening analysis
-  - 🔎 Incident Lens — automated incident detection
+  - 🔎 Incident Lens — automated incident detection & root-cause exploration
   - 🔗 Correlation analysis
   - 🌡️ Temperature change detection
   - 💰 Cost simulation
   - 📋 POP-level, region-level, and national reports
   - 📊 Multi-POP comparison
-- **Automated incident detection** using anomaly detection algorithms
-- **Exterior cause analysis** — distinguishes internal failures from external temperature spikes
-- **Optimised data loading** with caching for multiple POPs
-- **Print-friendly reports** with CSS print styles
+- **Automated incident detection** (power/door/CLIM/composite incidents)
+- **Exterior cause analysis** — helps distinguish internal failures from external temperature spikes
+- **Optimised data loading** with caching / preloading for multiple POPs
+- **Print-friendly reports** with custom CSS print styles
 
 ---
 
@@ -32,8 +32,13 @@ A **Streamlit-based monitoring dashboard** for INWI data centers (POPs — Point
 POP-INWI/
 │
 ├── app.py                          # Main Streamlit application entry point
-├── data_cleaning.py                # Data cleaning and preprocessing
+├── data_cleaning.py                # Data cleaning and preprocessing helpers
 ├── requirements.txt                # Python dependencies
+├── README.md                       # Project documentation (this file)
+│
+├── data_raw.db                     # SQLite database generated from CSVs (see scripts/)
+├── logo_inwi.png                   # UI/branding asset used in the app
+├── Rapport d'Avancement.pdf        # Project progress report / documentation
 │
 ├── data/                           # CSV data files organised by region/POP
 │   ├── Agadir/
@@ -54,9 +59,9 @@ POP-INWI/
 │   ├── ui/                         # User interface components
 │   │   ├── sidebar.py              # Region/POP selection sidebar
 │   │   ├── period_selector.py      # Date period selector
-│   │   ├── incident_lens_ui.py     # Incident Lens interface
+│   │   ├── incident_lens_ui.py     # Incident Lens UI (analysis workflow + visuals)
 │   │   ├── styles.py               # CSS themes & print styles
-│   │   ├── app_orchestrator.py     # Tab orchestration
+│   │   ├── app_orchestrator.py     # Tab orchestration (creates & renders 13 tabs)
 │   │   └── tabs/                   # 13 modular tab components
 │   │       ├── tab01_vue_ensemble.py
 │   │       ├── tab02_analyse_temporelle.py
@@ -74,11 +79,11 @@ POP-INWI/
 │   │
 │   ├── analysis/
 │   │   ├── anomaly_analyzer.py     # Anomaly detection logic
-│   │   └── exterior_cause.py       # Exterior cause analysis
+│   │   └── exterior_cause.py       # Exterior cause analysis (ambient spike causes)
 │   │
-│   ├── incident_lens/
+│   ├── incident_lens/              # Incident detection engine & analysis helpers
 │   │   ├── detector.py             # Incident detection engine
-│   │   └── analyzer-improved.py   # Improved incident analyzer
+│   │   └── analyzer-improved.py    # Improved incident analyzer
 │   │
 │   ├── config/
 │   │   └── settings.py             # Application configuration
@@ -86,11 +91,12 @@ POP-INWI/
 │   └── utils/
 │       └── startup_detection.py    # Server startup detection
 │
-├── scripts/                        # Utility scripts
+├── scripts/                        # Utility scripts (see scripts/README.md)
 │   ├── csv_to_sqlite.py            # Convert CSV data to SQLite
 │   └── sync_missing_pops_to_db.py  # Sync missing POPs to database
 │
-└── reports/                        # Generated reports & exports
+└── reports/                        # Generated reports & exports (see reports/README.md)
+    ├── README.md
     ├── csv_columns_report.csv
     └── csv_columns_report.json
 ```
@@ -140,37 +146,6 @@ streamlit run app.py
 ```
 
 The dashboard will be available at `http://localhost:8501` by default.
-
----
-
-## 📦 Dependencies
-
-| Package | Version |
-|---|---|
-| streamlit | 1.29.0 |
-| pandas | 2.1.4 |
-| numpy | 1.26.2 |
-| plotly | 5.18.0 |
-| seaborn | 0.13.0 |
-| matplotlib | 3.8.2 |
-| scipy | 1.11.4 |
-| scikit-learn | ≥ 1.3.0 |
-| networkx | ≥ 3.0 |
-| openpyxl | 3.1.2 |
-| kaleido | 0.2.1 |
-
----
-
-## 🏗️ Architecture
-
-The application follows a **modular architecture** with clear separation of concerns:
-
-- **`app.py`** — Entry point; loads data, manages session state, orchestrates the UI
-- **`src/core/`** — Data loading, caching, and filtering logic
-- **`src/ui/`** — All UI components, including 13 independent tab modules
-- **`src/analysis/`** — Anomaly detection and exterior cause analysis
-- **`src/incident_lens/`** — Automated incident detection and analysis engine
-- **`src/config/`** — Centralised application settings
 
 ---
 
