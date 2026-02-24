@@ -14,6 +14,7 @@ from data_cleaning import DataCleaner
 from src.analysis.exterior_cause import power_causes_ambient_spike, exterior_causes_ambient_spike
 import warnings
 import time
+import threading
 warnings.filterwarnings('ignore')
 import scipy.stats
 
@@ -28,6 +29,25 @@ from src.ui.app_orchestrator import orchestrate_dashboard
 
 # Initialiser le DataCleaner
 data_cleaner = DataCleaner("data")
+
+# ===== DÉMARRER LE SCHEDULER AUTO-SYNC EN ARRIÈRE-PLAN =====
+def start_scheduler():
+    """Démarre le scheduler de synchronisation automatique"""
+    try:
+        from scripts.auto_sync_scheduler import run_scheduler
+        scheduler_thread = threading.Thread(
+            target=run_scheduler,
+            kwargs={'target_hour': 2},
+            daemon=True
+        )
+        scheduler_thread.start()
+    except Exception as e:
+        print(f"⚠️ Impossible de démarrer le scheduler: {e}")
+
+# Lancer le scheduler une seule fois au démarrage
+if 'scheduler_started' not in st.session_state:
+    start_scheduler()
+    st.session_state.scheduler_started = True
 
 # Import period selector for date extraction
 from src.ui.period_selector import period_selector
