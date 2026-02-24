@@ -38,6 +38,17 @@ class UnifiedPeriodSelector:
         Returns:
             tuple: (start_date, end_date) as datetime objects
         """
+        # Ensure unified_period is initialized (defensive programming)
+        if 'unified_period' not in st.session_state:
+            end_date = datetime.now()
+            start_date = end_date - timedelta(days=7)
+            st.session_state.unified_period = {
+                'start_date': start_date,
+                'end_date': end_date,
+                'selection_type': 'Dernière semaine',
+                'custom_range': None
+            }
+        
         # Info box
         st.sidebar.info("🔄 Cette sélection s'applique automatiquement à toutes les sections de l'application")
         

@@ -58,19 +58,11 @@ def get_region_pop_selection(data_cleaner):
             st.session_state.preload_progress = 0
             st.session_state.loaded_pops_count = 0
             st.session_state.preload_session_attempted = False
-            st.sidebar.info("🔄 Préchargement activé - les données seront chargées...")
+            st.sidebar.info("🔄 Préchargement activé - les données seront chargées au prochain chargement...")
         else:
-            # User disabled preloading - stop everything and update visual state
+            # User disabled preloading - just update state, no rerun needed
             st.session_state.preload_enabled = False
-            st.session_state.preload_started = False
-            st.session_state.preload_completed = False
-            st.session_state.preload_session_attempted = True
-            st.session_state.preload_progress = 0
-            st.session_state.loaded_pops_count = 0
-            # Force visual refresh by incrementing key
-            st.session_state.checkbox_refresh += 1
-            st.sidebar.success("⏹️ Préchargement arrêté")
-            st.rerun()  # Force UI refresh to sync checkbox state
+            st.sidebar.info("ℹ️ Préchargement désactivé (données en cache conservées)")
     
     # Clear cache button
     if st.sidebar.button("🗑️ Vider le cache", help="Efface le cache - Utile après actualisation du navigateur"):
@@ -116,8 +108,17 @@ def get_region_pop_selection(data_cleaner):
                 
                 if 'preload_last_update' not in st.session_state:
                     st.session_state.preload_last_update = current_time
+                    st.session_state.preload_start_time = current_time
                 
-                # If no progress for more than 60 seconds, consider it stuck
+                # If preload has been running for more than 10 minutes, auto-reset (likely stuck)
+                time_since_start = current_time - st.session_state.get('preload_start_time', current_time)
+                if time_since_start > 600:  # 10 minutes
+                    st.sidebar.warning("⚠️ Préchargement bloqué - réinitialisation automatique")
+                    st.session_state.preload_started = False
+                    st.session_state.preload_completed = False
+                    st.session_state.preload_session_attempted = False
+                    st.rerun()
+                
                 time_since_update = current_time - st.session_state.preload_last_update
                 
                 progress = st.session_state.get('loaded_pops_count', 0) / max(1, st.session_state.get('total_pops_to_load', 1))
@@ -151,7 +152,6 @@ def get_region_pop_selection(data_cleaner):
     regions = data_cleaner.get_regions()
     if not regions:
         st.error("Aucune région trouvée dans la base SQLite")
-        st.stop()
         
     selected_region = st.sidebar.selectbox(
         "Sélectionnez une région",
@@ -162,7 +162,6 @@ def get_region_pop_selection(data_cleaner):
     pops = data_cleaner.get_pops(selected_region)
     if not pops:
         st.error(f"Aucun POP trouvé dans la région {selected_region}")
-        st.stop()
     
     # Vérifier la disponibilité des données pour chaque POP
     def check_pop_data_availability(region, pop):

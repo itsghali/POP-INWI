@@ -68,21 +68,23 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Obtenir la région et le POP sélectionnés
-selected_region, selected_pop = get_region_pop_selection(data_cleaner)
-
-# Track POP changes for timing purposes - only for initial load
+# Initialize all session state variables FIRST
 if 'current_pop' not in st.session_state:
     st.session_state.current_pop = None
     st.session_state.load_start_time = None
     st.session_state.first_load_completed = False
 
-# Initialize multi-POP cache in session state
 if 'multi_pop_cache' not in st.session_state:
     st.session_state.multi_pop_cache = {}
     
 if 'cached_pop_list' not in st.session_state:
     st.session_state.cached_pop_list = []
+
+if 'preload_session_attempted' not in st.session_state:
+    st.session_state.preload_session_attempted = False
+
+# Obtenir la région et le POP sélectionnés
+selected_region, selected_pop = get_region_pop_selection(data_cleaner)
 
 # Check if POP has changed (only start timing for new POP selection)
 pop_changed = st.session_state.current_pop != f"{selected_region}_{selected_pop}"
@@ -91,7 +93,19 @@ if pop_changed:
     st.session_state.load_start_time = time.time()
     st.session_state.first_load_completed = False  # Reset for new POP
 
-# Style CSS personnalisé
+# ===== AUTOMATIC PRELOADING ORCHESTRATION =====
+# Trigger preloading if enabled and not already done/in-progress
+if st.session_state.get('preload_enabled', False):
+    # Only start if not already completed and not already attempted in this session
+    if (not st.session_state.get('preload_completed', False) and 
+        not st.session_state.preload_session_attempted):
+        # Mark that we're attempting preload in this session to avoid repeated attempts
+        st.session_state.preload_session_attempted = True
+        # Trigger the actual preloading
+        preload_all_pops(data_cleaner, load_data)
+        # Stop here after preloading to show the preload UI
+
+# Style CSS personnalisé (appliqué après préchargement)
 render_page_header(selected_pop, selected_region)
 apply_custom_css()
 apply_print_styles()
@@ -103,7 +117,6 @@ try:
     
     if merged_data is None or merged_data.empty:
         st.error(f"❌ Aucune donnée disponible pour {selected_pop} ({selected_region})")
-        st.stop()
     
     # Ensure Timestamp is datetime
     if 'Timestamp' in merged_data.columns:
@@ -114,7 +127,6 @@ try:
     
     if merged_data.empty:
         st.error(f"❌ No valid data after timestamp conversion")
-        st.stop()
     
     # Get date range from session state or use full range
     if 'start_date' not in st.session_state:
@@ -199,7 +211,6 @@ try:
     
 except Exception as e:
     st.error(f"❌ Erreur lors du chargement des données: {str(e)}")
-    st.stop()
 
 # Footer
 st.markdown("---")

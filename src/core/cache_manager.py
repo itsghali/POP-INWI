@@ -93,35 +93,23 @@ def preload_all_pops(data_cleaner, load_data_func):
             
             total_time = time.time() - start_time
             
-            # Show completion status
-            status_text.markdown(f"""
-            ✅ **Préchargement terminé!**
-            - ✅ {successful_loads} POPs chargés avec succès
-            - ❌ {failed_loads} POPs échoués
-            - ⏱️ Temps total: {total_time:.1f} secondes
-            - 🚀 Navigation instantanée activée!
-            """)
-            
+            # Mark as completed
             st.session_state.preload_completed = True
             
-            # Auto-disable preloading checkbox after completion to switch to single POP mode
-            st.session_state.preload_enabled = False
-            st.session_state.checkbox_refresh += 1  # Force checkbox refresh
-            
-            # Show success message in the preload container
+            # Show final success message (single, consolidated message)
             status_text.markdown(f"""
             ✅ **Préchargement terminé!**
             - ✅ {successful_loads} POPs chargés avec succès
             - ❌ {failed_loads} POPs échoués  
             - ⏱️ Temps total: {total_time:.1f} secondes
             - 🚀 **Navigation instantanée activée!**
-            - 📂 **Mode POP unique activé** - Changez de POP pour une navigation instantanée!
             
-            👆 Vous pouvez maintenant changer de POP rapidement dans la barre latérale!
+            👆 Rechargez la page ou changez de POP dans la barre latérale!
             """)
             
-            # Force UI refresh to update checkbox state
-            st.rerun()
+            # Show a button to continue
+            if st.button("✅ Continuer vers l'application", type="primary"):
+                st.rerun()
                 
     except Exception as e:
         st.error(f"❌ Erreur pendant le préchargement: {str(e)}")
