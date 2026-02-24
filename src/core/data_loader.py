@@ -12,7 +12,7 @@ def load_data(region, pop):
     try:
         st.sidebar.write(f"🎯 Début du chargement: {region}/{pop}")
         
-        cleaner = DataCleaner()
+        cleaner = DataCleaner(auto_sync=False)  # No auto-sync in cached function
         
         # Vérifier que la région et le POP existent
         regions = cleaner.get_regions()

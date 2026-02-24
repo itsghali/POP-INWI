@@ -91,6 +91,18 @@ def get_region_pop_selection(data_cleaner):
         st.cache_data.clear()
         st.sidebar.success("✅ Cache vidé! Actualisez de nouveau si nécessaire.")
     
+    # Refresh data button
+    if st.sidebar.button("🔄 Actualiser les données", help="Synchronise les nouveaux fichiers CSV vers la base de données"):
+        with st.spinner("🔄 Synchronisation des CSV..."):
+            try:
+                data_cleaner.auto_sync_csv_to_db(force=True)
+                # Clear cache after sync
+                st.cache_data.clear()
+                st.session_state.multi_pop_cache = {}
+                st.sidebar.success("✅ Données synchronisées!")
+            except Exception as e:
+                st.sidebar.error(f"❌ Erreur de synchronisation: {str(e)}")
+    
     # Show preloading status in sidebar
     if st.session_state.preload_enabled:
         if 'preload_completed' in st.session_state:

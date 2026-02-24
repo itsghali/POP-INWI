@@ -25,7 +25,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     """)
     
     # Initialize the data cleaner for custom comparison
-    comparison_cleaner = DataCleaner()
+    comparison_cleaner = DataCleaner(auto_sync=False)
     
     # Custom selection interface (copied from "Sélection personnalisée")
     st.markdown("### ⚙️ Sélection des POPs à Comparer")

@@ -7,11 +7,12 @@ from datetime import datetime
 import pytz
 import traceback
 import time
+import warnings
 
 class DataCleaner:
     """Système de nettoyage des données pour les POPs"""
     
-    def __init__(self, data_dir="data"):
+    def __init__(self, data_dir="data", auto_sync=True):
         # Convertir en chemin absolu si c'est un chemin relatif
         if not Path(data_dir).is_absolute():
             self.data_dir = Path.cwd() / data_dir
@@ -19,6 +20,170 @@ class DataCleaner:
             self.data_dir = Path(data_dir)
         self.db_path = Path.cwd() / 'data_raw.db'
         print(f"🔍 Chemin absolu du dossier data : {self.data_dir}")
+        
+        # Auto-sync CSV to DB if enabled
+        if auto_sync:
+            self.auto_sync_csv_to_db()
+    
+    def _get_csv_files(self):
+        """Retourne tous les fichiers CSV avec leurs métadonnées"""
+        csv_files = []
+        for root, dirs, files in os.walk(self.data_dir):
+            for file in files:
+                if file.endswith(".csv"):
+                    file_path = Path(root) / file
+                    csv_files.append({
+                        'path': file_path,
+                        'mtime': file_path.stat().st_mtime,
+                        'rel_path': file_path.relative_to(self.data_dir.parent)
+                    })
+        return csv_files
+    
+    def _get_db_last_updated(self):
+        """Retourne le timestamp de dernière modification de la DB"""
+        if not self.db_path.exists():
+            return 0
+        return self.db_path.stat().st_mtime
+    
+    def _import_csv_to_db(self, file_path, conn):
+        """Importe un fichier CSV dans la base de données"""
+        try:
+            # Colonnes standard attendues
+            standard_columns = ["Timestamp", "Trend Flags", "Status", "Value"]
+            
+            # Extraire metadata region/pop depuis le chemin
+            rel_path = file_path.relative_to(self.data_dir)
+            parts = rel_path.parts
+            region = parts[0] if len(parts) >= 2 else ''
+            pop = parts[1] if len(parts) >= 3 else ''
+            filename = file_path.name
+            
+            table_name = file_path.stem.replace(" ", "_").replace("-", "_")
+            
+            print(f"   📥 Import: {region}/{pop}/{filename}")
+            
+            # Trouver la ligne d'en-tête
+            with open(file_path, encoding="utf-8", errors='ignore') as f:
+                lines = f.readlines()
+            
+            header_idx = None
+            for i, line in enumerate(lines):
+                if line.strip().startswith("Timestamp"):
+                    header_idx = i
+                    break
+            
+            if header_idx is None:
+                print(f"   ⚠️ Pas d'en-tête 'Timestamp' trouvé dans {filename}")
+                return False
+            
+            # Lire le CSV
+            df = pd.read_csv(file_path, skiprows=header_idx, encoding='utf-8', on_bad_lines='skip')
+            
+            # Nettoyage des noms de colonnes
+            df.columns = [c.strip() for c in df.columns]
+            df.columns = [c.replace('Value (°C)', 'Value').replace('Value(°C)', 'Value') for c in df.columns]
+            
+            # Identifier les colonnes pertinentes
+            col_map = {}
+            for c in df.columns:
+                lc = c.lower()
+                if lc.startswith('timestamp'):
+                    col_map['Timestamp'] = c
+                elif 'trend' in lc and 'flag' in lc:
+                    col_map['Trend Flags'] = c
+                elif lc.startswith('status'):
+                    col_map['Status'] = c
+                elif 'value' in lc:
+                    col_map['Value'] = c
+            
+            # Créer DataFrame avec colonnes standard
+            for std in standard_columns:
+                if std not in col_map:
+                    df[std] = pd.NA
+            
+            # Sélectionner colonnes
+            df_sel = pd.DataFrame()
+            for std in standard_columns:
+                if std in col_map:
+                    df_sel[std] = df[col_map[std]]
+                else:
+                    df_sel[std] = pd.NA
+            
+            # Ajouter metadata
+            df_sel['region'] = region
+            df_sel['pop'] = pop
+            
+            # Nettoyer Timestamp
+            ts = df_sel['Timestamp'].astype(str).str.replace(r"\s+\w+$", '', regex=True).str.strip()
+            df_sel['Timestamp'] = pd.to_datetime(ts, format="%d-%b-%y %I:%M:%S %p", errors='coerce')
+            
+            mask_na = df_sel['Timestamp'].isna()
+            if mask_na.any():
+                df_sel.loc[mask_na, 'Timestamp'] = pd.to_datetime(ts[mask_na], format="%d-%b-%y %H:%M:%S", errors='coerce')
+            
+            mask_na = df_sel['Timestamp'].isna()
+            if mask_na.any():
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore", UserWarning)
+                    df_sel.loc[mask_na, 'Timestamp'] = pd.to_datetime(ts[mask_na], errors='coerce')
+            
+            # Nettoyer les valeurs vides
+            df_sel = df_sel.replace(r'^\s*$', pd.NA, regex=True)
+            df_sel = df_sel.replace(['nan', 'NaN', 'None', 'NONE', 'NULL', 'null'], pd.NA)
+            df_sel = df_sel.dropna(axis=1, how='all')
+            
+            # Supprimer les entrées existantes pour cette region/pop/table
+            conn.execute(f'DELETE FROM "{table_name}" WHERE region = ? AND pop = ?', (region, pop))
+            
+            # Écrire dans la DB
+            if df_sel.shape[0] > 0:
+                df_sel.to_sql(table_name, conn, if_exists="append", index=False)
+                print(f"   ✅ {len(df_sel)} lignes importées pour {filename}")
+                return True
+            else:
+                print(f"   ⚠️ Aucune ligne valide dans {filename}")
+                return False
+                
+        except Exception as e:
+            print(f"   ❌ Erreur import {file_path.name}: {str(e)}")
+            return False
+    
+    def auto_sync_csv_to_db(self, force=False):
+        """
+        Synchronise automatiquement les CSV vers la base de données.
+        
+        Args:
+            force: Si True, force la synchronisation même si la DB est à jour
+        """
+        csv_files = self._get_csv_files()
+        
+        if not csv_files:
+            print("ℹ️ Aucun fichier CSV trouvé")
+            return
+        
+        db_last_updated = self._get_db_last_updated()
+        
+        # Vérifier si des CSV sont plus récents que la DB
+        newer_csvs = [f for f in csv_files if force or f['mtime'] > db_last_updated]
+        
+        if not newer_csvs and not force:
+            print("✅ Base de données à jour")
+            return
+        
+        print(f"\n🔄 Synchronisation: {len(newer_csvs)} fichier(s) à importer...")
+        
+        # Créer/connecter à la DB
+        conn = sqlite3.connect(str(self.db_path))
+        
+        imported = 0
+        for csv_info in newer_csvs:
+            if self._import_csv_to_db(csv_info['path'], conn):
+                imported += 1
+        
+        conn.commit()
+        conn.close()
+        
+        print(f"✅ Synchronisation terminée: {imported}/{len(newer_csvs)} fichiers importés\n")
         
     def get_regions(self):
         """Retourne la liste des régions disponibles"""

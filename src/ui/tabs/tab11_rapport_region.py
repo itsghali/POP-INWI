@@ -18,7 +18,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     """, unsafe_allow_html=True)
     
     # Initialize the data cleaner for region analysis
-    region_cleaner = DataCleaner()
+    region_cleaner = DataCleaner(auto_sync=False)
     
     # Get all POPs from the current region
     current_region_pops = region_cleaner.get_pops(selected_region)

@@ -21,7 +21,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     
     
     # Initialize the data cleaner for national analysis
-    national_cleaner = DataCleaner()
+    national_cleaner = DataCleaner(auto_sync=False)
     
     # Get all regions and POPs (same logic as "Toutes les régions" in Multi-POP)
     all_pops_national = []
