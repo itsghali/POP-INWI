@@ -1,0 +1,3 @@
+"""
+Module utils - Fonctions utilitaires
+"""

@@ -1,0 +1,1 @@
+"""UI components for the BGU-ONE monitoring dashboard"""
