@@ -1,0 +1,76 @@
+﻿history:GTC_Multisite_Inwi/SIDI_SLIMANE_ONCF Contact Porte
+
+Timestamp,Trend Flags,Status,Value
+13-Dec-24 2:49:19 PM WEST,{start},{ok},Ouvert
+16-Dec-24 2:08:03 PM WEST,{ },{down},Ouvert
+16-Dec-24 5:31:12 PM WEST,{ },{ok},Ouvert
+16-Dec-24 5:31:12 PM WEST,{ },{stale},Ouvert
+16-Dec-24 5:31:13 PM WEST,{ },{ok},Ouvert
+22-Dec-24 8:36:10 PM WEST,{ },{down},Ouvert
+22-Dec-24 8:59:32 PM WEST,{ },{ok},Ouvert
+06-Jan-25 2:33:07 PM WEST,{ },{down},Ouvert
+06-Jan-25 2:38:11 PM WEST,{ },{ok},Ouvert
+06-Jan-25 6:19:39 PM WEST,{ },{ok},Fermé
+06-Jan-25 6:19:41 PM WEST,{ },{ok},Ouvert
+17-Jan-25 1:05:49 PM WEST,{start},{ok},Ouvert
+28-Jan-25 4:53:16 PM WEST,{start},{ok},Ouvert
+29-Jan-25 9:27:30 AM WEST,{start},{ok},Ouvert
+30-Jan-25 10:07:54 PM WEST,{start},{ok},Ouvert
+11-Feb-25 11:37:28 AM WEST,{start},{ok},Ouvert
+12-Feb-25 2:26:00 AM WEST,{ },{down},Ouvert
+12-Feb-25 2:54:18 AM WEST,{ },{ok},Ouvert
+13-Feb-25 3:38:42 PM WEST,{start},{ok},Ouvert
+13-Feb-25 4:42:35 PM WEST,{start},{ok},Ouvert
+14-Feb-25 9:28:33 AM WEST,{start},{ok},Ouvert
+20-Feb-25 8:58:50 AM WEST,{start},{ok},Ouvert
+20-Feb-25 9:00:32 AM WEST,{start},{ok},Ouvert
+26-Feb-25 2:16:33 AM WET,{ },{down},Ouvert
+26-Feb-25 2:21:37 AM WET,{ },{ok},Ouvert
+28-Feb-25 1:52:58 AM WET,{ },{down},Ouvert
+28-Feb-25 1:58:07 AM WET,{ },{ok},Ouvert
+27-Mar-25 3:23:42 PM WET,{ },{down},Ouvert
+27-Mar-25 4:27:53 PM WET,{ },{ok},Ouvert
+09-Apr-25 4:23:38 PM WEST,{start},{ok},Ouvert
+13-Apr-25 8:05:42 PM WEST,{start},{ok},Ouvert
+23-Apr-25 12:10:54 PM WEST,{start},{ok},Ouvert
+30-Apr-25 5:07:09 PM WEST,{ },{ok},Fermé
+30-Apr-25 5:07:11 PM WEST,{ },{ok},Ouvert
+20-May-25 9:01:32 AM WEST,{start},{ok},Ouvert
+12-Jun-25 11:10:52 AM WEST,{start},{ok},Ouvert
+12-Jun-25 12:16:54 PM WEST,{start},{ok},Ouvert
+12-Jun-25 12:26:50 PM WEST,{start},{ok},Ouvert
+12-Jun-25 12:29:23 PM WEST,{start},{ok},Ouvert
+19-Jun-25 1:01:54 PM WEST,{ },{down},Ouvert
+23-Jun-25 11:46:07 AM WEST,{start},"{down,stale}",Ouvert
+23-Jun-25 11:50:02 AM WEST,{ },{stale},Ouvert
+23-Jun-25 11:50:07 AM WEST,{ },{ok},Ouvert
+23-Jun-25 5:10:34 PM WEST,{ },{down},Ouvert
+23-Jun-25 5:15:45 PM WEST,{ },{ok},Ouvert
+25-Jun-25 9:31:42 AM WEST,{start},{ok},Ouvert
+02-Jul-25 12:29:13 PM WEST,{start},{ok},Ouvert
+09-Jul-25 3:49:23 PM WEST,{start},{ok},Ouvert
+09-Jul-25 5:30:36 PM WEST,{start},{ok},Ouvert
+16-Jul-25 2:20:45 PM WEST,{start},{ok},Ouvert
+23-Jul-25 4:31:11 PM WEST,{start},{ok},Ouvert
+23-Jul-25 4:41:37 PM WEST,{start},{ok},Ouvert
+10-Aug-25 3:44:05 PM WEST,{start},{ok},Ouvert
+25-Aug-25 9:34:01 AM WEST,{start},{ok},Ouvert
+25-Aug-25 11:28:27 AM WEST,{start},{ok},Ouvert
+27-Aug-25 9:02:31 AM WEST,{start},{ok},Ouvert
+28-Aug-25 10:31:55 AM WEST,{start},{ok},Ouvert
+01-Sep-25 5:27:03 PM WEST,{start},{ok},Ouvert
+02-Sep-25 9:07:22 AM WEST,{start},{ok},Ouvert
+22-Sep-25 1:24:16 PM WEST,{start},{ok},Ouvert
+23-Sep-25 11:40:17 AM WEST,{start},{ok},Ouvert
+27-Sep-25 7:47:57 PM WEST,{start},{ok},Ouvert
+30-Sep-25 12:22:18 PM WEST,{start},{ok},Ouvert
+10-Oct-25 12:03:39 PM WEST,{start},{ok},Ouvert
+13-Oct-25 9:14:15 AM WEST,{start},{ok},Ouvert
+15-Oct-25 11:18:34 AM WEST,{start},{ok},Ouvert
+15-Oct-25 11:52:46 AM WEST,{start},{ok},Ouvert
+15-Oct-25 12:27:16 PM WEST,{start},{ok},Ouvert
+16-Oct-25 12:16:07 PM WEST,{start},{ok},Ouvert
+16-Oct-25 4:57:23 PM WEST,{ },{ok},Fermé
+16-Oct-25 4:57:37 PM WEST,{ },{ok},Ouvert
+20-Oct-25 9:06:38 AM WEST,{start},{ok},Ouvert
+22-Oct-25 6:19:54 PM WEST,{start},{ok},Ouvert

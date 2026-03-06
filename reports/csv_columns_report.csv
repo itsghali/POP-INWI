@@ -1,0 +1,528 @@
+file,relative,table_name,columns
+data\Agadir\AGA-MCO\Etat CLIM A.csv,Agadir\AGA-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\Etat CLIM B.csv,Agadir\AGA-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\Etat CLIM C.csv,Agadir\AGA-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\Etat CLIM D.csv,Agadir\AGA-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\Etat Porte.csv,Agadir\AGA-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\P.Active CLIM.csv,Agadir\AGA-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-MCO\P.Active Générale.csv,Agadir\AGA-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-MCO\Température Ambiante.csv,Agadir\AGA-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-MCO\Température Extérieure.csv,Agadir\AGA-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Etat CLIM A.csv,Agadir\AGA-ONE1\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Etat CLIM B.csv,Agadir\AGA-ONE1\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Etat CLIM C.csv,Agadir\AGA-ONE1\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Etat CLIM D.csv,Agadir\AGA-ONE1\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Etat Porte.csv,Agadir\AGA-ONE1\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\P.Active CLIM.csv,Agadir\AGA-ONE1\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-ONE1\P.Active Générale.csv,Agadir\AGA-ONE1\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-ONE1\Température Ambiante.csv,Agadir\AGA-ONE1\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE1\Température Extérieure.csv,Agadir\AGA-ONE1\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Etat CLIM A.csv,Agadir\AGA-ONE2\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Etat CLIM B.csv,Agadir\AGA-ONE2\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Etat CLIM C.csv,Agadir\AGA-ONE2\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Etat CLIM D.csv,Agadir\AGA-ONE2\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Etat Porte.csv,Agadir\AGA-ONE2\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\P.Active CLIM.csv,Agadir\AGA-ONE2\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-ONE2\P.Active Générale.csv,Agadir\AGA-ONE2\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\AGA-ONE2\Température Ambiante.csv,Agadir\AGA-ONE2\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\AGA-ONE2\Température Extérieure.csv,Agadir\AGA-ONE2\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Etat CLIM A.csv,Agadir\GLA-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Etat CLIM B.csv,Agadir\GLA-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Etat CLIM C.csv,Agadir\GLA-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Etat CLIM D.csv,Agadir\GLA-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Etat Porte.csv,Agadir\GLA-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\P.Active CLIM.csv,Agadir\GLA-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\GLA-ONE\P.Active Générale.csv,Agadir\GLA-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\GLA-ONE\Température Ambiante.csv,Agadir\GLA-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLA-ONE\Température Extérieure.csv,Agadir\GLA-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLM-ONE\Etat CLIM A.csv,Agadir\GLM-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLM-ONE\Etat CLIM B.csv,Agadir\GLM-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLM-ONE\Etat Porte.csv,Agadir\GLM-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLM-ONE\P.Active CLIM.csv,Agadir\GLM-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\GLM-ONE\P.Active Générale.csv,Agadir\GLM-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\GLM-ONE\Température Ambiante.csv,Agadir\GLM-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\GLM-ONE\Température Extérieure.csv,Agadir\GLM-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Agadir\TNT-ONE\Etat CLIM A.csv,Agadir\TNT-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Agadir\TNT-ONE\Etat CLIM B.csv,Agadir\TNT-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Agadir\TNT-ONE\Etat Porte.csv,Agadir\TNT-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Agadir\TNT-ONE\P.Active CLIM.csv,Agadir\TNT-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\TNT-ONE\P.Active Générale.csv,Agadir\TNT-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Agadir\TNT-ONE\Température Ambiante.csv,Agadir\TNT-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Agadir\TNT-ONE\Température Extérieure.csv,Agadir\TNT-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM A.csv,Casablanca\BEN-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM B.csv,Casablanca\BEN-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM C.csv,Casablanca\BEN-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM D.csv,Casablanca\BEN-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM E.csv,Casablanca\BEN-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat CLIM F.csv,Casablanca\BEN-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Etat Porte.csv,Casablanca\BEN-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\P.Active CLIM.csv,Casablanca\BEN-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BEN-MCO\P.Active Générale.csv,Casablanca\BEN-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BEN-MCO\Température Ambiante.csv,Casablanca\BEN-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-MCO\Température Extérieure.csv,Casablanca\BEN-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Etat CLIM A.csv,Casablanca\BEN-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Etat CLIM B.csv,Casablanca\BEN-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Etat CLIM C.csv,Casablanca\BEN-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Etat CLIM D.csv,Casablanca\BEN-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Etat Porte.csv,Casablanca\BEN-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\P.Active CLIM.csv,Casablanca\BEN-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BEN-ONE\P.Active Générale.csv,Casablanca\BEN-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BEN-ONE\Température Ambiante.csv,Casablanca\BEN-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BEN-ONE\Température Extérieure.csv,Casablanca\BEN-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-MCO\Etat CLIM A.csv,Casablanca\BER-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-MCO\Etat CLIM B.csv,Casablanca\BER-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-MCO\Etat Porte.csv,Casablanca\BER-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-MCO\P.Active CLIM.csv,Casablanca\BER-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-MCO\P.Active Générale.csv,Casablanca\BER-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-MCO\Température Ambiante.csv,Casablanca\BER-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-MCO\Température Extérieure.csv,Casablanca\BER-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONCF\Etat CLIM A.csv,Casablanca\BER-ONCF\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONCF\Etat CLIM B.csv,Casablanca\BER-ONCF\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONCF\Etat Porte.csv,Casablanca\BER-ONCF\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONCF\P.Active CLIM.csv,Casablanca\BER-ONCF\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-ONCF\P.Active Générale.csv,Casablanca\BER-ONCF\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-ONCF\Température Ambiante.csv,Casablanca\BER-ONCF\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONCF\Température Extérieure.csv,Casablanca\BER-ONCF\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONE\Etat CLIM A.csv,Casablanca\BER-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONE\Etat CLIM B.csv,Casablanca\BER-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONE\Etat Porte.csv,Casablanca\BER-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONE\P.Active CLIM.csv,Casablanca\BER-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-ONE\P.Active Générale.csv,Casablanca\BER-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\BER-ONE\Température Ambiante.csv,Casablanca\BER-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\BER-ONE\Température Extérieure.csv,Casablanca\BER-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CAS-ZENITH-MCO\Etat CLIM A.csv,Casablanca\CAS-ZENITH-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CAS-ZENITH-MCO\Etat CLIM B.csv,Casablanca\CAS-ZENITH-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CAS-ZENITH-MCO\Etat Porte.csv,Casablanca\CAS-ZENITH-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CAS-ZENITH-MCO\P.Active CLIM.csv,Casablanca\CAS-ZENITH-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kVA)
+data\Casablanca\CAS-ZENITH-MCO\P.Active Générale.csv,Casablanca\CAS-ZENITH-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\CAS-ZENITH-MCO\Température Ambiante.csv,Casablanca\CAS-ZENITH-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Etat CLIM A.csv,Casablanca\CASA-NU\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Etat CLIM B.csv,Casablanca\CASA-NU\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Etat CLIM C.csv,Casablanca\CASA-NU\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Etat CLIM D.csv,Casablanca\CASA-NU\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Etat Porte.csv,Casablanca\CASA-NU\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\P.Active CLIM.csv,Casablanca\CASA-NU\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\CASA-NU\P.Active Générale.csv,Casablanca\CASA-NU\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\CASA-NU\Température Ambiante.csv,Casablanca\CASA-NU\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\CASA-NU\Température Extérieure.csv,Casablanca\CASA-NU\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Etat CLIM A.csv,Casablanca\JAD-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Etat CLIM B.csv,Casablanca\JAD-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Etat CLIM C.csv,Casablanca\JAD-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Etat CLIM D.csv,Casablanca\JAD-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Etat Porte.csv,Casablanca\JAD-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\P.Active CLIM.csv,Casablanca\JAD-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\JAD-ONE\P.Active Générale.csv,Casablanca\JAD-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\JAD-ONE\Température Ambiante.csv,Casablanca\JAD-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\JAD-ONE\Température Extérieure.csv,Casablanca\JAD-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Etat CLIM A.csv,Casablanca\KHO-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Etat CLIM B.csv,Casablanca\KHO-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Etat CLIM C.csv,Casablanca\KHO-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Etat CLIM D.csv,Casablanca\KHO-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Etat Porte.csv,Casablanca\KHO-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\P.Active CLIM.csv,Casablanca\KHO-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\KHO-ONE\P.Active Générale.csv,Casablanca\KHO-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\KHO-ONE\Température Ambiante.csv,Casablanca\KHO-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\KHO-ONE\Température Extérieure.csv,Casablanca\KHO-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Etat CLIM A.csv,Casablanca\MOH-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Etat CLIM B.csv,Casablanca\MOH-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Etat CLIM C.csv,Casablanca\MOH-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Etat CLIM D.csv,Casablanca\MOH-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Etat Porte.csv,Casablanca\MOH-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\P.Active CLIM.csv,Casablanca\MOH-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\MOH-ONE\P.Active Générale.csv,Casablanca\MOH-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\MOH-ONE\Température Ambiante.csv,Casablanca\MOH-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\MOH-ONE\Température Extérieure.csv,Casablanca\MOH-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM A.csv,Casablanca\SAFI-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM B.csv,Casablanca\SAFI-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM C.csv,Casablanca\SAFI-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM D.csv,Casablanca\SAFI-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM E.csv,Casablanca\SAFI-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat CLIM F.csv,Casablanca\SAFI-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Etat Porte.csv,Casablanca\SAFI-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\P.Active CLIM.csv,Casablanca\SAFI-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SAFI-MCO\P.Active Générale.csv,Casablanca\SAFI-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SAFI-MCO\Température Ambiante.csv,Casablanca\SAFI-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-MCO\Température Extérieure.csv,Casablanca\SAFI-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Etat CLIM A.csv,Casablanca\SAFI-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Etat CLIM B.csv,Casablanca\SAFI-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Etat CLIM C.csv,Casablanca\SAFI-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Etat CLIM D.csv,Casablanca\SAFI-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Etat Porte.csv,Casablanca\SAFI-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\P.Active CLIM.csv,Casablanca\SAFI-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SAFI-ONE\P.Active Générale.csv,Casablanca\SAFI-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SAFI-ONE\Température Ambiante.csv,Casablanca\SAFI-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SAFI-ONE\Température Extérieure.csv,Casablanca\SAFI-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Etat CLIM A.csv,Casablanca\SETAT-ONCF\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Etat CLIM B.csv,Casablanca\SETAT-ONCF\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Etat CLIM C.csv,Casablanca\SETAT-ONCF\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Etat CLIM D.csv,Casablanca\SETAT-ONCF\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Etat Porte.csv,Casablanca\SETAT-ONCF\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\P.Active CLIM.csv,Casablanca\SETAT-ONCF\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SETAT-ONCF\P.Active Générale.csv,Casablanca\SETAT-ONCF\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\SETAT-ONCF\Température Ambiante.csv,Casablanca\SETAT-ONCF\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\SETAT-ONCF\Température Extérieure.csv,Casablanca\SETAT-ONCF\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Etat CLIM A.csv,Casablanca\TME-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Etat CLIM B.csv,Casablanca\TME-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Etat CLIM C.csv,Casablanca\TME-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Etat CLIM D.csv,Casablanca\TME-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Etat Porte.csv,Casablanca\TME-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\P.Active CLIM.csv,Casablanca\TME-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TME-ONE\P.Active Générale.csv,Casablanca\TME-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TME-ONE\Température Ambiante.csv,Casablanca\TME-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TME-ONE\Température Extérieure.csv,Casablanca\TME-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Etat CLIM A.csv,Casablanca\TZG-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Etat CLIM B.csv,Casablanca\TZG-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Etat CLIM C.csv,Casablanca\TZG-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Etat CLIM D.csv,Casablanca\TZG-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Etat Porte.csv,Casablanca\TZG-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\P.Active CLIM.csv,Casablanca\TZG-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TZG-ONE\P.Active Générale.csv,Casablanca\TZG-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TZG-ONE\Température Ambiante.csv,Casablanca\TZG-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZG-ONE\Température Extérieure.csv,Casablanca\TZG-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\Etat CLIM A.csv,Casablanca\TZR-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\Etat CLIM B.csv,Casablanca\TZR-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\Etat CLIM C.csv,Casablanca\TZR-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\Etat Porte.csv,Casablanca\TZR-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\P.Active CLIM.csv,Casablanca\TZR-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TZR-ONE\P.Active Générale.csv,Casablanca\TZR-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Casablanca\TZR-ONE\Température Ambiante.csv,Casablanca\TZR-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Casablanca\TZR-ONE\Température Extérieure.csv,Casablanca\TZR-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Etat CLIM A.csv,Laayoune\DAK-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Etat CLIM B.csv,Laayoune\DAK-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Etat CLIM C.csv,Laayoune\DAK-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Etat CLIM D.csv,Laayoune\DAK-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Etat Porte.csv,Laayoune\DAK-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\P.Active CLIM.csv,Laayoune\DAK-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\DAK-MCO\P.Active Générale.csv,Laayoune\DAK-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\DAK-MCO\Température Ambiante.csv,Laayoune\DAK-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-MCO\Température Extérieure.csv,Laayoune\DAK-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-ONE\Etat CLIM A.csv,Laayoune\DAK-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-ONE\Etat CLIM B.csv,Laayoune\DAK-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-ONE\Etat Porte.csv,Laayoune\DAK-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-ONE\P.Active CLIM.csv,Laayoune\DAK-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\DAK-ONE\P.Active Générale.csv,Laayoune\DAK-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\DAK-ONE\Température Ambiante.csv,Laayoune\DAK-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Laayoune\DAK-ONE\Température Extérieure.csv,Laayoune\DAK-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Etat CLIM A.csv,Laayoune\LAAY-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Etat CLIM B.csv,Laayoune\LAAY-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Etat CLIM C.csv,Laayoune\LAAY-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Etat CLIM D.csv,Laayoune\LAAY-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Etat Porte.csv,Laayoune\LAAY-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\P.Active CLIM.csv,Laayoune\LAAY-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\LAAY-MCO\P.Active Générale.csv,Laayoune\LAAY-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Laayoune\LAAY-MCO\Température Ambiante.csv,Laayoune\LAAY-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Laayoune\LAAY-MCO\Température Extérieure.csv,Laayoune\LAAY-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Etat CLIM A.csv,Marrakech\BGU-ONCF\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Etat CLIM B.csv,Marrakech\BGU-ONCF\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Etat CLIM C.csv,Marrakech\BGU-ONCF\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Etat Porte.csv,Marrakech\BGU-ONCF\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Température Ambiante.csv,Marrakech\BGU-ONCF\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONCF\Température Extérieure.csv,Marrakech\BGU-ONCF\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Etat CLIM A.csv,Marrakech\BGU-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Etat CLIM B.csv,Marrakech\BGU-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Etat CLIM C.csv,Marrakech\BGU-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Etat CLIM D.csv,Marrakech\BGU-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Etat Porte.csv,Marrakech\BGU-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\P.Active CLIM.csv,Marrakech\BGU-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\BGU-ONE\P.Active Générale.csv,Marrakech\BGU-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\BGU-ONE\Température Ambiante.csv,Marrakech\BGU-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\BGU-ONE\Température Extérieure.csv,Marrakech\BGU-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Etat CLIM A.csv,Marrakech\CHC-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Etat CLIM B.csv,Marrakech\CHC-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Etat CLIM C.csv,Marrakech\CHC-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Etat CLIM D.csv,Marrakech\CHC-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Etat Porte.csv,Marrakech\CHC-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\P.Active CLIM.csv,Marrakech\CHC-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\CHC-ONE\P.Active Générale.csv,Marrakech\CHC-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\CHC-ONE\Température Ambiante.csv,Marrakech\CHC-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\CHC-ONE\Température Extérieure.csv,Marrakech\CHC-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Etat CLIM A.csv,Marrakech\ESS-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Etat CLIM B.csv,Marrakech\ESS-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Etat CLIM C.csv,Marrakech\ESS-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Etat CLIM D.csv,Marrakech\ESS-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Etat Porte.csv,Marrakech\ESS-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\P.Active CLIM.csv,Marrakech\ESS-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\ESS-MCO\P.Active Générale.csv,Marrakech\ESS-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\ESS-MCO\Température Ambiante.csv,Marrakech\ESS-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\ESS-MCO\Température Extérieure.csv,Marrakech\ESS-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Etat CLIM A.csv,Marrakech\MAR-ONE01\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Etat CLIM B.csv,Marrakech\MAR-ONE01\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Etat CLIM C.csv,Marrakech\MAR-ONE01\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Etat CLIM D.csv,Marrakech\MAR-ONE01\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Etat Porte.csv,Marrakech\MAR-ONE01\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\P.Active CLIM.csv,Marrakech\MAR-ONE01\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\MAR-ONE01\P.Active Générale.csv,Marrakech\MAR-ONE01\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\MAR-ONE01\Température Ambiante.csv,Marrakech\MAR-ONE01\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE01\Température Extérieure.csv,Marrakech\MAR-ONE01\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Etat CLIM A.csv,Marrakech\MAR-ONE02\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Etat CLIM B.csv,Marrakech\MAR-ONE02\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Etat CLIM C.csv,Marrakech\MAR-ONE02\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Etat CLIM D.csv,Marrakech\MAR-ONE02\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Etat Porte.csv,Marrakech\MAR-ONE02\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\P.Active CLIM.csv,Marrakech\MAR-ONE02\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\MAR-ONE02\P.Active Générale.csv,Marrakech\MAR-ONE02\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\MAR-ONE02\Température Ambiante.csv,Marrakech\MAR-ONE02\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\MAR-ONE02\Température Extérieure.csv,Marrakech\MAR-ONE02\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Etat CLIM A.csv,Marrakech\OUA-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Etat CLIM B.csv,Marrakech\OUA-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Etat CLIM C.csv,Marrakech\OUA-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Etat CLIM D.csv,Marrakech\OUA-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Etat Porte.csv,Marrakech\OUA-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\P.Active CLIM.csv,Marrakech\OUA-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\OUA-ONE\P.Active Générale.csv,Marrakech\OUA-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Marrakech\OUA-ONE\Température Ambiante.csv,Marrakech\OUA-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Marrakech\OUA-ONE\Température Extérieure.csv,Marrakech\OUA-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\ALF-ONE\Etat CLIM A.csv,Meknès\ALF-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\ALF-ONE\Etat CLIM B.csv,Meknès\ALF-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\ALF-ONE\Etat Porte.csv,Meknès\ALF-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\ALF-ONE\P.Active CLIM.csv,Meknès\ALF-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\ALF-ONE\P.Active Générale.csv,Meknès\ALF-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\ALF-ONE\Température Ambiante.csv,Meknès\ALF-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\ALF-ONE\Température Extérieure.csv,Meknès\ALF-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\AZR-ONE\Etat CLIM A.csv,Meknès\AZR-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\AZR-ONE\Etat CLIM B.csv,Meknès\AZR-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\AZR-ONE\Etat Porte.csv,Meknès\AZR-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\AZR-ONE\P.Active CLIM.csv,Meknès\AZR-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\AZR-ONE\P.Active Générale.csv,Meknès\AZR-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\AZR-ONE\Température Ambiante.csv,Meknès\AZR-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\AZR-ONE\Température Extérieure.csv,Meknès\AZR-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM A.csv,Meknès\FEZ-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM B.csv,Meknès\FEZ-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM C.csv,Meknès\FEZ-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM D.csv,Meknès\FEZ-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM E.csv,Meknès\FEZ-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM F.csv,Meknès\FEZ-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM G.csv,Meknès\FEZ-MCO\Etat CLIM G.csv,Etat_CLIM_G,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat CLIM H.csv,Meknès\FEZ-MCO\Etat CLIM H.csv,Etat_CLIM_H,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Etat Porte.csv,Meknès\FEZ-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\P.Active CLIM.csv,Meknès\FEZ-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\FEZ-MCO\P.Active Générale.csv,Meknès\FEZ-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\FEZ-MCO\Température Ambiante.csv,Meknès\FEZ-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-MCO\Température Extérieure.csv,Meknès\FEZ-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-ONE\Etat CLIM A.csv,Meknès\FEZ-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-ONE\Etat CLIM B.csv,Meknès\FEZ-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-ONE\Etat Porte.csv,Meknès\FEZ-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-ONE\P.Active CLIM.csv,Meknès\FEZ-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\FEZ-ONE\P.Active Générale.csv,Meknès\FEZ-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\FEZ-ONE\Température Ambiante.csv,Meknès\FEZ-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\FEZ-ONE\Température Extérieure.csv,Meknès\FEZ-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\KMR-ONE\Etat CLIM A.csv,Meknès\KMR-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\KMR-ONE\Etat CLIM B.csv,Meknès\KMR-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\KMR-ONE\Etat Porte.csv,Meknès\KMR-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\KMR-ONE\P.Active CLIM.csv,Meknès\KMR-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\KMR-ONE\P.Active Générale.csv,Meknès\KMR-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\KMR-ONE\Température Ambiante.csv,Meknès\KMR-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\KMR-ONE\Température Extérieure.csv,Meknès\KMR-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM A.csv,Meknès\MEK-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM B.csv,Meknès\MEK-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM C.csv,Meknès\MEK-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM D.csv,Meknès\MEK-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM E.csv,Meknès\MEK-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM F.csv,Meknès\MEK-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat CLIM G.csv,Meknès\MEK-MCO\Etat CLIM G.csv,Etat_CLIM_G,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Etat Porte.csv,Meknès\MEK-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\P.Active CLIM.csv,Meknès\MEK-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\MEK-MCO\P.Active Générale.csv,Meknès\MEK-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\MEK-MCO\Température Ambiante.csv,Meknès\MEK-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-MCO\Température Extérieure.csv,Meknès\MEK-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Etat CLIM A.csv,Meknès\MEK-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Etat CLIM B.csv,Meknès\MEK-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Etat CLIM C.csv,Meknès\MEK-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Etat CLIM D.csv,Meknès\MEK-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Etat Porte.csv,Meknès\MEK-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\P.Active CLIM.csv,Meknès\MEK-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\MEK-ONE\P.Active Générale.csv,Meknès\MEK-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\MEK-ONE\Température Ambiante.csv,Meknès\MEK-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\MEK-ONE\Température Extérieure.csv,Meknès\MEK-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Meknès\OLI-ONE\Etat CLIM A.csv,Meknès\OLI-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Meknès\OLI-ONE\Etat CLIM B.csv,Meknès\OLI-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Meknès\OLI-ONE\Etat Porte.csv,Meknès\OLI-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Meknès\OLI-ONE\P.Active CLIM.csv,Meknès\OLI-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\OLI-ONE\P.Active Générale.csv,Meknès\OLI-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Meknès\OLI-ONE\Température Ambiante.csv,Meknès\OLI-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Meknès\OLI-ONE\Température Extérieure.csv,Meknès\OLI-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Etat CLIM A.csv,Oujda\AHO-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Etat CLIM B.csv,Oujda\AHO-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Etat CLIM C.csv,Oujda\AHO-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Etat CLIM D.csv,Oujda\AHO-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Etat Porte.csv,Oujda\AHO-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\P.Active CLIM.csv,Oujda\AHO-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\AHO-MCO\P.Active Générale.csv,Oujda\AHO-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\AHO-MCO\Température Ambiante.csv,Oujda\AHO-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\AHO-MCO\Température Extérieure.csv,Oujda\AHO-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Etat CLIM A.csv,Oujda\BOU-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Etat CLIM B.csv,Oujda\BOU-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Etat CLIM C.csv,Oujda\BOU-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Etat CLIM D.csv,Oujda\BOU-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Etat Porte.csv,Oujda\BOU-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\P.Active CLIM.csv,Oujda\BOU-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\BOU-ONE\P.Active Générale.csv,Oujda\BOU-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\BOU-ONE\Température Ambiante.csv,Oujda\BOU-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\BOU-ONE\Température Extérieure.csv,Oujda\BOU-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Etat CLIM A.csv,Oujda\BRK-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Etat CLIM B.csv,Oujda\BRK-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Etat CLIM C.csv,Oujda\BRK-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Etat CLIM D.csv,Oujda\BRK-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Etat Porte.csv,Oujda\BRK-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\P.Active CLIM.csv,Oujda\BRK-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\BRK-ONE\P.Active Générale.csv,Oujda\BRK-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\BRK-ONE\Température Ambiante.csv,Oujda\BRK-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\BRK-ONE\Température Extérieure.csv,Oujda\BRK-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Etat CLIM A.csv,Oujda\GRC-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Etat CLIM B.csv,Oujda\GRC-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Etat CLIM C.csv,Oujda\GRC-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Etat CLIM D.csv,Oujda\GRC-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Etat Porte.csv,Oujda\GRC-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\P.Active CLIM.csv,Oujda\GRC-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\GRC-ONE\P.Active Générale.csv,Oujda\GRC-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\GRC-ONE\Température Ambiante.csv,Oujda\GRC-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\GRC-ONE\Température Extérieure.csv,Oujda\GRC-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Etat CLIM A.csv,Oujda\NAD-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Etat CLIM B.csv,Oujda\NAD-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Etat CLIM C.csv,Oujda\NAD-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Etat CLIM D.csv,Oujda\NAD-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Etat Porte.csv,Oujda\NAD-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\P.Active CLIM.csv,Oujda\NAD-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\NAD-MCO\P.Active Générale.csv,Oujda\NAD-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\NAD-MCO\Température Ambiante.csv,Oujda\NAD-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-MCO\Température Extérieure.csv,Oujda\NAD-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Etat CLIM A.csv,Oujda\NAD-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Etat CLIM B.csv,Oujda\NAD-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Etat CLIM C.csv,Oujda\NAD-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Etat CLIM D.csv,Oujda\NAD-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Etat Porte.csv,Oujda\NAD-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\P.Active CLIM.csv,Oujda\NAD-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\NAD-ONE\P.Active Générale.csv,Oujda\NAD-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\NAD-ONE\Température Ambiante.csv,Oujda\NAD-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\NAD-ONE\Température Extérieure.csv,Oujda\NAD-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Etat CLIM A.csv,Oujda\OUJ-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Etat CLIM B.csv,Oujda\OUJ-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Etat CLIM C.csv,Oujda\OUJ-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Etat CLIM D.csv,Oujda\OUJ-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Etat Porte.csv,Oujda\OUJ-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\P.Active CLIM.csv,Oujda\OUJ-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\OUJ-MCO\P.Active Générale.csv,Oujda\OUJ-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\OUJ-MCO\Température Ambiante.csv,Oujda\OUJ-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-MCO\Température Extérieure.csv,Oujda\OUJ-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Etat CLIM A.csv,Oujda\OUJ-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Etat CLIM B.csv,Oujda\OUJ-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Etat CLIM C.csv,Oujda\OUJ-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Etat CLIM D.csv,Oujda\OUJ-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Etat Porte.csv,Oujda\OUJ-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\P.Active CLIM.csv,Oujda\OUJ-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\OUJ-ONE\P.Active Générale.csv,Oujda\OUJ-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Oujda\OUJ-ONE\Température Ambiante.csv,Oujda\OUJ-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Oujda\OUJ-ONE\Température Extérieure.csv,Oujda\OUJ-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM A.csv,Rabat\KEN-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM B.csv,Rabat\KEN-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM C.csv,Rabat\KEN-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM D.csv,Rabat\KEN-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM E.csv,Rabat\KEN-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat CLIM F.csv,Rabat\KEN-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Etat Porte.csv,Rabat\KEN-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\P.Active CLIM.csv,Rabat\KEN-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\KEN-MCO\P.Active Générale.csv,Rabat\KEN-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\KEN-MCO\Température Ambiante.csv,Rabat\KEN-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-MCO\Température Extérieure.csv,Rabat\KEN-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-ONE\Etat Porte.csv,Rabat\KEN-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-ONE\P.Active CLIM.csv,Rabat\KEN-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\KEN-ONE\P.Active Générale.csv,Rabat\KEN-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\KEN-ONE\Température Ambiante.csv,Rabat\KEN-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\KEN-ONE\Température Extérieure.csv,Rabat\KEN-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Etat CLIM A.csv,Rabat\RAB-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Etat CLIM B.csv,Rabat\RAB-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Etat CLIM C.csv,Rabat\RAB-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Etat CLIM D.csv,Rabat\RAB-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Etat Porte.csv,Rabat\RAB-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\P.Active CLIM.csv,Rabat\RAB-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\RAB-MCO\P.Active Générale.csv,Rabat\RAB-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\RAB-MCO\Température Ambiante.csv,Rabat\RAB-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-MCO\Température Extérieure.csv,Rabat\RAB-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-ONE\Etat Porte.csv,Rabat\RAB-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-ONE\P.Active CLIM.csv,Rabat\RAB-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\RAB-ONE\P.Active Générale.csv,Rabat\RAB-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\RAB-ONE\Température Ambiante.csv,Rabat\RAB-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\RAB-ONE\Température Extérieure.csv,Rabat\RAB-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\SEA-ONE\Etat Porte.csv,Rabat\SEA-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\SEA-ONE\P.Active CLIM.csv,Rabat\SEA-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\SEA-ONE\P.Active Générale.csv,Rabat\SEA-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\SEA-ONE\Température Ambiante.csv,Rabat\SEA-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\SEA-ONE\Température Extérieure.csv,Rabat\SEA-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\SIDI_SLIMANE-ONCF\Etat Porte.csv,Rabat\SIDI_SLIMANE-ONCF\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\SIDI_SLIMANE-ONCF\P.Active CLIM.csv,Rabat\SIDI_SLIMANE-ONCF\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\SIDI_SLIMANE-ONCF\P.Active Générale.csv,Rabat\SIDI_SLIMANE-ONCF\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\SIDI_SLIMANE-ONCF\Température Ambiante.csv,Rabat\SIDI_SLIMANE-ONCF\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\SIDI_SLIMANE-ONCF\Température Extérieure.csv,Rabat\SIDI_SLIMANE-ONCF\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\TIF-ONE\Etat Porte.csv,Rabat\TIF-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\TIF-ONE\P.Active CLIM.csv,Rabat\TIF-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\TIF-ONE\P.Active Générale.csv,Rabat\TIF-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\TIF-ONE\Température Ambiante.csv,Rabat\TIF-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\TIF-ONE\Température Extérieure.csv,Rabat\TIF-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Rabat\VSAT\Etat CLIM A.csv,Rabat\VSAT\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Rabat\VSAT\Etat CLIM B.csv,Rabat\VSAT\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Rabat\VSAT\Etat Porte.csv,Rabat\VSAT\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Rabat\VSAT\P.Active Générale.csv,Rabat\VSAT\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Rabat\VSAT\Température Ambiante.csv,Rabat\VSAT\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Rabat\VSAT\Température Extérieure.csv,Rabat\VSAT\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\Etat CLIM A.csv,Tanger\FAR-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\Etat CLIM B.csv,Tanger\FAR-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\Etat CLIM C.csv,Tanger\FAR-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\Etat Porte.csv,Tanger\FAR-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\P.Active CLIM.csv,Tanger\FAR-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\FAR-ONE\P.Active Générale.csv,Tanger\FAR-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\FAR-ONE\Température Ambiante.csv,Tanger\FAR-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\FAR-ONE\Température Extérieure.csv,Tanger\FAR-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Etat CLIM A.csv,Tanger\LAR-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Etat CLIM B.csv,Tanger\LAR-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Etat CLIM C.csv,Tanger\LAR-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Etat CLIM D.csv,Tanger\LAR-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Etat Porte.csv,Tanger\LAR-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\P.Active CLIM.csv,Tanger\LAR-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\LAR-MCO\P.Active Générale.csv,Tanger\LAR-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\LAR-MCO\Température Ambiante.csv,Tanger\LAR-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-MCO\Température Extérieure.csv,Tanger\LAR-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Etat CLIM A.csv,Tanger\LAR-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Etat CLIM B.csv,Tanger\LAR-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Etat CLIM C.csv,Tanger\LAR-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Etat CLIM D.csv,Tanger\LAR-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Etat Porte.csv,Tanger\LAR-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\P.Active CLIM.csv,Tanger\LAR-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\LAR-ONE\P.Active Générale.csv,Tanger\LAR-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\LAR-ONE\Température Ambiante.csv,Tanger\LAR-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\LAR-ONE\Température Extérieure.csv,Tanger\LAR-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\MEL-ONE\Etat CLIM A.csv,Tanger\MEL-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\MEL-ONE\Etat CLIM B.csv,Tanger\MEL-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\MEL-ONE\Etat Porte.csv,Tanger\MEL-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\MEL-ONE\P.Active CLIM.csv,Tanger\MEL-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\MEL-ONE\P.Active Générale.csv,Tanger\MEL-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\MEL-ONE\Température Ambiante.csv,Tanger\MEL-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\MEL-ONE\Température Extérieure.csv,Tanger\MEL-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM A.csv,Tanger\TAN-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM B.csv,Tanger\TAN-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM C.csv,Tanger\TAN-MCO\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM D.csv,Tanger\TAN-MCO\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM E.csv,Tanger\TAN-MCO\Etat CLIM E.csv,Etat_CLIM_E,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM F.csv,Tanger\TAN-MCO\Etat CLIM F.csv,Etat_CLIM_F,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM G.csv,Tanger\TAN-MCO\Etat CLIM G.csv,Etat_CLIM_G,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat CLIM H.csv,Tanger\TAN-MCO\Etat CLIM H.csv,Etat_CLIM_H,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Etat Porte.csv,Tanger\TAN-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\P.Active CLIM.csv,Tanger\TAN-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TAN-MCO\P.Active Générale.csv,Tanger\TAN-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TAN-MCO\Température Ambiante.csv,Tanger\TAN-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\TAN-MCO\Température Extérieure.csv,Tanger\TAN-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-MCO\Etat CLIM A.csv,Tanger\TET-MCO\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-MCO\Etat CLIM B.csv,Tanger\TET-MCO\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-MCO\Etat Porte.csv,Tanger\TET-MCO\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-MCO\P.Active CLIM.csv,Tanger\TET-MCO\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TET-MCO\P.Active Générale.csv,Tanger\TET-MCO\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TET-MCO\Température Ambiante.csv,Tanger\TET-MCO\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-MCO\Température Extérieure.csv,Tanger\TET-MCO\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Etat CLIM A.csv,Tanger\TET-ONE\Etat CLIM A.csv,Etat_CLIM_A,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Etat CLIM B.csv,Tanger\TET-ONE\Etat CLIM B.csv,Etat_CLIM_B,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Etat CLIM C.csv,Tanger\TET-ONE\Etat CLIM C.csv,Etat_CLIM_C,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Etat CLIM D.csv,Tanger\TET-ONE\Etat CLIM D.csv,Etat_CLIM_D,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Etat Porte.csv,Tanger\TET-ONE\Etat Porte.csv,Etat_Porte,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\P.Active CLIM.csv,Tanger\TET-ONE\P.Active CLIM.csv,P.Active_CLIM,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TET-ONE\P.Active Générale.csv,Tanger\TET-ONE\P.Active Générale.csv,P.Active_Générale,Timestamp;Trend Flags;Status;Value (kW)
+data\Tanger\TET-ONE\Température Ambiante.csv,Tanger\TET-ONE\Température Ambiante.csv,Température_Ambiante,Timestamp;Trend Flags;Status;Value
+data\Tanger\TET-ONE\Température Extérieure.csv,Tanger\TET-ONE\Température Extérieure.csv,Température_Extérieure,Timestamp;Trend Flags;Status;Value

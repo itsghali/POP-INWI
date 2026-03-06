@@ -1,0 +1,289 @@
+﻿history:GTC_Multisite_Inwi/Etat de la porte BEN_ONE
+
+Timestamp,Trend Flags,Status,Value
+19-Nov-24 12:44:37 AM WEST,{start},{ok},Fermé
+20-Nov-24 11:26:49 AM WEST,{ },{ok},Ouvert
+20-Nov-24 11:28:49 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+20-Nov-24 5:45:44 PM WEST,{ },{unackedAlarm},Fermé
+21-Nov-24 12:45:23 PM WEST,{ },{unackedAlarm},Ouvert
+21-Nov-24 12:47:23 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+21-Nov-24 6:15:55 PM WEST,{ },{unackedAlarm},Fermé
+21-Nov-24 6:15:56 PM WEST,{ },{unackedAlarm},Ouvert
+21-Nov-24 6:15:58 PM WEST,{ },{unackedAlarm},Fermé
+22-Nov-24 10:38:52 AM WEST,{ },{unackedAlarm},Ouvert
+22-Nov-24 10:40:52 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+22-Nov-24 4:52:09 PM WEST,{ },{unackedAlarm},Fermé
+22-Nov-24 5:18:23 PM WEST,{ },"{down,unackedAlarm}",Fermé
+22-Nov-24 5:23:28 PM WEST,{ },{unackedAlarm},Fermé
+22-Nov-24 5:23:28 PM WEST,{ },"{stale,unackedAlarm}",Ouvert
+22-Nov-24 5:23:33 PM WEST,{ },{unackedAlarm},Fermé
+25-Nov-24 12:03:06 PM WEST,{ },{unackedAlarm},Ouvert
+25-Nov-24 12:05:06 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Nov-24 12:24:38 PM WEST,{ },{unackedAlarm},Fermé
+04-Dec-24 11:32:35 AM WEST,{ },{unackedAlarm},Ouvert
+04-Dec-24 11:34:35 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+04-Dec-24 11:49:36 AM WEST,{ },"{down,alarm,unackedAlarm}",Ouvert
+04-Dec-24 4:33:22 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+04-Dec-24 4:33:22 PM WEST,{ },"{alarm,stale,unackedAlarm}",Ouvert
+04-Dec-24 4:33:24 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+04-Dec-24 6:15:11 PM WEST,{ },"{fault,alarm,unackedAlarm}",Ouvert
+04-Dec-24 6:15:34 PM WEST,{ },"{fault,down,alarm,unackedAlarm}",Ouvert
+04-Dec-24 6:20:34 PM WEST,{ },"{fault,alarm,unackedAlarm}",Ouvert
+04-Dec-24 7:00:20 PM WEST,{ },"{fault,down,alarm,unackedAlarm}",Ouvert
+04-Dec-24 7:05:26 PM WEST,{ },"{fault,alarm,unackedAlarm}",Ouvert
+10-Dec-24 11:34:06 AM WEST,{ },{unackedAlarm},Fermé
+18-Dec-24 11:24:16 AM WEST,{ },{unackedAlarm},Ouvert
+18-Dec-24 11:26:16 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+18-Dec-24 4:21:35 PM WEST,{ },{unackedAlarm},Fermé
+24-Dec-24 1:11:38 PM WEST,{ },{unackedAlarm},Ouvert
+24-Dec-24 1:13:39 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+24-Dec-24 1:27:18 PM WEST,{ },{unackedAlarm},Fermé
+26-Dec-24 12:03:04 PM WEST,{ },{unackedAlarm},Ouvert
+26-Dec-24 12:05:05 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+26-Dec-24 12:11:24 PM WEST,{ },{unackedAlarm},Fermé
+08-Jan-25 1:22:45 PM WEST,{ },{unackedAlarm},Ouvert
+08-Jan-25 1:24:46 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+08-Jan-25 3:09:25 PM WEST,{ },{unackedAlarm},Fermé
+08-Jan-25 3:17:55 PM WEST,{ },{unackedAlarm},Ouvert
+08-Jan-25 3:19:55 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+08-Jan-25 4:08:05 PM WEST,{ },{unackedAlarm},Fermé
+09-Jan-25 3:24:43 PM WEST,{ },{unackedAlarm},Ouvert
+09-Jan-25 3:26:43 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+09-Jan-25 3:30:43 PM WEST,{ },"{down,alarm,unackedAlarm}",Ouvert
+09-Jan-25 4:40:07 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+09-Jan-25 4:40:07 PM WEST,{ },"{alarm,stale,unackedAlarm}",Ouvert
+09-Jan-25 4:40:09 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+09-Jan-25 4:49:02 PM WEST,{ },"{fault,alarm,unackedAlarm}",Ouvert
+17-Jan-25 1:05:49 PM WEST,{start},"{fault,stale}",Ouvert
+24-Jan-25 4:04:07 PM WEST,{ },{unackedAlarm},Fermé
+28-Jan-25 4:53:16 PM WEST,{start},{unackedAlarm},Fermé
+29-Jan-25 9:27:30 AM WEST,{start},{unackedAlarm},Fermé
+30-Jan-25 10:07:54 PM WEST,{start},{unackedAlarm},Fermé
+04-Feb-25 12:44:45 PM WEST,{ },{ok},Fermé
+11-Feb-25 11:37:27 AM WEST,{start},{ok},Fermé
+12-Feb-25 2:26:00 AM WEST,{ },{down},Fermé
+12-Feb-25 2:58:25 AM WEST,{ },{ok},Fermé
+13-Feb-25 3:38:42 PM WEST,{start},{ok},Fermé
+13-Feb-25 4:42:35 PM WEST,{start},{ok},Fermé
+14-Feb-25 9:28:33 AM WEST,{start},{ok},Fermé
+20-Feb-25 8:58:50 AM WEST,{start},{ok},Fermé
+20-Feb-25 9:00:32 AM WEST,{start},{ok},Fermé
+20-Feb-25 9:09:56 AM WEST,{ },{ok},Ouvert
+20-Feb-25 9:11:56 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+20-Feb-25 11:11:08 AM WEST,{ },"{down,alarm,unackedAlarm}",Ouvert
+20-Feb-25 11:16:12 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+20-Feb-25 11:31:29 AM WEST,{ },"{down,alarm,unackedAlarm}",Ouvert
+20-Feb-25 11:36:40 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+20-Feb-25 3:09:30 PM WEST,{ },{unackedAlarm},Fermé
+28-Feb-25 1:52:56 AM WET,{ },"{down,unackedAlarm}",Fermé
+28-Feb-25 1:57:57 AM WET,{ },{unackedAlarm},Fermé
+01-Mar-25 9:47:47 AM WET,{ },{unackedAlarm},Ouvert
+01-Mar-25 9:49:47 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+01-Mar-25 6:19:33 PM WET,{ },{unackedAlarm},Fermé
+01-Mar-25 6:19:42 PM WET,{ },{unackedAlarm},Ouvert
+01-Mar-25 6:19:44 PM WET,{ },{unackedAlarm},Fermé
+01-Mar-25 6:19:48 PM WET,{ },{unackedAlarm},Ouvert
+01-Mar-25 6:21:48 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+01-Mar-25 6:22:42 PM WET,{ },{unackedAlarm},Fermé
+06-Mar-25 1:39:17 PM WET,{ },{unackedAlarm},Ouvert
+06-Mar-25 1:41:17 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+06-Mar-25 2:22:17 PM WET,{ },{unackedAlarm},Fermé
+07-Mar-25 12:03:16 AM WET,{ },{unackedAlarm},Ouvert
+07-Mar-25 12:05:16 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+07-Mar-25 12:33:14 AM WET,{ },{unackedAlarm},Fermé
+07-Mar-25 11:55:00 AM WET,{ },{unackedAlarm},Ouvert
+07-Mar-25 11:57:01 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+07-Mar-25 12:26:22 PM WET,{ },{unackedAlarm},Fermé
+11-Mar-25 3:48:33 PM WET,{ },{unackedAlarm},Ouvert
+11-Mar-25 3:50:34 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+11-Mar-25 4:20:22 PM WET,{ },{unackedAlarm},Fermé
+12-Mar-25 11:14:27 AM WET,{ },{unackedAlarm},Ouvert
+12-Mar-25 11:16:27 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+12-Mar-25 3:41:38 PM WET,{ },{unackedAlarm},Fermé
+14-Mar-25 9:04:07 AM WET,{ },{unackedAlarm},Ouvert
+14-Mar-25 9:06:07 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+14-Mar-25 10:17:05 AM WET,{ },{unackedAlarm},Fermé
+25-Mar-25 3:06:52 PM WET,{ },"{down,unackedAlarm}",Fermé
+25-Mar-25 3:38:46 PM WET,{ },{unackedAlarm},Fermé
+25-Mar-25 3:38:46 PM WET,{ },"{stale,unackedAlarm}",Ouvert
+25-Mar-25 3:38:48 PM WET,{ },{unackedAlarm},Ouvert
+25-Mar-25 3:40:48 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+25-Mar-25 3:50:32 PM WET,{ },{unackedAlarm},Fermé
+26-Mar-25 1:12:39 PM WET,{ },{unackedAlarm},Ouvert
+26-Mar-25 1:14:39 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+26-Mar-25 2:12:45 PM WET,{ },"{down,alarm,unackedAlarm}",Ouvert
+26-Mar-25 2:28:47 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+26-Mar-25 3:31:34 PM WET,{ },{unackedAlarm},Fermé
+27-Mar-25 11:10:15 AM WET,{ },{unackedAlarm},Ouvert
+27-Mar-25 11:12:16 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+27-Mar-25 4:22:33 PM WET,{ },{unackedAlarm},Fermé
+28-Mar-25 2:29:44 PM WET,{ },{unackedAlarm},Ouvert
+28-Mar-25 2:31:44 PM WET,{ },"{alarm,unackedAlarm}",Ouvert
+28-Mar-25 3:08:07 PM WET,{ },{unackedAlarm},Fermé
+04-Apr-25 11:08:52 AM WET,{ },{unackedAlarm},Ouvert
+04-Apr-25 11:10:52 AM WET,{ },"{alarm,unackedAlarm}",Ouvert
+04-Apr-25 6:31:50 PM WET,{ },{unackedAlarm},Fermé
+07-Apr-25 12:18:52 PM WEST,{ },{unackedAlarm},Ouvert
+07-Apr-25 12:20:52 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+07-Apr-25 5:43:50 PM WEST,{ },{unackedAlarm},Fermé
+09-Apr-25 11:46:15 AM WEST,{ },{unackedAlarm},Ouvert
+09-Apr-25 11:48:15 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+09-Apr-25 4:23:38 PM WEST,{start},"{alarm,unackedAlarm}",Ouvert
+09-Apr-25 4:47:41 PM WEST,{ },{unackedAlarm},Fermé
+10-Apr-25 8:55:47 PM WEST,{ },{unackedAlarm},Ouvert
+10-Apr-25 8:57:47 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+10-Apr-25 9:38:57 PM WEST,{ },{unackedAlarm},Fermé
+11-Apr-25 12:00:01 PM WEST,{ },{unackedAlarm},Ouvert
+11-Apr-25 12:02:01 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+11-Apr-25 12:38:42 PM WEST,{ },{unackedAlarm},Fermé
+11-Apr-25 4:07:17 PM WEST,{ },{unackedAlarm},Ouvert
+11-Apr-25 4:09:17 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+11-Apr-25 4:43:54 PM WEST,{ },{unackedAlarm},Fermé
+11-Apr-25 5:16:26 PM WEST,{ },{unackedAlarm},Ouvert
+11-Apr-25 5:18:26 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+11-Apr-25 5:23:25 PM WEST,{ },{unackedAlarm},Fermé
+13-Apr-25 8:05:42 PM WEST,{start},{unackedAlarm},Fermé
+15-Apr-25 3:50:16 PM WEST,{ },{unackedAlarm},Ouvert
+15-Apr-25 3:52:17 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+15-Apr-25 5:22:32 PM WEST,{ },{unackedAlarm},Fermé
+15-Apr-25 5:22:39 PM WEST,{ },{unackedAlarm},Ouvert
+15-Apr-25 5:22:40 PM WEST,{ },{unackedAlarm},Fermé
+15-Apr-25 5:56:08 PM WEST,{ },{unackedAlarm},Ouvert
+15-Apr-25 5:58:08 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+15-Apr-25 8:06:00 PM WEST,{ },{unackedAlarm},Fermé
+16-Apr-25 10:48:43 AM WEST,{ },{unackedAlarm},Ouvert
+16-Apr-25 10:50:44 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+16-Apr-25 11:58:57 AM WEST,{ },{unackedAlarm},Fermé
+16-Apr-25 2:19:05 PM WEST,{ },{unackedAlarm},Ouvert
+16-Apr-25 2:21:05 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+16-Apr-25 2:41:42 PM WEST,{ },{unackedAlarm},Fermé
+18-Apr-25 11:32:23 AM WEST,{ },{unackedAlarm},Ouvert
+18-Apr-25 11:34:23 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+18-Apr-25 1:08:12 PM WEST,{ },{unackedAlarm},Fermé
+22-Apr-25 11:24:13 AM WEST,{ },{unackedAlarm},Ouvert
+22-Apr-25 11:26:13 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+22-Apr-25 11:31:26 AM WEST,{ },{unackedAlarm},Fermé
+23-Apr-25 12:10:54 PM WEST,{start},{unackedAlarm},Fermé
+28-Apr-25 11:01:51 AM WEST,{ },{unackedAlarm},Ouvert
+28-Apr-25 11:03:51 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+28-Apr-25 2:17:00 PM WEST,{ },{unackedAlarm},Fermé
+28-Apr-25 2:17:22 PM WEST,{ },{unackedAlarm},Ouvert
+28-Apr-25 2:17:34 PM WEST,{ },{unackedAlarm},Fermé
+28-Apr-25 2:17:43 PM WEST,{ },{unackedAlarm},Ouvert
+28-Apr-25 2:17:59 PM WEST,{ },{unackedAlarm},Fermé
+28-Apr-25 2:18:10 PM WEST,{ },{unackedAlarm},Ouvert
+28-Apr-25 2:18:52 PM WEST,{ },{unackedAlarm},Fermé
+28-Apr-25 2:18:56 PM WEST,{ },{unackedAlarm},Ouvert
+28-Apr-25 2:20:25 PM WEST,{ },{unackedAlarm},Fermé
+29-Apr-25 10:13:22 AM WEST,{ },{unackedAlarm},Ouvert
+29-Apr-25 10:15:22 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+29-Apr-25 10:39:24 AM WEST,{ },{unackedAlarm},Fermé
+12-May-25 2:19:12 PM WEST,{ },{unackedAlarm},Ouvert
+12-May-25 2:21:12 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+12-May-25 2:43:11 PM WEST,{ },{unackedAlarm},Fermé
+20-May-25 9:01:32 AM WEST,{start},{unackedAlarm},Fermé
+28-May-25 1:35:33 AM WEST,{ },{unackedAlarm},Ouvert
+28-May-25 1:37:33 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+28-May-25 1:47:17 AM WEST,{ },{unackedAlarm},Fermé
+28-May-25 2:36:19 AM WEST,{ },"{down,unackedAlarm}",Fermé
+28-May-25 2:52:07 AM WEST,{ },{unackedAlarm},Fermé
+03-Jun-25 12:15:07 AM WEST,{ },{unackedAlarm},Ouvert
+03-Jun-25 12:17:08 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+03-Jun-25 12:44:57 AM WEST,{ },{unackedAlarm},Fermé
+12-Jun-25 11:10:52 AM WEST,{start},{unackedAlarm},Fermé
+12-Jun-25 12:16:54 PM WEST,{start},{unackedAlarm},Fermé
+12-Jun-25 12:26:50 PM WEST,{start},{unackedAlarm},Fermé
+12-Jun-25 12:29:23 PM WEST,{start},{unackedAlarm},Fermé
+17-Jun-25 10:45:17 AM WEST,{ },{unackedAlarm},Ouvert
+17-Jun-25 10:47:17 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+17-Jun-25 11:05:10 AM WEST,{ },{unackedAlarm},Fermé
+19-Jun-25 1:01:54 PM WEST,{ },"{down,unackedAlarm}",Fermé
+23-Jun-25 11:46:07 AM WEST,{start},"{down,stale}",Ouvert
+23-Jun-25 11:49:54 AM WEST,{ },{stale},Ouvert
+23-Jun-25 11:49:54 AM WEST,{ },{unackedAlarm},Fermé
+24-Jun-25 6:25:19 PM WEST,{ },{unackedAlarm},Ouvert
+24-Jun-25 6:25:41 PM WEST,{ },{unackedAlarm},Fermé
+24-Jun-25 6:51:43 PM WEST,{ },{unackedAlarm},Ouvert
+24-Jun-25 6:53:43 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+24-Jun-25 7:57:07 PM WEST,{ },{unackedAlarm},Fermé
+25-Jun-25 9:31:42 AM WEST,{start},{unackedAlarm},Fermé
+02-Jul-25 12:29:13 PM WEST,{start},{unackedAlarm},Fermé
+04-Jul-25 10:51:51 AM WEST,{ },{unackedAlarm},Ouvert
+04-Jul-25 10:53:51 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+04-Jul-25 5:12:25 PM WEST,{ },{unackedAlarm},Fermé
+09-Jul-25 3:49:23 PM WEST,{start},{unackedAlarm},Fermé
+09-Jul-25 5:30:36 PM WEST,{start},{unackedAlarm},Fermé
+15-Jul-25 2:54:37 PM WEST,{ },{unackedAlarm},Ouvert
+15-Jul-25 2:56:37 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+15-Jul-25 2:58:56 PM WEST,{ },{unackedAlarm},Fermé
+16-Jul-25 2:20:45 PM WEST,{start},{unackedAlarm},Fermé
+18-Jul-25 6:08:07 PM WEST,{ },{unackedAlarm},Ouvert
+18-Jul-25 6:10:07 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+18-Jul-25 6:19:42 PM WEST,{ },{unackedAlarm},Fermé
+23-Jul-25 4:31:11 PM WEST,{start},{unackedAlarm},Fermé
+23-Jul-25 4:41:37 PM WEST,{start},{unackedAlarm},Fermé
+05-Aug-25 9:30:41 AM WEST,{ },{unackedAlarm},Ouvert
+05-Aug-25 9:32:41 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+05-Aug-25 5:35:54 PM WEST,{ },{unackedAlarm},Fermé
+06-Aug-25 9:07:48 AM WEST,{ },{unackedAlarm},Ouvert
+06-Aug-25 9:09:48 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+06-Aug-25 5:02:34 PM WEST,{ },{unackedAlarm},Fermé
+08-Aug-25 9:14:11 AM WEST,{ },{unackedAlarm},Ouvert
+08-Aug-25 9:16:12 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+08-Aug-25 9:18:13 AM WEST,{ },{unackedAlarm},Fermé
+10-Aug-25 3:44:05 PM WEST,{start},{unackedAlarm},Fermé
+25-Aug-25 5:53:31 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 5:55:31 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 5:56:02 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 6:13:23 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 6:15:23 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 6:20:52 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 6:32:22 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 6:34:01 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 6:37:50 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 6:39:50 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 8:19:18 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 9:34:01 AM WEST,{start},{unackedAlarm},Fermé
+25-Aug-25 9:45:54 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 9:46:24 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 9:46:40 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 9:46:53 AM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 9:46:57 AM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 9:48:57 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 11:28:27 AM WEST,{start},"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 2:33:06 PM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 2:33:25 PM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 2:34:10 PM WEST,{ },{unackedAlarm},Fermé
+25-Aug-25 2:34:19 PM WEST,{ },{unackedAlarm},Ouvert
+25-Aug-25 2:36:19 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+25-Aug-25 2:54:20 PM WEST,{ },{unackedAlarm},Fermé
+27-Aug-25 9:02:31 AM WEST,{start},{unackedAlarm},Fermé
+28-Aug-25 10:31:55 AM WEST,{start},{unackedAlarm},Fermé
+01-Sep-25 5:27:03 PM WEST,{start},{unackedAlarm},Fermé
+02-Sep-25 9:07:21 AM WEST,{start},{unackedAlarm},Fermé
+15-Sep-25 11:53:59 PM WEST,{ },{unackedAlarm},Ouvert
+15-Sep-25 11:55:59 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+16-Sep-25 12:21:40 AM WEST,{ },{unackedAlarm},Fermé
+22-Sep-25 1:24:16 PM WEST,{start},{unackedAlarm},Fermé
+23-Sep-25 11:40:17 AM WEST,{start},{unackedAlarm},Fermé
+23-Sep-25 2:05:01 PM WEST,{ },{unackedAlarm},Ouvert
+23-Sep-25 2:07:01 PM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+23-Sep-25 2:28:31 PM WEST,{ },{unackedAlarm},Fermé
+27-Sep-25 7:47:57 PM WEST,{start},{unackedAlarm},Fermé
+30-Sep-25 12:22:18 PM WEST,{start},{unackedAlarm},Fermé
+10-Oct-25 12:03:39 PM WEST,{start},{unackedAlarm},Fermé
+13-Oct-25 9:14:15 AM WEST,{start},{unackedAlarm},Fermé
+14-Oct-25 10:07:03 AM WEST,{ },{unackedAlarm},Ouvert
+14-Oct-25 10:09:03 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+14-Oct-25 12:41:58 PM WEST,{ },{unackedAlarm},Fermé
+15-Oct-25 11:18:34 AM WEST,{start},{unackedAlarm},Fermé
+15-Oct-25 11:52:46 AM WEST,{start},{unackedAlarm},Fermé
+15-Oct-25 12:27:16 PM WEST,{start},{unackedAlarm},Fermé
+16-Oct-25 12:16:07 PM WEST,{start},{unackedAlarm},Fermé
+20-Oct-25 9:06:38 AM WEST,{start},{unackedAlarm},Fermé
+22-Oct-25 10:50:28 AM WEST,{ },{unackedAlarm},Ouvert
+22-Oct-25 10:52:28 AM WEST,{ },"{alarm,unackedAlarm}",Ouvert
+22-Oct-25 4:39:23 PM WEST,{ },{unackedAlarm},Fermé
+22-Oct-25 4:40:43 PM WEST,{ },{unackedAlarm},Ouvert
+22-Oct-25 4:41:01 PM WEST,{ },{unackedAlarm},Fermé
+22-Oct-25 6:19:54 PM WEST,{start},{unackedAlarm},Fermé
