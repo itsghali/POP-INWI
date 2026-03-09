@@ -52,13 +52,9 @@ st.set_page_config(
 # Obtenir la région et le POP sélectionnés
 selected_region, selected_pop = get_region_pop_selection(data_cleaner)
 
-# Force preloading at startup (auto-trigger)
-# This ensures all POPs are cached for fast navigation
-if 'preload_session_attempted' not in st.session_state:
-    st.session_state.preload_session_attempted = True
-    # Direct trigger - bypass the condition checks
-    if not st.session_state.get('preload_completed', False):
-        preload_all_pops(data_cleaner, load_data)
+
+# Préchargement systématique à chaque lancement
+preload_all_pops(data_cleaner, load_data)
 
 # Track POP changes for timing purposes - only for initial load
 if 'current_pop' not in st.session_state:

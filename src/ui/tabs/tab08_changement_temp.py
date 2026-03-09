@@ -10,6 +10,7 @@ import scipy.stats
 from src.analysis.exterior_cause import power_causes_ambient_spike, exterior_causes_ambient_spike
 
 
+
 def render_tab(filtered_merged_data, start_date, end_date):
     """
     Affiche l'analyse des changements de température et détection de pics.
