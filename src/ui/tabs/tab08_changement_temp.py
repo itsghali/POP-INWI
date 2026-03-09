@@ -44,8 +44,76 @@ def render_tab(filtered_merged_data, start_date, end_date):
             range_amplitude = global_max - global_min
             MIN_EXCURSION = max(0.5, range_amplitude * 0.1)
 
-            high_candidates = df[df['Temp_Ambiante'] > global_max + MIN_EXCURSION].copy()
-            low_candidates  = df[df['Temp_Ambiante'] < global_min - MIN_EXCURSION].copy()
+            # ----------------------------
+            # Sélecteur de mode seuils
+            # ----------------------------
+            st.subheader("⚙️ Mode de définition des seuils")
+            seuil_mode = st.selectbox(
+                "Choisir le mode de seuils :",
+                ["Automatique", "Manuel"],
+                index=0,
+                key="tab8_seuil_mode"
+            )
+
+            data_min = float(df['Temp_Ambiante'].min())
+            data_max = float(df['Temp_Ambiante'].max())
+
+            temp_min_disabled = (seuil_mode == "Automatique")
+            temp_max_disabled = (seuil_mode == "Automatique")
+
+            # Synchronisation des valeurs lors du changement de mode
+            if 'tab8_last_mode' not in st.session_state:
+                st.session_state['tab8_last_mode'] = seuil_mode
+
+            if st.session_state['tab8_last_mode'] != seuil_mode:
+                if seuil_mode == "Automatique":
+                    st.session_state['tab8_temp_min'] = round(global_min, 1)
+                    st.session_state['tab8_temp_max'] = round(global_max, 1)
+                else:
+                    st.session_state['tab8_temp_min'] = st.session_state.get('tab8_temp_min', round(global_min, 1))
+                    st.session_state['tab8_temp_max'] = st.session_state.get('tab8_temp_max', round(global_max, 1))
+                st.session_state['tab8_last_mode'] = seuil_mode
+
+            if seuil_mode == "Automatique":
+                temp_min_value = round(global_min, 1)
+                temp_max_value = round(global_max, 1)
+            else:
+                temp_min_value = st.session_state.get("tab8_temp_min", round(global_min, 1))
+                temp_max_value = st.session_state.get("tab8_temp_max", round(global_max, 1))
+
+            temp_min = st.number_input(
+                "Seuil Température Min (°C)",
+                min_value=data_min - 5,
+                max_value=data_max,
+                value=temp_min_value,
+                step=0.1,
+                key="tab8_temp_min",
+                disabled=temp_min_disabled
+            )
+            temp_max = st.number_input(
+                "Seuil Température Max (°C)",
+                min_value=data_min,
+                max_value=data_max + 5,
+                value=temp_max_value,
+                step=0.1,
+                key="tab8_temp_max",
+                disabled=temp_max_disabled
+            )
+
+            if temp_min >= temp_max:
+                st.error("Le seuil minimum doit être inférieur au seuil maximum.")
+                return
+
+            # Utilisation des seuils selon le mode
+            if seuil_mode == "Automatique":
+                seuil_max = global_max
+                seuil_min = global_min
+            else:
+                seuil_max = temp_max
+                seuil_min = temp_min
+
+            high_candidates = df[df['Temp_Ambiante'] > seuil_max + MIN_EXCURSION].copy()
+            low_candidates  = df[df['Temp_Ambiante'] < seuil_min - MIN_EXCURSION].copy()
 
             high_spikes_list = []
             if not high_candidates.empty:
@@ -432,8 +500,8 @@ def render_tab(filtered_merged_data, start_date, end_date):
             ))
             
             # Ajouter les seuils
-            fig1.add_hline(y=global_max, line=dict(color='red', width=1, dash='dash'), annotation_text=f"Seuil Max ({global_max:.1f}°C)", annotation_position="top left", annotation_font_size=10)
-            fig1.add_hline(y=global_min, line=dict(color='green', width=1, dash='dash'), annotation_text=f"Seuil Min ({global_min:.1f}°C)", annotation_position="bottom left", annotation_font_size=10)
+            fig1.add_hline(y=seuil_max, line=dict(color='red', width=1, dash='dash'), annotation_text=f"Seuil Max ({seuil_max:.1f}°C)", annotation_position="top left", annotation_font_size=10)
+            fig1.add_hline(y=seuil_min, line=dict(color='green', width=1, dash='dash'), annotation_text=f"Seuil Min ({seuil_min:.1f}°C)", annotation_position="bottom left", annotation_font_size=10)
             
             # Ajouter les marqueurs de Pics
             if not all_spikes_df.empty:
