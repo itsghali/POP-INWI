@@ -21,15 +21,11 @@ class DataCleaner:
         print(f"🔍 Chemin absolu du dossier data : {self.data_dir}")
         
     def get_regions(self):
-        """Retourne la liste des régions disponibles"""
-        if self.db_path.exists():
-            return self._get_regions_from_db()
+        """Retourne la liste des régions disponibles (FORCÉ: dossiers/fichiers, ignore la DB)"""
         return [d.name for d in self.data_dir.iterdir() if d.is_dir()]
-    
+
     def get_pops(self, region):
-        """Retourne la liste des POPs disponibles pour une région donnée"""
-        if self.db_path.exists():
-            return self._get_pops_from_db(region)
+        """Retourne la liste des POPs disponibles pour une région donnée (FORCÉ: dossiers/fichiers, ignore la DB)"""
         region_path = self.data_dir / region
         if not region_path.exists():
             return []

@@ -314,22 +314,22 @@ def render_tab(filtered_merged_data, start_date, end_date):
         # boutons rapides
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            if st.button("🌡️ Toutes Températures", key="tab8_all_temp"):
+            if st.button("🌡️ Toutes Températures", key="tab14_all_temp"):
                 st.session_state['selected_metrics'] = [c for c in available_cols if 'Temp' in c]
         with col2:
-            if st.button("⚡ Toutes Puissances", key="tab8_all_power"):
+            if st.button("⚡ Toutes Puissances", key="tab14_all_power"):
                 st.session_state['selected_metrics'] = [c for c in available_cols if 'Puissance' in c]
         with col3:
-            if st.button("❄️ Tous CLIMs", key="tab8_all_clims"):
+            if st.button("❄️ Tous CLIMs", key="tab14_all_clims"):
                 st.session_state['selected_metrics'] = [c for c in available_cols if 'CLIM' in c and 'Status' in c]
         with col4:
-            if st.button("📊 Tout Sélectionner", key="tab8_select_all"):
+            if st.button("📊 Tout Sélectionner", key="tab14_select_all"):
                 st.session_state['selected_metrics'] = available_cols
 
         selected_metrics = st.multiselect(
             "Sélectionner les données à afficher:",
             available_cols,
-            key="metrics_selector_tab8",
+            key="metrics_selector_tab14",
             default=st.session_state.get(
                 'selected_metrics',
                 ['Temp_Ambiante', 'Temp_Exterieure', 'Puissance_IT'] if all(col in available_cols for col in ['Temp_Ambiante', 'Temp_Exterieure', 'Puissance_IT']) else available_cols[:3]
@@ -390,13 +390,137 @@ def render_tab(filtered_merged_data, start_date, end_date):
         has_temp = any('Temp' in m for m in selected_metrics)
         has_power = any('Puissance' in m for m in selected_metrics)
         
+
+        # ----------------------------
+        # 1) Seuils personnalisables
+        # ----------------------------
+        data_min = float(df['Temp_Ambiante'].min())
+        data_max = float(df['Temp_Ambiante'].max())
+
+        default_min = round(data_min, 1)
+        default_max = round(data_max, 1)
+
+        st.subheader("⚙️ Seuils personnalisables")
+        col1, col2 = st.columns(2)
+
+        with col1:
+            temp_min = st.number_input(
+                "Seuil Température Min (°C)",
+                min_value=data_min - 5,
+                max_value=data_max,
+                value=default_min,
+                step=0.1,
+                key="tab14_temp_min"
+            )
+
+        with col2:
+            temp_max = st.number_input(
+                "Seuil Température Max (°C)",
+                min_value=data_min,
+                max_value=data_max + 5,
+                value=default_max,
+                step=0.1,
+                key="tab14_temp_max"
+            )
+
+        if temp_min >= temp_max:
+            st.error("Le seuil minimum doit être inférieur au seuil maximum.")
+            return
+
+        global_min = temp_min
+        global_max = temp_max
+        MIN_EXCURSION = 0
+
         # Option d'affichage pour les données binaires
         binary_display = st.selectbox(
             "Affichage binaires:",
             ["Superposées transparentes", "Séparées classiques"],
-            key="tab8_binary_display",
+            key="tab14_binary_display",
             help="Superposées: données binaires empilées avec transparence. Séparées: affichage classique."
         )
+
+
+        # Détection des pics basée sur les seuils personnalisés
+        high_candidates = df[df['Temp_Ambiante'] > temp_max].copy()
+        low_candidates = df[df['Temp_Ambiante'] < temp_min].copy()
+
+        high_spikes_list = []
+        if not high_candidates.empty:
+            high_candidates = high_candidates.sort_values('Timestamp')
+            high_candidates['gap'] = high_candidates['Timestamp'].diff() > pd.Timedelta(minutes=30)
+            high_candidates['cluster'] = high_candidates['gap'].cumsum()
+            for _, cluster in high_candidates.groupby('cluster'):
+                start_time = cluster['Timestamp'].min()
+                end_time = cluster['Timestamp'].max()
+                peak_row = cluster.loc[cluster['Temp_Ambiante'].idxmax()]
+                duration = (end_time - start_time).total_seconds() / 60
+                if duration == 0:
+                    start_time = peak_row['Timestamp'] - pd.Timedelta(hours=1)
+                context = df[(df['Timestamp'] >= peak_row['Timestamp'] - pd.Timedelta(hours=1)) & (df['Timestamp'] <= peak_row['Timestamp'] + pd.Timedelta(minutes=20))]
+                causes = []
+                # 1. Condition : Porte ouverte
+                if 'Porte_Status' in df.columns:
+                    door_context = df[(df['Timestamp'] >= start_time - pd.Timedelta(hours=1)) & (df['Timestamp'] <= start_time + pd.Timedelta(minutes=20))]
+                    if not door_context.empty and door_context['Porte_Status'].mean() > 0.05:
+                        causes.append("Porte ouverte")
+                # 4. Condition : Toutes les CLIMs éteintes
+                clim_cols = [col for col in df.columns if 'CLIM_' in col and '_Status' in col]
+                clim_cols_in_context = [col for col in clim_cols if col in context.columns]
+                if clim_cols_in_context:
+                    offline = [col.replace('_Status','').replace('CLIM_','CLIM ') for col in clim_cols_in_context if (context[col] == 0).all()]
+                    if len(offline) == len(clim_cols_in_context):
+                        causes.append("Toutes les clims éteintes")
+                high_spikes_list.append({
+                    'spike_time': peak_row['Timestamp'],
+                    'start_time': start_time,
+                    'end_time': end_time,
+                    'spike_temp': peak_row['Temp_Ambiante'],
+                    'duration_min': duration,
+                    'range_max': temp_max,
+                    'excursion': peak_row['Temp_Ambiante'] - temp_max,
+                    'type': 'Haut',
+                    'causes': causes
+                })
+
+        low_spikes_list = []
+        if not low_candidates.empty:
+            low_candidates = low_candidates.sort_values('Timestamp')
+            low_candidates['gap'] = low_candidates['Timestamp'].diff() > pd.Timedelta(minutes=30)
+            low_candidates['cluster'] = low_candidates['gap'].cumsum()
+            for _, cluster in low_candidates.groupby('cluster'):
+                start_time = cluster['Timestamp'].min()
+                end_time = cluster['Timestamp'].max()
+                peak_row = cluster.loc[cluster['Temp_Ambiante'].idxmin()]
+                duration = (end_time - start_time).total_seconds() / 60
+                if duration == 0:
+                    start_time = peak_row['Timestamp'] - pd.Timedelta(hours=1)
+                context = df[(df['Timestamp'] >= peak_row['Timestamp'] - pd.Timedelta(hours=1)) & (df['Timestamp'] <= peak_row['Timestamp'] + pd.Timedelta(minutes=20))]
+                causes = []
+                if 'Porte_Status' in df.columns:
+                    door_context = df[(df['Timestamp'] >= start_time - pd.Timedelta(minutes=5)) & (df['Timestamp'] <= start_time + pd.Timedelta(minutes=5))]
+                    if not door_context.empty and door_context['Porte_Status'].mean() > 0.05:
+                        causes.append("Porte ouverte")
+                clim_cols = [col for col in df.columns if 'CLIM_' in col and '_Status' in col]
+                clim_cols_in_context = [col for col in clim_cols if col in context.columns]
+                if clim_cols_in_context:
+                    offline = [col.replace('_Status','').replace('CLIM_','CLIM ') for col in clim_cols_in_context if (context[col] == 0).all()]
+                    if len(offline) == len(clim_cols_in_context):
+                        causes.append("Toutes les clims éteintes")
+                low_spikes_list.append({
+                    'spike_time': peak_row['Timestamp'],
+                    'start_time': start_time,
+                    'end_time': end_time,
+                    'spike_temp': peak_row['Temp_Ambiante'],
+                    'duration_min': duration,
+                    'range_min': temp_min,
+                    'excursion': temp_min - peak_row['Temp_Ambiante'],
+                    'type': 'Bas',
+                    'causes': causes
+                })
+
+        high_spikes_df = pd.DataFrame(high_spikes_list)
+        low_spikes_df  = pd.DataFrame(low_spikes_list)
+        all_spikes_df = pd.concat([high_spikes_df, low_spikes_df], ignore_index=True) if not high_spikes_df.empty or not low_spikes_df.empty else pd.DataFrame()
 
         # NOUVEAU : Sélecteur de pic individuel
         if not all_spikes_df.empty:
@@ -408,7 +532,8 @@ def render_tab(filtered_merged_data, start_date, end_date):
             selected_peak_label = st.selectbox(
                 "Mettre en évidence un pic précis (les autres seront masqués)",
                 options=["Tous les pics"] + all_spikes_df['label'].tolist(),
-                index=0
+                index=0,
+                key="tab14_peak_selector_main"
             )
         else:
             selected_peak_label = "Tous les pics"
@@ -433,7 +558,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
             
             # Ajouter les seuils
             fig1.add_hline(y=global_max, line=dict(color='red', width=1, dash='dash'), annotation_text=f"Seuil Max ({global_max:.1f}°C)", annotation_position="top left", annotation_font_size=10)
-            fig1.add_hline(y=global_min, line=dict(color='green', width=1, dash='dash'), annotation_text=f"Seuil Min ({global_min:.1f}°C)", annotation_position="bottom left", annotation_font_size=10)
+            fig1.add_hline(y=temp_min, line=dict(color='green', width=1, dash='dash'), annotation_text=f"Seuil Min ({temp_min:.1f}°C)", annotation_position="bottom left", annotation_font_size=10)
             
             # Ajouter les marqueurs de Pics
             if not all_spikes_df.empty:
@@ -474,7 +599,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
             height=400, hovermode='x unified',
             legend=dict(orientation="h", yanchor="top", y=1.5, xanchor="left", x=0)
         )
-        st.plotly_chart(fig1, width='stretch', key="tab8_main_overview_chart")
+        st.plotly_chart(fig1, width='stretch', key="tab14_main_overview_chart")
         
 
         
@@ -527,8 +652,8 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 if 'Temp_Ambiante' in selected_metrics:
                     fig.add_hline(y=global_max, line=dict(color='red', width=2, dash='dash'),
                                 annotation_text=f"Seuil Max ({global_max:.1f}°C)", annotation_position="top left")
-                    fig.add_hline(y=global_min, line=dict(color='green', width=2, dash='dash'),
-                                annotation_text=f"Seuil Min ({global_min:.1f}°C)", annotation_position="bottom left")
+                    fig.add_hline(y=temp_min, line=dict(color='green', width=2, dash='dash'),
+                                annotation_text=f"Seuil Min ({temp_min:.1f}°C)", annotation_position="bottom left")
 
 
 
@@ -736,7 +861,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                     'modeBarButtonsToAdd': ['drawline', 'drawopenpath', 'drawclosedpath', 'drawcircle', 'drawrect', 'eraseshape'],
                     'toImageButtonOptions': {'format': 'png', 'filename': 'evolution_temporelle', 'height':700, 'width':1200, 'scale':2}
                 }
-                st.plotly_chart(fig, width='stretch', config=config, key="tab8_main_chart")
+                st.plotly_chart(fig, width='stretch', config=config, key="tab14_main_chart")
 
                 st.markdown("##### ⚠️ Causes potentielles identifiées:")
                 if selected_row['causes']:
@@ -933,4 +1058,3 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 st.info("Veuillez sélectionner au moins une métrique à afficher.")
     else:
         st.warning("Aucune donnée disponible pour la période sélectionnée.")
-
