@@ -61,19 +61,24 @@ def render_tab(filtered_merged_data, start_date, end_date):
             temp_min_disabled = (seuil_mode == "Automatique")
             temp_max_disabled = (seuil_mode == "Automatique")
 
+
             # Synchronisation des valeurs lors du changement de mode
             if 'tab8_last_mode' not in st.session_state:
                 st.session_state['tab8_last_mode'] = seuil_mode
+            mode_changed = st.session_state['tab8_last_mode'] != seuil_mode
 
-            if st.session_state['tab8_last_mode'] != seuil_mode:
+            # Mise à jour des valeurs affichées dans les champs lors du changement de mode
+            if mode_changed:
                 if seuil_mode == "Automatique":
                     st.session_state['tab8_temp_min'] = round(global_min, 1)
                     st.session_state['tab8_temp_max'] = round(global_max, 1)
                 else:
+                    # En mode manuel, on garde les valeurs précédentes ou on initialise avec les seuils auto
                     st.session_state['tab8_temp_min'] = st.session_state.get('tab8_temp_min', round(global_min, 1))
                     st.session_state['tab8_temp_max'] = st.session_state.get('tab8_temp_max', round(global_max, 1))
                 st.session_state['tab8_last_mode'] = seuil_mode
 
+            # Les valeurs affichées dans les champs doivent toujours refléter le mode
             if seuil_mode == "Automatique":
                 temp_min_value = round(global_min, 1)
                 temp_max_value = round(global_max, 1)
@@ -81,13 +86,17 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 temp_min_value = st.session_state.get("tab8_temp_min", round(global_min, 1))
                 temp_max_value = st.session_state.get("tab8_temp_max", round(global_max, 1))
 
+            # Pour forcer la mise à jour visuelle lors du changement de mode, on utilise key dynamiques
+            temp_min_key = f"tab8_temp_min_{seuil_mode}"
+            temp_max_key = f"tab8_temp_max_{seuil_mode}"
+
             temp_min = st.number_input(
                 "Seuil Température Min (°C)",
                 min_value=data_min - 5,
                 max_value=data_max,
                 value=temp_min_value,
                 step=0.1,
-                key="tab8_temp_min",
+                key=temp_min_key,
                 disabled=temp_min_disabled
             )
             temp_max = st.number_input(
@@ -96,9 +105,14 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 max_value=data_max + 5,
                 value=temp_max_value,
                 step=0.1,
-                key="tab8_temp_max",
+                key=temp_max_key,
                 disabled=temp_max_disabled
             )
+
+            # Synchronisation des valeurs manuelles dans session_state
+            if seuil_mode == "Manuel":
+                st.session_state['tab8_temp_min'] = temp_min
+                st.session_state['tab8_temp_max'] = temp_max
 
             if temp_min >= temp_max:
                 st.error("Le seuil minimum doit être inférieur au seuil maximum.")
@@ -593,10 +607,10 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 # --- FIN DU BLOC 2 ---
                 
                 if 'Temp_Ambiante' in selected_metrics:
-                    fig.add_hline(y=global_max, line=dict(color='red', width=2, dash='dash'),
-                                annotation_text=f"Seuil Max ({global_max:.1f}°C)", annotation_position="top left")
-                    fig.add_hline(y=global_min, line=dict(color='green', width=2, dash='dash'),
-                                annotation_text=f"Seuil Min ({global_min:.1f}°C)", annotation_position="bottom left")
+                    fig.add_hline(y=seuil_max, line=dict(color='red', width=2, dash='dash'),
+                                annotation_text=f"Seuil Max ({seuil_max:.1f}°C)", annotation_position="top left")
+                    fig.add_hline(y=seuil_min, line=dict(color='green', width=2, dash='dash'),
+                                annotation_text=f"Seuil Min ({seuil_min:.1f}°C)", annotation_position="bottom left")
 
 
 

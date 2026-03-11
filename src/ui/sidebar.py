@@ -24,6 +24,116 @@ def get_region_pop_selection(data_cleaner):
     # Performance options section (restored to original position)
     st.sidebar.markdown("---")
     st.sidebar.markdown("### ⚙️ Cache & Performance")
+
+    # --- Affichage de la progression du préchargement en haut de la sidebar ---
+    if not st.session_state.get('preload_completed', False):
+        st.sidebar.markdown("### 🚀 Initialisation du système")
+        if not st.session_state.get('preload_started', False):
+            # Lancer le préchargement (en mode non-bloquant pour l'UI)
+            st.session_state.preload_started = True
+            regions = data_cleaner.get_regions()
+            all_pops_list = []
+            for region in regions:
+                pops = data_cleaner.get_pops(region)
+                for pop in pops:
+                    all_pops_list.append((region, pop))
+            st.session_state.total_pops_to_load = len(all_pops_list)
+            st.session_state.loaded_pops_count = 0
+            st.session_state._preload_pops_list = all_pops_list
+            st.session_state._preload_idx = 0
+            st.session_state._preload_success = 0
+            st.session_state._preload_fail = 0
+        # Afficher la progression
+        total = st.session_state.get('total_pops_to_load', 1)
+        loaded = st.session_state.get('loaded_pops_count', 0)
+        progress = loaded / max(1, total)
+        st.sidebar.info(f"🔄 Chargement de {total} POPs pour une navigation rapide...")
+        st.sidebar.progress(progress)
+        if 'current_preload_status' in st.session_state:
+            st.sidebar.text(st.session_state['current_preload_status'])
+
+        # Bouton Terminer préchargement toujours visible pendant le préchargement
+        if st.sidebar.button("⏩ Terminer préchargement", help="Force la fin du préchargement et continue à partir du dernier POP chargé."):
+            idx = st.session_state.get('_preload_idx', 0)
+            if idx < total:
+                try:
+                    from src.core.data_loader import load_data
+                    for i in range(idx, total):
+                        region, pop = st.session_state._preload_pops_list[i]
+                        cleaned_data, merged_data = load_data(region, pop, silent=True)
+                        if merged_data is not None and not merged_data.empty:
+                            pop_id = f"{region}_{pop}"
+                            merged_data_copy = merged_data.copy()
+                            merged_data_copy['Region'] = region
+                            merged_data_copy['POP'] = pop
+                            merged_data_copy['POP_ID'] = pop_id
+                            st.session_state.multi_pop_cache[pop_id] = merged_data_copy
+                            st.session_state._preload_success += 1
+                        else:
+                            st.session_state._preload_fail += 1
+                        st.session_state.loaded_pops_count += 1
+                        st.session_state._preload_idx += 1
+                except Exception:
+                    pass
+            st.session_state.preload_completed = True
+            for k in ['_preload_pops_list', '_preload_idx', '_preload_success', '_preload_fail', 'current_preload_status']:
+                if k in st.session_state:
+                    del st.session_state[k]
+            st.rerun()
+
+        # Effectuer un pas de préchargement à chaque run
+        if st.session_state.get('_preload_idx', 0) < st.session_state.get('total_pops_to_load', 0):
+            idx = st.session_state._preload_idx
+            region, pop = st.session_state._preload_pops_list[idx]
+            st.session_state['current_preload_status'] = f"Chargement {region}/{pop} ({idx+1}/{total})...  Running load_data(...)"
+            try:
+                from src.core.data_loader import load_data
+                cleaned_data, merged_data = load_data(region, pop, silent=True)
+                if merged_data is not None and not merged_data.empty:
+                    pop_id = f"{region}_{pop}"
+                    merged_data_copy = merged_data.copy()
+                    merged_data_copy['Region'] = region
+                    merged_data_copy['POP'] = pop
+                    merged_data_copy['POP_ID'] = pop_id
+                    st.session_state.multi_pop_cache[pop_id] = merged_data_copy
+                    st.session_state._preload_success += 1
+                else:
+                    st.session_state._preload_fail += 1
+            except Exception:
+                st.session_state._preload_fail += 1
+            st.session_state.loaded_pops_count += 1
+            st.session_state._preload_idx += 1
+            # Forcer le rerun pour continuer le chargement
+            st.rerun()
+        else:
+            st.session_state.preload_completed = True
+            nb_success = st.session_state.get('_preload_success', 0)
+            nb_fail = st.session_state.get('_preload_fail', 0)
+            st.sidebar.markdown(f"""
+            ✅ **Préchargement terminé!**
+            - ✅ {nb_success} POPs chargés avec succès
+            - ❌ {nb_fail} POPs vides ou échoués
+            - 🚀 **Navigation instantanée activée!**
+            👆 Vous pouvez maintenant changer de POP rapidement dans la barre latérale!
+            """)
+            # Nettoyage des variables temporaires
+            for k in ['_preload_pops_list', '_preload_idx', '_preload_success', '_preload_fail', 'current_preload_status']:
+                if k in st.session_state:
+                    del st.session_state[k]
+    """
+    Gère la sélection de la région et du POP dans la barre latérale 
+    avec indicateurs de disponibilité des données
+    
+    Args:
+        data_cleaner: Instance de DataCleaner
+        
+    Returns:
+        tuple: (selected_region, selected_pop)
+    """
+    period_selector.ensure_initialized()
+    
+    # Performance options section (restored to original position)
+    st.sidebar.markdown("---")
     
     # Initialize preloading preference - ALWAYS enabled automatically
     if 'preload_enabled' not in st.session_state:
@@ -38,7 +148,6 @@ def get_region_pop_selection(data_cleaner):
     # Show preloading status (informational only - no user control)
     if st.session_state.get('preload_completed', False):
         total_pops = st.session_state.get('loaded_pops_count', 0)
-        st.sidebar.success(f"✅ {total_pops} POPs préchargés")
     elif st.session_state.get('preload_started', False):
         progress = st.session_state.get('preload_progress', 0)
         st.sidebar.info(f"🔄 Chargement en cours... {int(progress*100)}%")
@@ -61,14 +170,49 @@ def get_region_pop_selection(data_cleaner):
         # Clear Streamlit's @st.cache_data
         st.cache_data.clear()
         st.sidebar.success("✅ Cache vidé! Actualisez de nouveau si nécessaire.")
+
+    # Bouton Terminer préchargement (visible uniquement si préchargement en cours)
+    if not st.session_state.get('preload_completed', False) and st.session_state.get('preload_started', False):
+        if st.sidebar.button("⏩ Terminer préchargement", help="Force la fin du préchargement et continue à partir du dernier POP chargé."):
+            # On saute directement à la fin du préchargement, mais on ne recommence pas depuis zéro
+            # On continue à partir de l'index courant
+            total = st.session_state.get('total_pops_to_load', 0)
+            idx = st.session_state.get('_preload_idx', 0)
+            if idx < total:
+                # On boucle sur les POPs restants pour finir le préchargement rapidement
+                try:
+                    from src.core.data_loader import load_data
+                    for i in range(idx, total):
+                        region, pop = st.session_state._preload_pops_list[i]
+                        cleaned_data, merged_data = load_data(region, pop, silent=True)
+                        if merged_data is not None and not merged_data.empty:
+                            pop_id = f"{region}_{pop}"
+                            merged_data_copy = merged_data.copy()
+                            merged_data_copy['Region'] = region
+                            merged_data_copy['POP'] = pop
+                            merged_data_copy['POP_ID'] = pop_id
+                            st.session_state.multi_pop_cache[pop_id] = merged_data_copy
+                            st.session_state._preload_success += 1
+                        else:
+                            st.session_state._preload_fail += 1
+                        st.session_state.loaded_pops_count += 1
+                        st.session_state._preload_idx += 1
+                except Exception:
+                    pass
+            st.session_state.preload_completed = True
+            # Nettoyage des variables temporaires
+            for k in ['_preload_pops_list', '_preload_idx', '_preload_success', '_preload_fail', 'current_preload_status']:
+                if k in st.session_state:
+                    del st.session_state[k]
+            st.rerun()
     
     # Show preloading status in sidebar
     if st.session_state.preload_enabled:
         if 'preload_completed' in st.session_state:
             if st.session_state.get('preload_completed', False):
-                st.sidebar.success("🚀 Navigation rapide activée!")
+                print("")
                 if 'loaded_pops_count' in st.session_state and st.session_state.loaded_pops_count > 0:
-                    st.sidebar.info(f"💾 {st.session_state.loaded_pops_count} POPs en cache")
+                    st.sidebar.info(f"")
             elif st.session_state.get('preload_started', False):
                 # Check if preloading might be stuck (no progress for too long)
                 current_time = time.time()
@@ -151,9 +295,6 @@ def get_region_pop_selection(data_cleaner):
     # Extraire le nom réel du POP (sans l'indicateur)
     selected_pop = selected_pop_display.split(' ', 1)[1].split(' (')[0]
     
-    # Display loading message BEFORE period selector
-    st.sidebar.markdown("---")
-    st.sidebar.markdown(f"### 🎯 Début du chargement: {selected_region}/{selected_pop}")
     
     # Render period selector AFTER loading message
     st.sidebar.markdown("---")

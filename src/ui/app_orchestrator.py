@@ -12,16 +12,13 @@ from .tabs.tab02_analyse_temporelle import render_tab as render_analyse_temporel
 from .tabs.tab03_analyses_eda import render_tab as render_analyses_eda
 from .tabs.tab04_analyse_clim import render_tab as render_analyse_clim
 from .tabs.tab05_analyse_porte import render_tab as render_analyse_porte
-from .tabs.tab06_incident_lens import render_tab as render_incident_lens_tab
 from .tabs.tab07_correlations import render_tab as render_correlations
 from .tabs.tab08_changement_temp import render_tab as render_changement_temp
 from .tabs.tab09_simulation_couts import render_tab as render_simulation_couts
 from .tabs.tab10_rapport_pop import render_tab as render_rapport_pop
 from .tabs.tab11_rapport_region import render_tab as render_rapport_region
 from .tabs.tab12_rapport_national import render_tab as render_rapport_national
-
 from .tabs.tab13_comparaison_pops import render_tab as render_comparaison_pops
-from .tabs.tab14_incident import render_tab as render_incident_tab
 
 
 def create_tabs():
@@ -39,18 +36,15 @@ def create_tabs():
         "🔬 Analyses EDA",
         "❄️ Analyse CLIM",
         "🚪 Analyse Porte",
-        "🔍 Incident Lens",
         "🔗 Corrélations",
-        "Analyse changement °T",
+        "Analyse anomalie",
         "💰 Simulation Coûts",
         "📋 Rapport POP",
         "🏢 Rapport Région",
         "🇲🇦 Rapport National",
-        "🔄 Comparaison entre POPs",
-        "🛑 Incidents"
+        "🔄 Comparaison entre POPs"
     ])
     return tabs
-
 
 def show_no_data_message(tabs, selected_pop: str, selected_region: str):
     """
@@ -104,7 +98,7 @@ def render_all_tabs(tabs, filtered_data: pd.DataFrame, unfiltered_data: pd.DataF
         selected_region: Selected region name
         selected_pop: Selected POP name
     """
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13, tab14 = tabs
+    tab1, tab2, tab3, tab4, tab5, tab7, tab8, tab9, tab10, tab11, tab12, tab13 = tabs
     
     # 1. VUE D'ENSEMBLE
     with tab1:
@@ -125,11 +119,6 @@ def render_all_tabs(tabs, filtered_data: pd.DataFrame, unfiltered_data: pd.DataF
     # 5. ANALYSE PORTE
     with tab5:
         render_analyse_porte(filtered_data, start_date, end_date)
-
-    # 6. INCIDENT LENS
-    with tab6:
-        render_incident_lens_tab(filtered_data, start_date, end_date, 
-                                region=selected_region, site=selected_pop)
 
     # 7. CORRÉLATIONS
     with tab7:
@@ -161,9 +150,7 @@ def render_all_tabs(tabs, filtered_data: pd.DataFrame, unfiltered_data: pd.DataF
         render_comparaison_pops(filtered_data, start_date, end_date, 
                                selected_region, selected_pop)
 
-    # 14. INCIDENTS
-    with tab14:
-        render_incident_tab(filtered_data, start_date, end_date)
+    
 
 
 def orchestrate_dashboard(filtered_data: pd.DataFrame, unfiltered_data: pd.DataFrame,

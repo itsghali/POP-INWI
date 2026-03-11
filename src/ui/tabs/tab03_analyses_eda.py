@@ -60,7 +60,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                     continue
                 
                 # 1. STATISTIQUES GÉNÉRALES
-                with st.expander(f"📈 Statistiques et informations - {metric_labels.get(metric, metric)}", expanded=True):
+                #with st.expander(f"📈 Statistiques et informations - {metric_labels.get(metric, metric)}", expanded=True):
                     col1, col2 = st.columns([1, 2])
                     
                     with col1:
@@ -90,7 +90,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                         st.dataframe(pd.DataFrame(stats_data), hide_index=True, width='stretch')
                 
                 # 2. VISUALISATIONS DE DISTRIBUTION
-                st.markdown(f"#### 📊 Distribution - {metric_labels.get(metric, metric)}")
+                #st.markdown(f"#### 📊 Distribution - {metric_labels.get(metric, metric)}")
                 col1, col2 = st.columns(2)
                 
                 with col1:
@@ -258,4 +258,3 @@ def render_tab(filtered_merged_data, start_date, end_date):
     
     else:
         st.error("Aucune donnée disponible.")
-

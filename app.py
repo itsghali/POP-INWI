@@ -53,8 +53,6 @@ st.set_page_config(
 selected_region, selected_pop = get_region_pop_selection(data_cleaner)
 
 
-# Préchargement systématique à chaque lancement
-preload_all_pops(data_cleaner, load_data)
 
 # Track POP changes for timing purposes - only for initial load
 if 'current_pop' not in st.session_state:
