@@ -2,7 +2,7 @@
 Incident Lens - Root Cause Analysis Module
 Automated incident detection and root cause exploration for data center operations
 """
-
+''
 from .detector import IncidentDetector
 try:
     from .analyzer import RootCauseAnalyzer

@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from dataclasses import dataclass
 from enum import Enum
 import uuid
-
+''
 try:
     from ..config.settings import (
         DOOR_CYCLE_MIN_DURATION,

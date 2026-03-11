@@ -27,7 +27,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
         st.info(f"**CLIMs détectées:** {', '.join(clim_columns)}")
         
         # Vérifier l'état des CLIMs
-        clim_status_summary = []
+        '''clim_status_summary = []
         for clim in clim_columns:
             if clim in filtered_merged_data.columns:
                 total_points = len(filtered_merged_data)
@@ -46,7 +46,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
             st.dataframe(df_clim_summary.style.format({
                 '% ON': '{:.1f}%'
             }), width='stretch')
-        
+        '''
         # Analyse de la température après arrêt CLIM
         st.subheader("📉 Évolution de la température après arrêt des CLIMs")
         
@@ -428,4 +428,3 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 st.info(f"Aucun changement de température mesuré après les arrêts de {selected_clim}.")
         else:
             st.warning(f"Aucun arrêt détecté pour {selected_clim} dans la période sélectionnée.")
-
