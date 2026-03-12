@@ -81,106 +81,173 @@ apply_print_styles()
 
 # ===== LOAD AND PREPARE DATA =====
 try:
-    # Load data for the selected POP - returns tuple (cleaned_data, merged_data)
-    cleaned_data, merged_data = load_data(selected_region, selected_pop)
-    
-    if merged_data is None or merged_data.empty:
-        st.error(f"❌ Aucune donnée disponible pour {selected_pop} ({selected_region})")
-        st.stop()
-    
-    # Ensure Timestamp is datetime
-    if 'Timestamp' in merged_data.columns:
-        # Convert all timestamp types to datetime
-        merged_data['Timestamp'] = pd.to_datetime(merged_data['Timestamp'], errors='coerce', utc=False)
-        # Remove rows with NaT timestamps
-        merged_data = merged_data.dropna(subset=['Timestamp'])
-    
-    if merged_data.empty:
-        st.error(f"❌ No valid data after timestamp conversion")
-        st.stop()
-    
-    # Get date range from session state or use full range
-    if 'start_date' not in st.session_state:
-        if 'Timestamp' in merged_data.columns:
-            ts_min = merged_data['Timestamp'].min()
-            # Convert pandas Timestamp to Python datetime
-            if hasattr(ts_min, 'to_pydatetime'):
-                st.session_state.start_date = ts_min.to_pydatetime()
-            elif isinstance(ts_min, str):
-                st.session_state.start_date = pd.to_datetime(ts_min).to_pydatetime()
+    # Affichage progressif pendant le préchargement
+    if not st.session_state.get('preload_completed', False):
+        multi_pop_cache = st.session_state.get('multi_pop_cache', {})
+        st.write('DEBUG multi_pop_cache:', list(multi_pop_cache.keys()))
+        pop_id_selected = f"{selected_region}_{selected_pop}"
+        # Si le POP sélectionné est déjà chargé, l'afficher
+        if pop_id_selected in multi_pop_cache:
+            merged_data = multi_pop_cache[pop_id_selected]
+            st.info(f"Préchargement en cours... Affichage du POP sélectionné déjà chargé : {pop_id_selected}")
+            region_display = selected_region
+            pop_display = selected_pop
+        # Sinon, afficher le premier POP chargé
+        elif multi_pop_cache:
+            first_pop_id = next(iter(multi_pop_cache))
+            merged_data = multi_pop_cache[first_pop_id]
+            st.info(f"Préchargement en cours... Affichage du premier POP chargé : {first_pop_id}")
+            # Extraire region/pop du nom
+            if '_' in first_pop_id:
+                region_display, pop_display = first_pop_id.split('_', 1)
             else:
-                st.session_state.start_date = ts_min if isinstance(ts_min, datetime) else datetime.now()
+                region_display, pop_display = '', ''
         else:
-            st.session_state.start_date = datetime.now()
-    
-    if 'end_date' not in st.session_state:
-        if 'Timestamp' in merged_data.columns:
-            ts_max = merged_data['Timestamp'].max()
-            # Convert pandas Timestamp to Python datetime
-            if hasattr(ts_max, 'to_pydatetime'):
-                st.session_state.end_date = ts_max.to_pydatetime()
-            elif isinstance(ts_max, str):
-                st.session_state.end_date = pd.to_datetime(ts_max).to_pydatetime()
-            else:
-                st.session_state.end_date = ts_max if isinstance(ts_max, datetime) else datetime.now()
-        else:
-            st.session_state.end_date = datetime.now()
-    
-    # Ensure start_date and end_date are proper Python datetime objects
-    start_date = st.session_state.start_date
-    end_date = st.session_state.end_date
-    
-    # Final conversion safety check
-    if isinstance(start_date, str):
-        start_date = pd.to_datetime(start_date).to_pydatetime()
-    elif isinstance(start_date, pd.Timestamp):
-        start_date = start_date.to_pydatetime()
-    elif not isinstance(start_date, datetime):
-        start_date = datetime.now()
-    
-    if isinstance(end_date, str):
-        end_date = pd.to_datetime(end_date).to_pydatetime()
-    elif isinstance(end_date, pd.Timestamp):
-        end_date = end_date.to_pydatetime()
-    elif not isinstance(end_date, datetime):
-        end_date = datetime.now()
-    
-    # Store corrected dates back in session state
-    st.session_state.start_date = start_date
-    st.session_state.end_date = end_date
-    
-    # Filter data by date range using data_filter utility
-    filtered_merged_data = filter_by_date_range(merged_data, start_date, end_date)
-    
-    # Validate data availability
-    required_cols = ['Temp_Ambiante', 'Timestamp']
-    is_valid, missing = validate_data_availability(filtered_merged_data, required_cols)
-    if not is_valid and len(filtered_merged_data) > 0:
-        st.warning(f"⚠️ Colonnes manquantes: {missing}")
-    
-    # Get selected period from unified selector (rendered in sidebar)
-    if 'unified_period' in st.session_state:
-        sidebar_start_date = st.session_state.unified_period.get('start_date')
-        sidebar_end_date = st.session_state.unified_period.get('end_date')
-
-        if sidebar_start_date is not None and sidebar_end_date is not None:
-            start_date = sidebar_start_date
-            end_date = sidebar_end_date
+            st.info("Préchargement en cours... Aucun POP n'est encore chargé.")
+            merged_data = None
+            region_display, pop_display = '', ''
+        if merged_data is not None:
+            # Ensure Timestamp is datetime
+            if 'Timestamp' in merged_data.columns:
+                merged_data['Timestamp'] = pd.to_datetime(merged_data['Timestamp'], errors='coerce', utc=False)
+                merged_data = merged_data.dropna(subset=['Timestamp'])
+            if merged_data.empty:
+                st.error(f"❌ No valid data after timestamp conversion")
+                st.stop()
+            # Dates
+            if 'start_date' not in st.session_state:
+                if 'Timestamp' in merged_data.columns:
+                    ts_min = merged_data['Timestamp'].min()
+                    if hasattr(ts_min, 'to_pydatetime'):
+                        st.session_state.start_date = ts_min.to_pydatetime()
+                    elif isinstance(ts_min, str):
+                        st.session_state.start_date = pd.to_datetime(ts_min).to_pydatetime()
+                    else:
+                        st.session_state.start_date = ts_min if isinstance(ts_min, datetime) else datetime.now()
+                else:
+                    st.session_state.start_date = datetime.now()
+            if 'end_date' not in st.session_state:
+                if 'Timestamp' in merged_data.columns:
+                    ts_max = merged_data['Timestamp'].max()
+                    if hasattr(ts_max, 'to_pydatetime'):
+                        st.session_state.end_date = ts_max.to_pydatetime()
+                    elif isinstance(ts_max, str):
+                        st.session_state.end_date = pd.to_datetime(ts_max).to_pydatetime()
+                    else:
+                        st.session_state.end_date = ts_max if isinstance(ts_max, datetime) else datetime.now()
+                else:
+                    st.session_state.end_date = datetime.now()
+            start_date = st.session_state.start_date
+            end_date = st.session_state.end_date
+            if isinstance(start_date, str):
+                start_date = pd.to_datetime(start_date).to_pydatetime()
+            elif isinstance(start_date, pd.Timestamp):
+                start_date = start_date.to_pydatetime()
+            elif not isinstance(start_date, datetime):
+                start_date = datetime.now()
+            if isinstance(end_date, str):
+                end_date = pd.to_datetime(end_date).to_pydatetime()
+            elif isinstance(end_date, pd.Timestamp):
+                end_date = end_date.to_pydatetime()
+            elif not isinstance(end_date, datetime):
+                end_date = datetime.now()
             st.session_state.start_date = start_date
             st.session_state.end_date = end_date
-            # Re-filter data with selected period
             filtered_merged_data = filter_by_date_range(merged_data, start_date, end_date)
-    
-    # Orchestrate the dashboard with all prepared data
-    orchestrate_dashboard(
-        filtered_merged_data,
-        merged_data,
-        start_date,
-        end_date,
-        selected_region,
-        selected_pop
-    )
-    
+            required_cols = ['Temp_Ambiante', 'Timestamp']
+            is_valid, missing = validate_data_availability(filtered_merged_data, required_cols)
+            if not is_valid and len(filtered_merged_data) > 0:
+                st.warning(f"⚠️ Colonnes manquantes: {missing}")
+            if 'unified_period' in st.session_state:
+                sidebar_start_date = st.session_state.unified_period.get('start_date')
+                sidebar_end_date = st.session_state.unified_period.get('end_date')
+                if sidebar_start_date is not None and sidebar_end_date is not None:
+                    start_date = sidebar_start_date
+                    end_date = sidebar_end_date
+                    st.session_state.start_date = start_date
+                    st.session_state.end_date = end_date
+                    filtered_merged_data = filter_by_date_range(merged_data, start_date, end_date)
+            orchestrate_dashboard(
+                filtered_merged_data,
+                merged_data,
+                start_date,
+                end_date,
+                region_display,
+                pop_display
+            )
+    else:
+        # Comportement normal après préchargement
+        # Load data for the selected POP - returns tuple (cleaned_data, merged_data)
+        cleaned_data, merged_data = load_data(selected_region, selected_pop)
+        if merged_data is None or merged_data.empty:
+            st.error(f"❌ Aucune donnée disponible pour {selected_pop} ({selected_region})")
+            st.stop()
+        if 'Timestamp' in merged_data.columns:
+            merged_data['Timestamp'] = pd.to_datetime(merged_data['Timestamp'], errors='coerce', utc=False)
+            merged_data = merged_data.dropna(subset=['Timestamp'])
+        if merged_data.empty:
+            st.error(f"❌ No valid data after timestamp conversion")
+            st.stop()
+        if 'start_date' not in st.session_state:
+            if 'Timestamp' in merged_data.columns:
+                ts_min = merged_data['Timestamp'].min()
+                if hasattr(ts_min, 'to_pydatetime'):
+                    st.session_state.start_date = ts_min.to_pydatetime()
+                elif isinstance(ts_min, str):
+                    st.session_state.start_date = pd.to_datetime(ts_min).to_pydatetime()
+                else:
+                    st.session_state.start_date = ts_min if isinstance(ts_min, datetime) else datetime.now()
+            else:
+                st.session_state.start_date = datetime.now()
+        if 'end_date' not in st.session_state:
+            if 'Timestamp' in merged_data.columns:
+                ts_max = merged_data['Timestamp'].max()
+                if hasattr(ts_max, 'to_pydatetime'):
+                    st.session_state.end_date = ts_max.to_pydatetime()
+                elif isinstance(ts_max, str):
+                    st.session_state.end_date = pd.to_datetime(ts_max).to_pydatetime()
+                else:
+                    st.session_state.end_date = ts_max if isinstance(ts_max, datetime) else datetime.now()
+            else:
+                st.session_state.end_date = datetime.now()
+        start_date = st.session_state.start_date
+        end_date = st.session_state.end_date
+        if isinstance(start_date, str):
+            start_date = pd.to_datetime(start_date).to_pydatetime()
+        elif isinstance(start_date, pd.Timestamp):
+            start_date = start_date.to_pydatetime()
+        elif not isinstance(start_date, datetime):
+            start_date = datetime.now()
+        if isinstance(end_date, str):
+            end_date = pd.to_datetime(end_date).to_pydatetime()
+        elif isinstance(end_date, pd.Timestamp):
+            end_date = end_date.to_pydatetime()
+        elif not isinstance(end_date, datetime):
+            end_date = datetime.now()
+        st.session_state.start_date = start_date
+        st.session_state.end_date = end_date
+        filtered_merged_data = filter_by_date_range(merged_data, start_date, end_date)
+        required_cols = ['Temp_Ambiante', 'Timestamp']
+        is_valid, missing = validate_data_availability(filtered_merged_data, required_cols)
+        if not is_valid and len(filtered_merged_data) > 0:
+            st.warning(f"⚠️ Colonnes manquantes: {missing}")
+        if 'unified_period' in st.session_state:
+            sidebar_start_date = st.session_state.unified_period.get('start_date')
+            sidebar_end_date = st.session_state.unified_period.get('end_date')
+            if sidebar_start_date is not None and sidebar_end_date is not None:
+                start_date = sidebar_start_date
+                end_date = sidebar_end_date
+                st.session_state.start_date = start_date
+                st.session_state.end_date = end_date
+                filtered_merged_data = filter_by_date_range(merged_data, start_date, end_date)
+        orchestrate_dashboard(
+            filtered_merged_data,
+            merged_data,
+            start_date,
+            end_date,
+            selected_region,
+            selected_pop
+        )
 except Exception as e:
     st.error(f"❌ Erreur lors du chargement des données: {str(e)}")
     st.stop()

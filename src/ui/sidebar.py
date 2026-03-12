@@ -111,11 +111,9 @@ def get_region_pop_selection(data_cleaner):
             nb_fail = st.session_state.get('_preload_fail', 0)
             st.sidebar.markdown(f"""
             ✅ **Préchargement terminé!**
-            - ✅ {nb_success} POPs chargés avec succès
-            - ❌ {nb_fail} POPs vides ou échoués
-            - 🚀 **Navigation instantanée activée!**
-            👆 Vous pouvez maintenant changer de POP rapidement dans la barre latérale!
-            """)
+            - ✅ {nb_success} POPs chargés avec succès: 
+            - ❌ {nb_fail} POPs vides ou échoués """
+            )
             # Nettoyage des variables temporaires
             for k in ['_preload_pops_list', '_preload_idx', '_preload_success', '_preload_fail', 'current_preload_status']:
                 if k in st.session_state:
