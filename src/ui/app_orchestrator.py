@@ -83,6 +83,24 @@ def show_no_data_message(tabs, selected_pop: str, selected_region: str):
             st.info("👈 Changez de région/POP dans la barre latérale")
 
 
+def show_preloading_message(tabs, selected_pop: str, selected_region: str):
+    """
+    Keep tabs available during background preloading without showing
+    preload banners/messages in the main area.
+
+    Args:
+        tabs: Tuple of tab objects
+        selected_pop: Selected POP name
+        selected_region: Selected region name
+    """
+    _ = selected_pop
+    _ = selected_region
+
+    for tab in tabs:
+        with tab:
+            st.empty()
+
+
 def render_all_tabs(tabs, filtered_data: pd.DataFrame, unfiltered_data: pd.DataFrame,
                    start_date: datetime, end_date: datetime, 
                    selected_region: str, selected_pop: str):
@@ -155,7 +173,8 @@ def render_all_tabs(tabs, filtered_data: pd.DataFrame, unfiltered_data: pd.DataF
 
 def orchestrate_dashboard(filtered_data: pd.DataFrame, unfiltered_data: pd.DataFrame,
                          start_date: datetime, end_date: datetime,
-                         selected_region: str, selected_pop: str):
+                         selected_region: str, selected_pop: str,
+                         is_preloading: bool = False):
     """
     Main orchestration function for the dashboard
     Handles tab creation and rendering based on data availability
@@ -167,12 +186,16 @@ def orchestrate_dashboard(filtered_data: pd.DataFrame, unfiltered_data: pd.DataF
         end_date: End date for the period
         selected_region: Selected region name
         selected_pop: Selected POP name
+        is_preloading: True when background preload is still running and
+            placeholders should be rendered instead of no-data errors
     """
     # Create tabs
     tabs = create_tabs()
     
     # Check data availability and render appropriately
-    if unfiltered_data.empty:
+    if is_preloading:
+        show_preloading_message(tabs, selected_pop, selected_region)
+    elif unfiltered_data.empty:
         show_no_data_message(tabs, selected_pop, selected_region)
     else:
         render_all_tabs(tabs, filtered_data, unfiltered_data, 
