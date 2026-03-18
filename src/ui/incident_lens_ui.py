@@ -1,73 +1,42 @@
 """
 Incident Lens UI Components for Streamlit
-User interface for temperature anomaly root cause analysis
+User interface for temperature anomaly root cause analysis.
+
+Business logic (grouping, clustering, severity) is in:
+    src.features.incident_lens.service
 """
-import streamlit as st
-import pandas as pd
+import logging
+import warnings
+
 import numpy as np
+import pandas as pd
 import plotly.graph_objects as go
-import plotly.express as px
-from plotly.subplots import make_subplots
+import streamlit as st
 from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
-import warnings
+
+from ..incident_lens.preprocessor import DataPreprocessor
+from ..incident_lens.analyzer import RootCauseAnalyzer
+from ..incident_lens.recommender import RecommendationEngine
+from ..incident_lens.detector import IncidentDetector, Incident, IncidentType, IncidentSeverity
+from src.features.incident_lens.service import (
+    group_incidents_by_day,
+    severity_rank,
+    cluster_incidents_by_time,
+)
+
 warnings.filterwarnings('ignore')
-''
-try:
-    from ..incident_lens.preprocessor import DataPreprocessor
-    from ..incident_lens.analyzer import RootCauseAnalyzer
-    from ..incident_lens.recommender import RecommendationEngine
-    from ..incident_lens.detector import IncidentDetector, Incident, IncidentType, IncidentSeverity
-except ImportError:
-    # Fallback for direct execution
-    import sys
-    import os
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-    from src.incident_lens.preprocessor import DataPreprocessor
-    from src.incident_lens.analyzer import RootCauseAnalyzer
-    from src.incident_lens.recommender import RecommendationEngine
-    from src.incident_lens.detector import IncidentDetector, Incident, IncidentType, IncidentSeverity
+logger = logging.getLogger(__name__)
 
-
-# ============= CLUSTERING FUNCTIONS =============
-
+# Backward-compatible alias
 def group_all_incidents_by_day(incidents: List) -> List:
-    """
-    Group ALL incidents (temperature + others) into ONE incident per day.
-    
-    Logic:
-    - Group by calendar day
-    - ALL incidents of same day → 1 daily incident
-    - Extract primary anomaly type + list all causes
-    - Merge durations and metrics correctly
-    """
-    if not incidents:
-        return []
-    
-    from datetime import date
-    
-    # Sort by timestamp
-    sorted_incidents = sorted(incidents, key=lambda x: x.timestamp)
-    
-    # Group by date - all incidents of same day together
-    daily_groups = {}
-    for incident in sorted_incidents:
-        day = incident.timestamp.date()
-        if day not in daily_groups:
-            daily_groups[day] = []
-        daily_groups[day].append(incident)
-    
-    # Create ONE merged incident per day
-    grouped = []
-    for day in sorted(daily_groups.keys()):
-        day_incidents = daily_groups[day]
-        
-        if day_incidents:
-            merged = create_daily_unified_incident(day_incidents)
-            if merged:
-                grouped.append(merged)
-    
-    return grouped
+    return group_incidents_by_day(incidents)
+
+
+# Keep the old function name available but delegate
+def _legacy_group_all_incidents_by_day(incidents: List) -> List:
+    """Legacy wrapper - delegates to service layer."""
+    return group_incidents_by_day(incidents)
 
 
 def create_daily_unified_incident(group: List):
@@ -216,15 +185,7 @@ def create_daily_unified_incident(group: List):
     )
 
 
-def severity_rank(severity: IncidentSeverity) -> int:
-    """Return sortable rank for severity."""
-    order = {
-        IncidentSeverity.INFO: 1,
-        IncidentSeverity.WARNING: 2,
-        IncidentSeverity.CRITICAL: 3,
-        IncidentSeverity.EMERGENCY: 4
-    }
-    return order.get(severity, 0)
+# severity_rank is now imported from src.features.incident_lens.service
 
 
 def _incident_time_window(incident: Incident) -> tuple:
