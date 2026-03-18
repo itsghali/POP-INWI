@@ -75,6 +75,16 @@ def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
         except Exception:
             availability[pop] = False
 
+        # Ajout des POP non chargées (présentes dans le dossier mais absentes de la base)
+        import os
+        from pathlib import Path
+        data_dir = Path("data") / selected_region
+        if data_dir.exists() and data_dir.is_dir():
+            pops_fs = [d for d in os.listdir(data_dir) if (data_dir / d).is_dir()]
+            missing_pops = [pop for pop in pops_fs if pop not in pops]
+            for pop in missing_pops:
+                pops.append(pop)
+                availability[pop] = False
     if not any(availability.values()):
         st.sidebar.warning(
             f"Aucun POP dans {selected_region} n'a de données complètes"

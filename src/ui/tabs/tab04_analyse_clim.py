@@ -24,7 +24,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
     
     if clim_columns and 'Temp_Ambiante' in filtered_merged_data.columns:
         # Info sur les données disponibles
-        st.info(f"**CLIMs détectées:** {', '.join(clim_columns)}")
+        st.info(f"**CLIMs détectées:** {len(clim_columns)} clim(s)")
         
         # Vérifier l'état des CLIMs
         '''clim_status_summary = []

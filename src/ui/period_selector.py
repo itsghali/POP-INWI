@@ -54,10 +54,7 @@ class UnifiedPeriodSelector:
             tuple: (start_date, end_date) as datetime objects
         """
         self._ensure_unified_period_state()
-
-        # Info box
-        st.sidebar.info("🔄 Cette sélection s'applique automatiquement à toutes les sections de l'application")
-        
+              
         # Predefined period options
         period_options = [
             "Dernière heure",
