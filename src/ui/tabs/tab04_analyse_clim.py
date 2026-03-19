@@ -7,6 +7,24 @@ import pandas as pd
 from datetime import timedelta
 
 
+def _normalize_clim_state(series: pd.Series) -> tuple[pd.Series, pd.Series]:
+    """Normalize CLIM states to numeric (0/1) and display labels (OFF/ON)."""
+    text_state_map = {
+        "1": 1, "0": 0,
+        "ON": 1, "OFF": 0,
+        "on": 1, "off": 0,
+        "On": 1, "Off": 0,
+    }
+
+    numeric_state = pd.to_numeric(series, errors='coerce')
+    text_state = series.astype(str).str.strip().map(text_state_map)
+    normalized_state = numeric_state.fillna(text_state)
+    normalized_state = normalized_state.where(normalized_state.isin([0, 1]))
+    display_state = normalized_state.map({0: 'OFF', 1: 'ON'}).fillna('Inconnu')
+
+    return normalized_state, display_state
+
+
 def render_tab(filtered_merged_data, start_date, end_date):
     """
     Render l'onglet Analyse CLIM
@@ -61,23 +79,11 @@ def render_tab(filtered_merged_data, start_date, end_date):
         filtered_merged_data['CLIM_Stop'] = (filtered_merged_data[selected_clim].shift(1) == 1) & (filtered_merged_data[selected_clim] == 0)
         
         # Points d'arrêt
-        stop_points = filtered_merged_data[filtered_merged_data['CLIM_Stop']]['Timestamp'].tolist()
-        
-        # Debug info
-        with st.expander("🔍 Informations de débogage"):
-            st.write(f"Total de points de données: {len(filtered_merged_data)}")
-            st.write(f"Points avec température valide: {filtered_merged_data['Temp_Ambiante'].notna().sum()}")
-            st.write(f"Valeurs uniques de {selected_clim}: {filtered_merged_data[selected_clim].value_counts().to_dict()}")
-            st.write(f"Transitions détectées (1→0): {len(stop_points)}")
-            if stop_points:
-                st.write(f"Premiers arrêts: {[t.strftime('%Y-%m-%d %H:%M') for t in stop_points[:5]]}")
+        stop_points = filtered_merged_data[filtered_merged_data['CLIM_Stop']]['Timestamp'].tolist()        
         
         if stop_points:
             # Analyser chaque arrêt
             temp_changes = []
-            
-            st.write(f"**{len(stop_points)} arrêts détectés pour {selected_clim}**")
-            st.write(f"**Analyse de tous les {len(stop_points)} arrêts...**")
             
             # Progress bar for large datasets
             progress_bar = st.progress(0)
@@ -127,11 +133,40 @@ def render_tab(filtered_merged_data, start_date, end_date):
             # Clear progress bar
             progress_bar.empty()
             
-            st.write(f"**Cycles valides trouvés:** {len(temp_changes)}")
-            
             if temp_changes:
                 # Graphique des changements de température
                 df_changes = pd.DataFrame(temp_changes)
+
+                # Normaliser l'état CLIM pour affichage robuste (0/1, "0/1", "ON/OFF")
+                clim_state_numeric, clim_state_display = _normalize_clim_state(filtered_merged_data[selected_clim])
+                from plotly.subplots import make_subplots
+                fig2 = make_subplots(specs=[[{"secondary_y": True}]])
+                fig2.add_trace(go.Scatter(
+                    x=filtered_merged_data['Timestamp'],
+                    y=filtered_merged_data['Temp_Ambiante'],
+                    name='Température',
+                    mode='lines',
+                    line=dict(color='red')
+                ), secondary_y=False)
+                # Axe secondaire: encodage numérique interne, affichage texte OFF/ON
+                fig2.add_trace(go.Scatter(
+                    x=filtered_merged_data['Timestamp'],
+                    y=clim_state_numeric,
+                    name=f'{selected_clim} (ON=Marche / OFF=Arrêt)',
+                    mode='lines',
+                    line=dict(color='blue', dash='dash'),
+                    meta=selected_clim,
+                    customdata=clim_state_display,
+                    hovertemplate='CLIM: %{meta}<br>Date: %{x|%Y-%m-%d %H:%M:%S}<br>État CLIM: %{customdata}<extra></extra>'
+                ), secondary_y=True)
+                fig2.update_yaxes(title_text='Température (°C)', secondary_y=False)
+                fig2.update_yaxes(title_text='État CLIM', secondary_y=True, tickvals=[0, 1], ticktext=['OFF', 'ON'], range=[-0.1, 1.1])
+                fig2.update_layout(
+                    title=f"Évolution autour de l'arrêt du {stop_points[0].strftime('%Y-%m-%d %H:%M')}" if stop_points else "Évolution CLIM",
+                    xaxis_title="Temps",
+                    legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
+                )
+                st.plotly_chart(fig2, use_container_width=True)
                 
                 fig = go.Figure()
                 fig.add_trace(go.Scatter(
@@ -197,55 +232,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                     zero_changes = df_changes[df_changes['Delta_Temp'] == 0]
                     st.metric("Sans changement", f"{len(zero_changes)} ({len(zero_changes)/len(df_changes)*100:.1f}%)")
                 
-                # Tableau détaillé de tous les événements
-                st.subheader("📋 Détail de tous les arrêts CLIM")
                 
-                # Préparer les données pour l'affichage
-                display_df = df_changes.copy()
-                display_df['Timestamp'] = display_df['Timestamp'].dt.strftime('%Y-%m-%d %H:%M:%S')
-                display_df['Temp_Initial'] = display_df['Temp_Initial'].round(2)
-                display_df['Temp_Final'] = display_df['Temp_Final'].round(2)
-                display_df['Delta_Temp'] = display_df['Delta_Temp'].round(2)
-                
-                # Ajouter une colonne pour l'index
-                display_df.insert(0, 'N°', range(1, len(display_df) + 1))
-                
-                # Renommer les colonnes pour l'affichage
-                display_df = display_df.rename(columns={
-                    'Timestamp': 'Date/Heure arrêt',
-                    'Temp_Initial': 'T° initiale (°C)',
-                    'Temp_Final': f'T° après {minutes_after}min (°C)',
-                    'Delta_Temp': 'ΔT (°C)',
-                    'Num_Points': 'Points de données'
-                })
-                
-                # Sélectionner les colonnes à afficher
-                columns_to_display = ['N°', 'Date/Heure arrêt', 'T° initiale (°C)', 
-                                     f'T° après {minutes_after}min (°C)', 'ΔT (°C)', 'Points de données']
-                
-                # Utiliser un expander si il y a beaucoup d'événements
-                if len(display_df) > 20:
-                    with st.expander(f"Voir tous les {len(display_df)} événements"):
-                        st.dataframe(
-                            display_df[columns_to_display],
-                            width='stretch',
-                            hide_index=True
-                        )
-                else:
-                    st.dataframe(
-                        display_df[columns_to_display],
-                        width='stretch',
-                        hide_index=True
-                    )
-                
-                # Bouton pour télécharger les données
-                csv = display_df[columns_to_display].to_csv(index=False, encoding='utf-8-sig')
-                st.download_button(
-                    label="📥 Télécharger les données en CSV",
-                    data=csv,
-                    file_name=f"analyse_arrets_{selected_clim}_{minutes_after}min.csv",
-                    mime="text/csv"
-                )
                 
                 # Visualisations supplémentaires des distributions
                 st.subheader("📊 Distribution des changements de température")
@@ -347,6 +334,8 @@ def render_tab(filtered_merged_data, start_date, end_date):
                     
                     if len(viz_data) > 0:
                         fig_timeline = go.Figure()
+                        viz_clim_numeric = clim_state_numeric.loc[viz_data.index]
+                        viz_clim_display = clim_state_display.loc[viz_data.index]
                         
                         # Température
                         fig_timeline.add_trace(go.Scatter(
@@ -360,10 +349,13 @@ def render_tab(filtered_merged_data, start_date, end_date):
                         # État du CLIM
                         fig_timeline.add_trace(go.Scatter(
                             x=viz_data['Timestamp'],
-                            y=viz_data[selected_clim] * viz_data['Temp_Ambiante'].max() * 0.95,
+                            y=viz_clim_numeric,
                             mode='lines',
-                            name=f'{selected_clim} (ON/OFF)',
+                            name=f'{selected_clim} (ON=Marche / OFF=Arrêt)',
                             line=dict(color='blue', width=2, dash='dash'),
+                            meta=selected_clim,
+                            customdata=viz_clim_display,
+                            hovertemplate='CLIM: %{meta}<br>Date: %{x|%Y-%m-%d %H:%M:%S}<br>État CLIM: %{customdata}<extra></extra>',
                             yaxis='y2'
                         ))
                         
@@ -408,22 +400,15 @@ def render_tab(filtered_merged_data, start_date, end_date):
                                 title="État CLIM",
                                 overlaying='y',
                                 side='right',
-                                showticklabels=False
+                                tickvals=[0, 1],
+                                ticktext=['OFF', 'ON'],
+                                range=[-0.1, 1.1],
+                                showgrid=False
                             ),
                             height=400
                         )
                         
                         st.plotly_chart(fig_timeline, width='stretch', key="clim_temp_timeline")
-                
-                # Tableau détaillé
-                with st.expander("📋 Voir le détail des événements"):
-                    st.dataframe(
-                        df_changes.style.format({
-                            'Temp_Initial': '{:.1f}°C',
-                            'Temp_Final': '{:.1f}°C',
-                            'Delta_Temp': '{:.2f}°C'
-                        })
-                    )
             else:
                 st.info(f"Aucun changement de température mesuré après les arrêts de {selected_clim}.")
         else:
