@@ -4,11 +4,23 @@ import plotly.graph_objects as go
 from datetime import datetime
 import time
 
-from data_cleaning import DataCleaner
-from src.core.data_loader import load_multiple_pops_optimized
+from src.services import cache_service
+from src.services.preload_service import (
+    PreloadedStore,
+    get_load_revision,
+    get_preload_snapshot,
+    is_pop_loaded,
+)
 
 
-def render_tab(filtered_merged_data, start_date, end_date, selected_region, selected_pop):
+def render_tab(
+    filtered_merged_data,
+    start_date,
+    end_date,
+    selected_region,
+    selected_pop,
+    store: PreloadedStore | None = None,
+):
     """Render the National Report tab with national-level analysis."""
     
     # Add title with region and POP name
@@ -20,15 +32,16 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     """, unsafe_allow_html=True)
     
     
-    # Initialize the data cleaner for national analysis
-    national_cleaner = DataCleaner()
+    if store is None:
+        st.error("❌ Store préchargé indisponible pour l'analyse nationale.")
+        return
     
     # Get all regions and POPs (same logic as "Toutes les régions" in Multi-POP)
     all_pops_national = []
     region_stats_national = {}
     
-    for region in national_cleaner.get_regions():
-        region_pops = national_cleaner.get_pops(region)
+    for region in store.all_regions:
+        region_pops = store.catalog_by_region.get(region, [])
         region_stats_national[region] = len(region_pops)
         for pop in region_pops:
             all_pops_national.append((region, pop))
@@ -75,7 +88,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
             total_selected_pops = 0
             
             for region in selected_regions_national:
-                region_pops = national_cleaner.get_pops(region)
+                region_pops = store.catalog_by_region.get(region, [])
                 for pop in region_pops:
                     pops_to_load_national.append((region, pop))
                 total_selected_pops += len(region_pops)
@@ -89,6 +102,15 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
             with col3:
                 coverage = (len(selected_regions_national) / total_regions_national) * 100
                 st.metric("📈 Couverture nationale", f"{coverage:.1f}%")
+
+            ready_now = sum(
+                1 for region, pop in pops_to_load_national
+                if is_pop_loaded(store, region, pop)
+            )
+            st.caption(
+                f"POPs prêts: {ready_now}/{len(pops_to_load_national)} | "
+                f"en cours: {len(pops_to_load_national) - ready_now}"
+            )
             
             st.success(f"✅ Sélection: **{len(pops_to_load_national)} POPs** dans **{len(selected_regions_national)} régions**")
         else:
@@ -107,9 +129,42 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
                 st.info(f"🔄 **Analyse nationale**: {len(pops_to_load_national)} POPs sur {total_regions_national} régions")
                 
                 with st.spinner(f"Chargement optimisé de {len(pops_to_load_national)} POPs..."):
-                    # Use optimized loading that reuses cached data
+                    ready_pairs = [
+                        pair
+                        for pair in pops_to_load_national
+                        if is_pop_loaded(store, pair[0], pair[1])
+                    ]
+                    ready_set = set(ready_pairs)
+                    pending_pairs = [
+                        pair for pair in pops_to_load_national if pair not in ready_set
+                    ]
+
+                    if pending_pairs:
+                        snapshot = get_preload_snapshot(store)
+                        st.info(
+                            f"⏳ {len(pending_pairs)} POP(s) encore en chargement."
+                        )
+                        if snapshot.loading_pop_id:
+                            st.caption(
+                                f"Chargement en cours: {snapshot.loading_pop_id}"
+                            )
+
+                    if not ready_pairs:
+                        st.warning(
+                            "Aucun POP prêt pour l'analyse nationale pour le moment."
+                        )
+                        return
+
+                    load_revision = get_load_revision(store)
+                    # Load from preloaded memory + cache
                     load_start = time.time()
-                    national_pops_data, cached_count, fresh_load_count = load_multiple_pops_optimized(pops_to_load_national)
+                    national_pops_data = cache_service.get_cached_multi_pop_data(
+                        pop_pairs=ready_pairs,
+                        start_date=start_date,
+                        end_date=end_date,
+                        db_version=store.db_version,
+                        load_revision=load_revision,
+                    )
                     load_time = time.time() - load_start
                     
                     if national_pops_data:
@@ -117,11 +172,13 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
                         st.success(f"✅ **Données chargées en {load_time:.2f} secondes** ({len(national_pops_data)} POPs)")
                         # Calculate correlations for all POPs
                         correlation_start = time.time()
-                        period = (start_date, end_date) if start_date and end_date else None
-                        national_correlation_df = national_cleaner.calculate_pop_correlations(
-                            national_pops_data, 
+                        national_correlation_df = cache_service.get_cached_pop_correlations(
+                            pop_pairs=ready_pairs,
                             metric='Temp_Ambiante',
-                            period=period
+                            start_date=start_date,
+                            end_date=end_date,
+                            db_version=store.db_version,
+                            load_revision=load_revision,
                         )
                         correlation_time = time.time() - correlation_start
                         

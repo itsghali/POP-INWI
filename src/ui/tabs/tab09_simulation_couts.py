@@ -477,7 +477,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
         # Add simulate button
         simulate_button = st.button("🔄 Simuler les Économies", type="primary", width='stretch')
         
-        if simulate_button or True:  # Always show results for better UX
+        if simulate_button:
             # Calcul des économies potentielles
             new_total_power = avg_it_power * target_pue
             power_savings = avg_total_power - new_total_power

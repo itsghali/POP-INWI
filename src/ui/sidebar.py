@@ -2,11 +2,8 @@
 Sidebar — Region/POP selection, period selector, and cache controls.
 
 Changes from previous version:
-- Removed auto-switch to first preloaded POP (confusing UX)
-- Removed preload status/progress display (no more background preload)
-- Uses PopRepository for discovery (single source of truth)
-- Uses cache_service for simple cache management
-- User selection is always stable and respected
+- Uses preloaded in-memory catalog for all region/POP discovery.
+- Avoids repeated SQLite queries during navigation.
 """
 from __future__ import annotations
 
@@ -15,17 +12,58 @@ import logging
 import streamlit as st
 
 from src.services import cache_service
-from src.services.pop_repository import PopRepository
+from src.services.preload_service import (
+    PreloadedStore,
+    get_preload_snapshot,
+    is_pop_loaded,
+)
 from src.ui.period_selector import period_selector
 
 logger = logging.getLogger(__name__)
 
 
-def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
+def _on_user_selection_change() -> None:
+    """Mark that the user took manual control of POP/region selection."""
+    st.session_state.user_selected_pop_locked = True
+
+
+def _render_preload_status(store: PreloadedStore) -> None:
+    """Render progressive preload status in sidebar."""
+    snapshot = get_preload_snapshot(store)
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### ⏳ Préchargement")
+
+    if snapshot.total_pops <= 0:
+        st.sidebar.caption("Aucun POP à précharger")
+        return
+
+    pct = min(1.0, snapshot.loaded_count / snapshot.total_pops)
+    try:
+        st.sidebar.progress(
+            pct,
+            text=f"{snapshot.loaded_count}/{snapshot.total_pops} POPs",
+        )
+    except TypeError:
+        st.sidebar.progress(pct)
+        st.sidebar.caption(
+            f"{snapshot.loaded_count}/{snapshot.total_pops} POPs"
+        )
+
+    if snapshot.is_loading:
+        st.sidebar.caption("Préchargement des POPs en cours...")
+        if snapshot.loading_pop_id:
+            st.sidebar.caption(f"POP en cours: {snapshot.loading_pop_id}")
+    elif snapshot.is_complete:
+        st.sidebar.caption("Préchargement terminé ✅")
+    else:
+        st.sidebar.caption("Préchargement en attente...")
+
+
+def get_region_pop_selection(store: PreloadedStore) -> tuple[str, str]:
     """Render sidebar and return (selected_region, selected_pop).
 
     Args:
-        repo: PopRepository for region/POP discovery and availability checks.
+        store: Preloaded in-memory store.
 
     Returns:
         Tuple of (region, pop) as selected by the user.
@@ -35,12 +73,13 @@ def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
 
     # Cache controls
     _render_cache_controls()
+    _render_preload_status(store)
     st.sidebar.markdown("---")
 
     # Region selection
-    regions = repo.get_regions()
+    regions = store.all_regions
     if not regions:
-        st.error("Aucune région trouvée dans la base de données")
+        st.error("Aucune région trouvée dans le catalogue préchargé")
         st.stop()
 
     if (
@@ -53,10 +92,11 @@ def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
         "Sélectionnez une région",
         regions,
         key="selected_region_ui",
+        on_change=_on_user_selection_change,
     )
 
     # POP selection
-    pops = repo.get_pops(selected_region)
+    pops = store.catalog_by_region.get(selected_region, [])
     if not pops:
         st.error(f"Aucun POP trouvé dans la région {selected_region}")
         st.stop()
@@ -67,40 +107,31 @@ def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
     ):
         st.session_state.selected_pop_ui = pops[0]
 
-    # Check data availability for each POP
-    availability: dict[str, bool] = {}
-    for pop in pops:
-        try:
-            availability[pop] = repo.has_pop_data(selected_region, pop)
-        except Exception:
-            availability[pop] = False
-
-        # Ajout des POP non chargées (présentes dans le dossier mais absentes de la base)
-        import os
-        from pathlib import Path
-        data_dir = Path("data") / selected_region
-        if data_dir.exists() and data_dir.is_dir():
-            pops_fs = [d for d in os.listdir(data_dir) if (data_dir / d).is_dir()]
-            missing_pops = [pop for pop in pops_fs if pop not in pops]
-            for pop in missing_pops:
-                pops.append(pop)
-                availability[pop] = False
-    if not any(availability.values()):
+    # Readiness reflects actual in-memory preload state, not catalog metadata.
+    readiness: dict[str, bool] = {
+        pop: is_pop_loaded(store, selected_region, pop)
+        for pop in pops
+    }
+    if not any(readiness.values()):
         st.sidebar.warning(
-            f"Aucun POP dans {selected_region} n'a de données complètes"
+            f"Aucun POP de {selected_region} n'est prêt pour le moment."
         )
-        st.sidebar.info("Essayez une autre région")
+        st.sidebar.info(
+            "Les POPs marqués '(données indisponibles)' ne sont pas encore "
+            "préchargés ou n'ont pas de dataset exploitable."
+        )
 
     selected_pop = st.sidebar.selectbox(
         "Sélectionnez un POP",
         pops,
         key="selected_pop_ui",
         format_func=lambda pop: (
-            f"✅ {pop} (données disponibles)"
-            if availability.get(pop, False)
-            else f"❌ {pop} (données manquantes)"
+            f"{pop} (données disponibles)"
+            if readiness.get(pop, False)
+            else f"{pop} (données indisponibles)"
         ),
-        help="✅ = Données disponibles, ❌ = Données manquantes",
+        help="Affiche l'état de disponibilité des données en mémoire par POP",
+        on_change=_on_user_selection_change,
     )
 
     # Period selector
@@ -110,9 +141,9 @@ def get_region_pop_selection(repo: PopRepository) -> tuple[str, str]:
 
     # Cache info
     st.sidebar.markdown("---")
-    n_cached = cache_service.cache_size()
-    if n_cached > 0:
-        st.sidebar.caption(f"📦 {n_cached} POP(s) en cache")
+    st.sidebar.caption(
+        f"📦 {get_preload_snapshot(store).loaded_count} POP(s) déjà préchargés"
+    )
 
     return selected_region, selected_pop
 
@@ -124,5 +155,8 @@ def _render_cache_controls() -> None:
         help="Efface les données en mémoire pour forcer un rechargement.",
     ):
         cache_service.clear_cache()
+        st.session_state.user_selected_pop_locked = False
+        st.session_state.auto_first_pop_applied = False
+        st.session_state.preload_last_seen_revision = -1
         st.sidebar.success("✅ Cache vidé.")
         st.rerun()

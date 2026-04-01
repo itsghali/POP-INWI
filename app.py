@@ -5,7 +5,7 @@ This is a thin orchestrator that:
 1. Configures the page
 2. Initializes services
 3. Renders sidebar for user selection
-4. Loads data on demand (via cache_service)
+4. Uses globally preloaded in-memory datasets
 5. Delegates rendering to the dashboard orchestrator
 
 All business logic lives in src/services/ and src/domain/.
@@ -22,8 +22,18 @@ import streamlit as st
 
 from src.domain.data_models import TIMESTAMP_COL
 from src.services import cache_service
-from src.services.pop_repository import PopRepository
-from src.services.session_service import coerce_datetime, init_session_state
+from src.services.preload_service import (
+    get_dataset,
+    get_preload_snapshot,
+    get_preloaded_store,
+    get_load_revision,
+    is_pop_loaded,
+)
+from src.services.session_service import (
+    coerce_datetime,
+    init_session_state,
+    maybe_auto_select_first_ready_pop,
+)
 from src.ui.app_orchestrator import orchestrate_dashboard
 from src.ui.sidebar import get_region_pop_selection
 from src.ui.styles import apply_custom_css, apply_print_styles, render_page_header
@@ -34,6 +44,22 @@ from src.config.logging_config import setup_logging
 
 setup_logging()
 logger = logging.getLogger(__name__)
+
+
+def _start_preload_refresh_fragment(store) -> None:
+    """Trigger lightweight reruns when preload progress changes."""
+    if not hasattr(st, "fragment"):
+        return
+
+    @st.fragment(run_every="2s")
+    def _preload_refresh_tick():
+        snapshot = get_preload_snapshot(store)
+        last_seen = st.session_state.get("preload_last_seen_revision", -1)
+        if snapshot.load_revision != last_seen:
+            st.session_state.preload_last_seen_revision = snapshot.load_revision
+            st.rerun()
+
+    _preload_refresh_tick()
 
 
 # ---- Page config (must be first Streamlit call) ----
@@ -48,11 +74,16 @@ st.set_page_config(
 # ---- Initialize ----
 
 init_session_state()
-repo = PopRepository()
+store = get_preloaded_store()
+_start_preload_refresh_fragment(store)
+
+# ---- Auto-select first ready POP (before any user selection) ----
+
+maybe_auto_select_first_ready_pop(store)
 
 # ---- Sidebar: user selects region + POP ----
 
-selected_region, selected_pop = get_region_pop_selection(repo)
+selected_region, selected_pop = get_region_pop_selection(store)
 
 # ---- Header + styles ----
 
@@ -63,9 +94,11 @@ apply_print_styles()
 # ---- Load data ----
 
 try:
-    dataset = cache_service.get_or_load(repo, selected_region, selected_pop)
+    preload_snapshot = get_preload_snapshot(store)
+    selected_pop_ready = is_pop_loaded(store, selected_region, selected_pop)
+    dataset = get_dataset(store, selected_region, selected_pop)
 
-    if dataset.is_empty:
+    if dataset is None:
         now = datetime.now()
         orchestrate_dashboard(
             pd.DataFrame(),
@@ -74,16 +107,37 @@ try:
             now,
             selected_region,
             selected_pop,
+            store=store,
+            selected_pop_loading=not preload_snapshot.is_complete,
+            preload_snapshot=preload_snapshot,
+        )
+    elif dataset.is_empty:
+        now = datetime.now()
+        orchestrate_dashboard(
+            pd.DataFrame(),
+            pd.DataFrame(),
+            now,
+            now,
+            selected_region,
+            selected_pop,
+            store=store,
+            selected_pop_loading=False,
+            preload_snapshot=preload_snapshot,
         )
     else:
         merged_data = dataset.inject_metadata()
 
         # Prepare timestamps
         if TIMESTAMP_COL in merged_data.columns:
-            merged_data[TIMESTAMP_COL] = pd.to_datetime(
-                merged_data[TIMESTAMP_COL], errors="coerce", utc=False
-            )
-            merged_data = merged_data.dropna(subset=[TIMESTAMP_COL])
+            if not pd.api.types.is_datetime64_any_dtype(
+                merged_data[TIMESTAMP_COL]
+            ):
+                merged_data[TIMESTAMP_COL] = pd.to_datetime(
+                    merged_data[TIMESTAMP_COL], errors="coerce", utc=False
+                )
+            merged_data = merged_data.loc[
+                merged_data[TIMESTAMP_COL].notna()
+            ].copy()
 
         if merged_data.empty:
             st.error("❌ Aucune donnée valide après préparation.")
@@ -107,11 +161,19 @@ try:
                 start_date = coerce_datetime(sidebar_start, start_date)
                 end_date = coerce_datetime(sidebar_end, end_date)
 
-        # Filter
-        filtered_data = merged_data[
-            (merged_data[TIMESTAMP_COL] >= start_date)
-            & (merged_data[TIMESTAMP_COL] <= end_date)
-        ]
+        # Filter from preloaded in-memory store (cached by period + db version)
+        filtered_data = cache_service.get_filtered_period_data(
+            pop_id=dataset.pop_id,
+            start_date=start_date,
+            end_date=end_date,
+            db_version=store.db_version,
+            load_revision=get_load_revision(store),
+        )
+        if not filtered_data.empty:
+            filtered_data = filtered_data.copy()
+            filtered_data["Region"] = dataset.region
+            filtered_data["POP"] = dataset.pop
+            filtered_data["POP_ID"] = dataset.pop_id
 
         orchestrate_dashboard(
             filtered_data,
@@ -120,6 +182,9 @@ try:
             end_date,
             selected_region,
             selected_pop,
+            store=store,
+            selected_pop_loading=not selected_pop_ready,
+            preload_snapshot=preload_snapshot,
         )
 
 except Exception as exc:
