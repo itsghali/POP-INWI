@@ -76,10 +76,13 @@ def render_tab(filtered_merged_data, start_date, end_date):
             selected_clim = st.selectbox("Sélectionner un CLIM", clim_columns)
         
         # Détecter les arrêts de CLIM (passage de 1 à 0)
-        filtered_merged_data['CLIM_Stop'] = (filtered_merged_data[selected_clim].shift(1) == 1) & (filtered_merged_data[selected_clim] == 0)
+        clim_stop = (
+            (filtered_merged_data[selected_clim].shift(1) == 1)
+            & (filtered_merged_data[selected_clim] == 0)
+        )
         
         # Points d'arrêt
-        stop_points = filtered_merged_data[filtered_merged_data['CLIM_Stop']]['Timestamp'].tolist()        
+        stop_points = filtered_merged_data.loc[clim_stop, 'Timestamp'].tolist()
         
         if stop_points:
             # Analyser chaque arrêt

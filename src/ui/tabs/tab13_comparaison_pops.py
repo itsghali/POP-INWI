@@ -4,11 +4,23 @@ import plotly.graph_objects as go
 from datetime import datetime
 import time
 
-from data_cleaning import DataCleaner
-from src.core.data_loader import load_multiple_pops_optimized
+from src.services import cache_service
+from src.services.preload_service import (
+    PreloadedStore,
+    get_load_revision,
+    get_preload_snapshot,
+    is_pop_loaded,
+)
 
 
-def render_tab(filtered_merged_data, start_date, end_date, selected_region, selected_pop):
+def render_tab(
+    filtered_merged_data,
+    start_date,
+    end_date,
+    selected_region,
+    selected_pop,
+    store: PreloadedStore | None = None,
+):
     """Render the Custom POP Comparison tab."""
     
     # Add title with region and POP name
@@ -24,8 +36,9 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     Sélectionnez les régions et POPs que vous souhaitez analyser pour obtenir une comparaison détaillée.
     """)
     
-    # Initialize the data cleaner for custom comparison
-    comparison_cleaner = DataCleaner()
+    if store is None:
+        st.error("❌ Store préchargé indisponible pour la comparaison.")
+        return
     
     # Custom selection interface (copied from "Sélection personnalisée")
     st.markdown("### ⚙️ Sélection des POPs à Comparer")
@@ -33,7 +46,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     # Multi-region/POP selection interface
     selected_regions_comparison = st.multiselect(
         "Sélectionner les régions",
-        comparison_cleaner.get_regions(),
+        store.all_regions,
         default=[selected_region],
         key="tab13_comparison_regions_selector",
         help="Choisissez les régions d'où sélectionner les POPs à comparer"
@@ -48,7 +61,7 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
         comparison_summary = []
         
         for region in selected_regions_comparison:
-            available_pops = comparison_cleaner.get_pops(region)
+            available_pops = store.catalog_by_region.get(region, [])
             if available_pops:
                 with st.expander(f"🗺️ {region} - {len(available_pops)} POPs disponibles", expanded=True):
                     selected_pops_comparison = st.multiselect(
@@ -82,6 +95,15 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
             with col3:
                 avg_pops_per_region = len(pops_to_load_comparison) / len(selected_regions_comparison) if selected_regions_comparison else 0
                 st.metric("📈 Moyenne POPs/Région", f"{avg_pops_per_region:.1f}")
+
+            ready_now = sum(
+                1 for region, pop in pops_to_load_comparison
+                if is_pop_loaded(store, region, pop)
+            )
+            st.caption(
+                f"POPs prêts: {ready_now}/{len(pops_to_load_comparison)} | "
+                f"en cours: {len(pops_to_load_comparison) - ready_now}"
+            )
             
             st.success(f"✅ **{len(pops_to_load_comparison)} POPs** sélectionnés dans **{len(selected_regions_comparison)} régions** prêts pour la comparaison")
         else:
@@ -102,9 +124,44 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
             st.info(f"🔄 **Comparaison de POPs**: {len(pops_to_load_comparison)} POPs dans {len(selected_regions_comparison)} régions")
             
             with st.spinner(f"Chargement optimisé de {len(pops_to_load_comparison)} POPs pour comparaison..."):
-                # Use optimized loading that reuses cached data
+                ready_pairs = [
+                    pair
+                    for pair in pops_to_load_comparison
+                    if is_pop_loaded(store, pair[0], pair[1])
+                ]
+                ready_set = set(ready_pairs)
+                pending_pairs = [
+                    pair
+                    for pair in pops_to_load_comparison
+                    if pair not in ready_set
+                ]
+
+                if pending_pairs:
+                    snapshot = get_preload_snapshot(store)
+                    st.info(
+                        f"⏳ {len(pending_pairs)} POP(s) encore en chargement."
+                    )
+                    if snapshot.loading_pop_id:
+                        st.caption(
+                            f"Chargement en cours: {snapshot.loading_pop_id}"
+                        )
+
+                if not ready_pairs:
+                    st.warning(
+                        "Aucun POP prêt pour la comparaison pour le moment."
+                    )
+                    return
+
+                load_revision = get_load_revision(store)
+                # Load from preloaded memory + cache
                 load_start = time.time()
-                comparison_pops_data, cached_count, fresh_load_count = load_multiple_pops_optimized(pops_to_load_comparison)
+                comparison_pops_data = cache_service.get_cached_multi_pop_data(
+                    pop_pairs=ready_pairs,
+                    start_date=start_date,
+                    end_date=end_date,
+                    db_version=store.db_version,
+                    load_revision=load_revision,
+                )
                 load_time = time.time() - load_start
                 
                 if comparison_pops_data:
@@ -113,11 +170,13 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
                     
                     # Calculate correlations for all selected POPs
                     correlation_start = time.time()
-                    period = (start_date, end_date) if start_date and end_date else None
-                    comparison_correlation_df = comparison_cleaner.calculate_pop_correlations(
-                        comparison_pops_data, 
+                    comparison_correlation_df = cache_service.get_cached_pop_correlations(
+                        pop_pairs=ready_pairs,
                         metric='Temp_Ambiante',
-                        period=period
+                        start_date=start_date,
+                        end_date=end_date,
+                        db_version=store.db_version,
+                        load_revision=load_revision,
                     )
                     correlation_time = time.time() - correlation_start
                     

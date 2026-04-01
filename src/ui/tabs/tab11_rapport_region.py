@@ -2,12 +2,24 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 from datetime import datetime
-from data_cleaning import DataCleaner
-from src.core.data_loader import load_multiple_pops_optimized
 import time
+from src.services import cache_service
+from src.services.preload_service import (
+    PreloadedStore,
+    get_load_revision,
+    get_preload_snapshot,
+    is_pop_loaded,
+)
 
 
-def render_tab(filtered_merged_data, start_date, end_date, selected_region, selected_pop):
+def render_tab(
+    filtered_merged_data,
+    start_date,
+    end_date,
+    selected_region,
+    selected_pop,
+    store: PreloadedStore | None = None,
+):
     """Render the Regional Report tab."""
     # Add title with region and POP name
     st.markdown(f"""
@@ -17,11 +29,12 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
     </div>
     """, unsafe_allow_html=True)
     
-    # Initialize the data cleaner for region analysis
-    region_cleaner = DataCleaner()
-    
+    if store is None:
+        st.error("❌ Store préchargé indisponible pour l'analyse régionale.")
+        return
+
     # Get all POPs from the current region
-    current_region_pops = region_cleaner.get_pops(selected_region)
+    current_region_pops = store.catalog_by_region.get(selected_region, [])
     
     if current_region_pops:
         # Display region overview
@@ -32,6 +45,21 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
             st.metric("📊 POPs Total", len(current_region_pops))
         with col3:
             st.metric("🎯 POP Sélectionné", selected_pop)
+
+        ready_pairs_all = [
+            (selected_region, pop)
+            for pop in current_region_pops
+            if is_pop_loaded(store, selected_region, pop)
+        ]
+        pending_pairs_all = [
+            (selected_region, pop)
+            for pop in current_region_pops
+            if not is_pop_loaded(store, selected_region, pop)
+        ]
+        st.caption(
+            f"POPs prêts: {len(ready_pairs_all)}/{len(current_region_pops)} | "
+            f"en cours: {len(pending_pairs_all)}"
+        )
         
         # Prepare POPs for loading
         pops_to_load_region = [(selected_region, pop) for pop in current_region_pops]
@@ -43,26 +71,65 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
         # Button to launch region analysis
         if st.button("🔄 Lancer l'analyse régionale", key="launch_region_analysis"):
             if pops_to_load_region:
+                ready_pairs = [
+                    pair
+                    for pair in pops_to_load_region
+                    if is_pop_loaded(store, pair[0], pair[1])
+                ]
+                ready_set = set(ready_pairs)
+                pending_pairs = [
+                    pair for pair in pops_to_load_region if pair not in ready_set
+                ]
+
+                if pending_pairs:
+                    snapshot = get_preload_snapshot(store)
+                    st.info(
+                        f"⏳ {len(pending_pairs)} POP(s) sont encore en chargement."
+                    )
+                    if snapshot.loading_pop_id:
+                        st.caption(
+                            f"Chargement en cours: {snapshot.loading_pop_id}"
+                        )
+
+                if not ready_pairs:
+                    st.warning(
+                        "Aucun POP de la région n'est prêt pour l'instant. "
+                        "Relancez dans un instant."
+                    )
+                    return
+
                 # Start timing for region analysis
                 region_start_time = time.time()
-                st.info(f"🔄 **Analyse de la région {selected_region}**: {len(pops_to_load_region)} POPs")
+                st.info(
+                    f"🔄 **Analyse de la région {selected_region}**: "
+                    f"{len(ready_pairs)} POPs prêts"
+                )
                 
                 with st.spinner(f"Chargement des données de la région {selected_region}..."):
-                    # Load data for all POPs in the region
+                    load_revision = get_load_revision(store)
+                    # Load data for all POPs in the region (memory + cache)
                     load_start = time.time()
-                    region_pops_data, cached_count, fresh_load_count = load_multiple_pops_optimized(pops_to_load_region)
+                    region_pops_data = cache_service.get_cached_multi_pop_data(
+                        pop_pairs=ready_pairs,
+                        start_date=start_date,
+                        end_date=end_date,
+                        db_version=store.db_version,
+                        load_revision=load_revision,
+                    )
                     load_time = time.time() - load_start
                     
                     if region_pops_data:
                         st.success(f"✅ **Données chargées en {load_time:.2f} secondes** ({len(region_pops_data)} POPs)")
                         
-                        # Calculate correlations for all POPs in the region
+                        # Calculate correlations for all POPs in the region (cached)
                         correlation_start = time.time()
-                        period = (start_date, end_date) if start_date and end_date else None
-                        region_correlation_df = region_cleaner.calculate_pop_correlations(
-                            region_pops_data, 
+                        region_correlation_df = cache_service.get_cached_pop_correlations(
+                            pop_pairs=ready_pairs,
                             metric='Temp_Ambiante',
-                            period=period
+                            start_date=start_date,
+                            end_date=end_date,
+                            db_version=store.db_version,
+                            load_revision=load_revision,
                         )
                         correlation_time = time.time() - correlation_start
                         
@@ -474,10 +541,10 @@ def render_tab(filtered_merged_data, start_date, end_date, selected_region, sele
         st.error(f"❌ Aucun POP trouvé dans la région {selected_region}")
         
         # Show alternative regions
-        all_regions = region_cleaner.get_regions()
+        all_regions = store.all_regions
         if all_regions:
             st.markdown("### 💡 **Régions disponibles:**")
             for region in all_regions:
-                region_pops = region_cleaner.get_pops(region)
+                region_pops = store.catalog_by_region.get(region, [])
                 st.write(f"- **{region}**: {len(region_pops)} POPs")
 
