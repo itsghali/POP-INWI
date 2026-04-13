@@ -398,11 +398,6 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 close_time = cycle['close_ts']
                 cycle_duration = cycle['duration_sec'] / 60  # Convertir en minutes
                 
-                # Limiter les cycles très longs (plus de 2 heures)
-                if cycle_duration > 120:
-                    close_time = open_time + timedelta(minutes=120)
-                    cycle_duration = 120
-                
                 # Enregistrer tous les cycles (avec ou sans température)
                 all_door_cycles.append({
                     'Open_Time': open_time,
