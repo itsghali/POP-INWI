@@ -480,87 +480,86 @@ def render_tab(filtered_merged_data, start_date, end_date, merged_data=None):
                 else:
                     st.success("✅ Aucune action urgente requise. Le système fonctionne dans des paramètres acceptables.")
                 
-                # Technical details expander for those who want more info
-                with st.expander("📊 Détails Techniques (pour les experts)", expanded=False):
-                    st.markdown("#### Valeurs de Corrélation")
-                    
-                    # Create a clean dataframe for display with consistent string formatting
-                    correlation_display = []
-                    impact_display = []
-                    
-                    for val in temp_correlations.values:
-                        if isinstance(val, str):
-                            # For "Toujours ON/OFF" strings
-                            correlation_display.append(val)
-                            impact_display.append('Neutre')
-                        elif isinstance(val, (int, float)) and pd.notna(val):
-                            # For numeric correlations
-                            correlation_display.append(f"{val:.1%}")
-                            impact_display.append('Positif' if val > 0 else 'Négatif')
+                # Technical details displayed directly without expander
+                st.markdown("### 📊 Tableau de corrélation")
+                
+                # Create a clean dataframe for display with consistent string formatting
+                correlation_display = []
+                impact_display = []
+                
+                for val in temp_correlations.values:
+                    if isinstance(val, str):
+                        # For "Toujours ON/OFF" strings
+                        correlation_display.append(val)
+                        impact_display.append('Neutre')
+                    elif isinstance(val, (int, float)) and pd.notna(val):
+                        # For numeric correlations
+                        correlation_display.append(f"{val:.1%}")
+                        impact_display.append('Positif' if val > 0 else 'Négatif')
+                    else:
+                        # For missing data
+                        correlation_display.append("N/A")
+                        impact_display.append('Neutre')
+                
+                tech_df = pd.DataFrame({
+                    'Variable': temp_correlations.index,
+                    'Corrélation': correlation_display,
+                    'Impact': impact_display
+                })
+                
+                # Create a sort key for proper ordering
+                def create_sort_key(row):
+                    val = temp_correlations[row.name]  # Get original value for sorting
+                    if isinstance(val, str):
+                        return (1, 0)  # Put string values at the end with secondary sort of 0
+                    elif pd.isna(val):
+                        return (2, 0)  # Put NaN at the very end
+                    else:
+                        return (0, -abs(val))  # Put numeric values first, sorted by absolute value (descending)
+                
+                tech_df['_sort_key'] = tech_df.apply(create_sort_key, axis=1)
+                tech_df = tech_df.sort_values('_sort_key').drop('_sort_key', axis=1).reset_index(drop=True)
+                
+                # Since all correlation values are now pre-formatted as strings, we can apply styling directly
+                # Custom background gradient function that handles both percentages and constant states
+                def background_gradient_for_correlations(s):
+                    styles = []
+                    for i, val in enumerate(s):
+                        if val in ['Toujours Ouverte', 'Toujours OFF']:
+                            # Light red for problematic states
+                            styles.append('background-color: #ffebee; color: #d32f2f; font-weight: bold')
+                        elif val in ['Toujours Fermée', 'Toujours ON']:
+                            # Blue for good states
+                            styles.append('background-color: #e8f4fd; color: #1976d2; font-weight: bold')
+                        elif val.endswith('%'):
+                            # Extract numeric value from percentage string
+                            try:
+                                numeric_val = float(val.replace('%', '')) / 100
+                                # Create color map
+                                import matplotlib.pyplot as plt
+                                cmap = plt.cm.RdBu_r
+                                norm = plt.Normalize(vmin=-1, vmax=1)
+                                color = cmap(norm(numeric_val))
+                                rgb = f'rgb({int(color[0]*255)}, {int(color[1]*255)}, {int(color[2]*255)})'
+                                styles.append(f'background-color: {rgb}')
+                            except:
+                                styles.append('')
                         else:
-                            # For missing data
-                            correlation_display.append("N/A")
-                            impact_display.append('Neutre')
-                    
-                    tech_df = pd.DataFrame({
-                        'Variable': temp_correlations.index,
-                        'Corrélation': correlation_display,
-                        'Impact': impact_display
-                    })
-                    
-                    # Create a sort key for proper ordering
-                    def create_sort_key(row):
-                        val = temp_correlations[row.name]  # Get original value for sorting
-                        if isinstance(val, str):
-                            return (1, 0)  # Put string values at the end with secondary sort of 0
-                        elif pd.isna(val):
-                            return (2, 0)  # Put NaN at the very end
-                        else:
-                            return (0, -abs(val))  # Put numeric values first, sorted by absolute value (descending)
-                    
-                    tech_df['_sort_key'] = tech_df.apply(create_sort_key, axis=1)
-                    tech_df = tech_df.sort_values('_sort_key').drop('_sort_key', axis=1).reset_index(drop=True)
-                    
-                    # Since all correlation values are now pre-formatted as strings, we can apply styling directly
-                    # Custom background gradient function that handles both percentages and constant states
-                    def background_gradient_for_correlations(s):
-                        styles = []
-                        for i, val in enumerate(s):
-                            if val in ['Toujours Ouverte', 'Toujours OFF']:
-                                # Light red for problematic states
-                                styles.append('background-color: #ffebee; color: #d32f2f; font-weight: bold')
-                            elif val in ['Toujours Fermée', 'Toujours ON']:
-                                # Blue for good states
-                                styles.append('background-color: #e8f4fd; color: #1976d2; font-weight: bold')
-                            elif val.endswith('%'):
-                                # Extract numeric value from percentage string
-                                try:
-                                    numeric_val = float(val.replace('%', '')) / 100
-                                    # Create color map
-                                    import matplotlib.pyplot as plt
-                                    cmap = plt.cm.RdBu_r
-                                    norm = plt.Normalize(vmin=-1, vmax=1)
-                                    color = cmap(norm(numeric_val))
-                                    rgb = f'rgb({int(color[0]*255)}, {int(color[1]*255)}, {int(color[2]*255)})'
-                                    styles.append(f'background-color: {rgb}')
-                                except:
-                                    styles.append('')
-                            else:
-                                styles.append('')  # No style for other values
-                        return styles
-                    
-                    # Apply styling
-                    styled_df = tech_df.style.apply(background_gradient_for_correlations, subset=['Corrélation'])
-                    
-                    st.dataframe(styled_df, width='stretch')
-                    
-                    st.markdown("""
-                    **Guide d'interprétation:**
-                    - **Corrélation positive:** Les deux variables évoluent dans le même sens
-                    - **Corrélation négative:** Les variables évoluent en sens opposé
-                    - **Valeur absolue:** Indique la force de la relation (0 = aucune, 1 = parfaite)
-                    - **Méthode utilisée:** Corrélation de Spearman (robuste aux valeurs extrêmes)
-                    """)
+                            styles.append('')  # No style for other values
+                    return styles
+                
+                # Apply styling
+                styled_df = tech_df.style.apply(background_gradient_for_correlations, subset=['Corrélation'])
+                
+                st.dataframe(styled_df, width='stretch')
+                
+                st.markdown("""
+                **Guide d'interprétation:**
+                - **Corrélation positive:** Les deux variables évoluent dans le même sens
+                - **Corrélation négative:** Les variables évoluent en sens opposé
+                - **Valeur absolue:** Indique la force de la relation (0 = aucune, 1 = parfaite)
+                - **Méthode utilisée:** Corrélation de Spearman (robuste aux valeurs extrêmes)
+                """)
         
         else:
             # No valid correlations calculated

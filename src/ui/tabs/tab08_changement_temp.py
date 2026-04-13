@@ -179,9 +179,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                                     spearman_thresh=0.5,
                                     min_ext_change=0.8
                                 )
-                                # Vérification supplémentaire : différence moyenne (Ext - Amb) >= 2°C
-                                temp_diff = (corr_data_ext['Temp_Exterieure'] - corr_data_ext['Temp_Ambiante']).mean()
-                                if ext_flag and temp_diff >= 2.0:
+                                if ext_flag:
                                     causes.append("Temp Ext. élevée")
                         
                         # --- Calcul IT ---
@@ -293,9 +291,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                                     spearman_thresh=0.5,
                                     min_ext_change=0.8
                                 )
-                                # Vérification supplémentaire : différence moyenne (Ext - Amb) <= -2°C
-                                temp_diff = (corr_data_ext['Temp_Exterieure'] - corr_data_ext['Temp_Ambiante']).mean()
-                                if ext_flag and temp_diff <= -2.0:
+                                if ext_flag:
                                     causes.append("Temp Ext. faible")
                         
                         # --- Calcul IT ---
@@ -834,10 +830,6 @@ def render_tab(filtered_merged_data, start_date, end_date):
                 
                 # --- FONCTION UTILITAIRE POUR LE CALCUL LOCAL DE CORRÉLATION (Réutilisation de la logique) ---
                 def get_correlations_for_row(row, df):
-                    # Définition de la fenêtre de corrélation pour l'affichage (Zoom + Marge de 1h)
-                    corr_start = row['start_time'] - pd.Timedelta(hours=1)
-                    corr_end = row['end_time'] + pd.Timedelta(minutes=20)
-                    
                     # Contexte -1h/+20min pour les métriques secondaires
                     context_local = df[(df['Timestamp'] >= row['spike_time'] - pd.Timedelta(hours=1)) & 
                                        (df['Timestamp'] <= row['spike_time'] + pd.Timedelta(minutes=20))]
@@ -845,8 +837,7 @@ def render_tab(filtered_merged_data, start_date, end_date):
                     corr_ext = None
                     # --- Calcul Ext ---
                     if 'Temp_Exterieure' in df.columns:
-                        corr_data_ext = df[(df['Timestamp'] >= corr_start) & (df['Timestamp'] <= corr_end)]
-                        corr_data_ext = corr_data_ext.dropna(subset=['Temp_Ambiante', 'Temp_Exterieure'])
+                        corr_data_ext = context_local.dropna(subset=['Temp_Ambiante', 'Temp_Exterieure'])
                         if len(corr_data_ext) >= 10:
                             corr_ext, _ = scipy.stats.spearmanr(corr_data_ext['Temp_Ambiante'], corr_data_ext['Temp_Exterieure'])
                     
@@ -1013,6 +1004,43 @@ def render_tab(filtered_merged_data, start_date, end_date):
 
             else:
                 st.info("Veuillez sélectionner au moins une métrique à afficher.")
+
+        st.markdown("---")
+        with st.expander("ℹ️ Conditions de détection des causes", expanded=False):
+            st.markdown("""
+            **Fenêtre d'analyse utilisée**
+            - Les causes sont analysées sur une fenêtre centrée sur le pic: de `1 heure avant` à `20 minutes après` le pic.
+
+            **Porte ouverte**
+            - La cause `Porte ouverte` est ajoutée si le statut d'ouverture est détecté dans la fenêtre de contrôle du pic.
+
+            **Température extérieure**
+            - Au moins `5` points valides `Temp_Ambiante` + `Temp_Exterieure` sont nécessaires.
+            - La cause `Temp Ext. élevée` ou `Temp Ext. faible` est ajoutée si toutes les conditions suivantes sont vraies:
+            - Corrélation de Spearman `ρ(Temp_Ambiante, Temp_Exterieure) >= 0.5`
+            - Variation extérieure sur la fenêtre `>= 0.8°C`
+            - Et au moins une des conditions suivantes:
+            - Corrélation des variations successives `>= 0.3`
+            - Ou accord de direction des variations `>= 60%`
+
+            **Puissance IT**
+            - Au moins `5` points valides `Temp_Ambiante` + `Puissance_IT` sont nécessaires.
+            - La cause `Puissance IT élevée` ou `Puissance IT faible` est ajoutée si toutes les conditions suivantes sont vraies:
+            - Variation de `Puissance_IT` sur la fenêtre `>= 0.5 kW`
+            - Et au moins un des signaux suivants est vérifié:
+            - Corrélation des variations successives `|ρ| >= 0.3`
+            - Ou meilleure corrélation décalée `|ρ| >= 0.3` avec un décalage entre `-2` et `+2`
+            - Ou accord de direction des variations `>= 60%`
+            - Ou corrélation de Spearman brute `|ρ(Temp_Ambiante, Puissance_IT)| >= 0.5`
+
+            **CLIM**
+            - La cause `Toutes les clims éteintes` est ajoutée si toutes les colonnes CLIM disponibles sont à `0` sur la fenêtre.
+            - Une cause `Arrêt CLIM X` est ajoutée si une transition `1 -> 0` est détectée avant le pic.
+
+            **Pourquoi une corrélation peut être affichée sans devenir une cause**
+            - Une corrélation affichée seule ne suffit pas.
+            - Il faut aussi respecter les seuils de variation et les règles de cohérence temporelle ci-dessus.
+            """)
     else:
         st.warning("Aucune donnée disponible pour la période sélectionnée.")
 
